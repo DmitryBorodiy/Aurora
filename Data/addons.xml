@@ -3,32 +3,37 @@
   <Addon>
     <DisplayName>Word</DisplayName>
     <LaunchUri>https://www.office.com/launch/word?auth=1</LaunchUri>
-    <ShellIcon>https://assets.msn.com/staticsb/statics/latest/icons/office-icons/Word_24x.svg</ShellIcon>
+    <ShellIcon>https://img.icons8.com/fluency/96/null/microsoft-word-2019.png</ShellIcon>
   </Addon>
   <Addon>
     <DisplayName>Outlook</DisplayName>
     <LaunchUri>https://outlook.com</LaunchUri>
-    <ShellIcon>https://assets.msn.com/staticsb/statics/latest/icons/office-icons/Outlook_24x.svg</ShellIcon>
+    <ShellIcon>https://img.icons8.com/fluency/96/null/microsoft-outlook-2019.png</ShellIcon>
   </Addon>
   <Addon>
     <DisplayName>Excel</DisplayName>
     <LaunchUri>https://www.office.com/launch/excel?auth=1</LaunchUri>
-    <ShellIcon>https://assets.msn.com/staticsb/statics/latest/icons/office-icons/Excel_24x.svg</ShellIcon>
+    <ShellIcon>https://img.icons8.com/fluency/96/null/microsoft-excel-2019.png</ShellIcon>
   </Addon>
   <Addon>
     <DisplayName>Power Point</DisplayName>
     <LaunchUri>https://www.office.com/launch/powerpoint?auth=1</LaunchUri>
-    <ShellIcon>https://assets.msn.com/staticsb/statics/latest/icons/office-icons/PowerPoint_24x.svg</ShellIcon>
+    <ShellIcon>https://img.icons8.com/fluency/96/null/microsoft-powerpoint-2019.png</ShellIcon>
   </Addon>
   <Addon>
     <DisplayName>OneNote</DisplayName>
     <LaunchUri>https://www.onenote.com/notebooks?auth=1</LaunchUri>
-    <ShellIcon>https://assets.msn.com/staticsb/statics/latest/icons/office-icons/OneNote_24x.svg</ShellIcon>
+    <ShellIcon>https://img.icons8.com/fluency/96/null/microsoft-onenote-2019.png</ShellIcon>
   </Addon>
   <Addon>
     <DisplayName>OneDrive</DisplayName>
     <LaunchUri>https://onedrive.live.com</LaunchUri>
-    <ShellIcon>https://assets.msn.com/staticsb/statics/latest/icons/office-icons/OneDrive_24x.svg</ShellIcon>
+    <ShellIcon>https://img.icons8.com/fluency/96/null/microsoft-onedrive-2019.png</ShellIcon>
+  </Addon>
+  <Addon>
+    <DisplayName>To do</DisplayName>
+    <LaunchUri>https://to-do.microsoft.com/tasks/?auth=1</LaunchUri>
+    <ShellIcon>https://img.icons8.com/fluency/96/null/microsoft-todo-2019.png</ShellIcon>
   </Addon>
   <Addon>
     <DisplayName>Calendar</DisplayName>
