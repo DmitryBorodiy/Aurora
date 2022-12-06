@@ -36,8 +36,13 @@
     <ShellIcon>https://img.icons8.com/fluency/96/null/microsoft-todo-2019.png</ShellIcon>
   </Addon>
   <Addon>
+    <DisplayName>Teams</DisplayName>
+    <LaunchUri>https://teams.live.com/_?utm_source=OfficeWeb</LaunchUri>
+    <ShellIcon>https://img.icons8.com/fluency/96/null/microsoft-teams-2019.png</ShellIcon>
+  </Addon>
+  <Addon>
     <DisplayName>Calendar</DisplayName>
     <LaunchUri>https://outlook.live.com/calendar/</LaunchUri>
-    <ShellIcon>https://assets.msn.com/staticsb/statics/latest/icons/office-icons/Calendar_24x.svg</ShellIcon>
+    <ShellIcon>https://img.icons8.com/fluency/96/null/calendar.png</ShellIcon>
   </Addon>
 </KnownAddons>
