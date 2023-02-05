@@ -4,6 +4,7 @@
     <extensionsList extensionType="webSearch">
         <extension 
             ExtensionName="Google"
+            ExtensionType="AllTypes"
             ExtensionDeveloper="Google Inc"
             ExtensionIcon="https://img.icons8.com/fluency/48/null/google-logo.png"
             ExtensionDescription="Google web search features for Aurora."
@@ -15,6 +16,7 @@
             ExtensionPlacesSearchRequest="https://www.google.com/maps?q={0}" />
         <extension 
             ExtensionName="Bing"
+            ExtensionType="AllTypes"
             ExtensionDeveloper="Microsoft"
             ExtensionIcon="https://img.icons8.com/fluency/48/null/bing--v1.png"
             ExtensionDescription="Bing web search and other Microsoft apps features."
@@ -25,8 +27,18 @@
             ExtensionVideoSearchRequest="https://www.bing.com/videos/search?q={0}"
             ExtensionPlacesSearchRequest="https://www.bing.com/maps?q={0}" />
     </extensionsList>
-    <extensionsList extensionsList="videoSearch">
-
+    <extensionsList extensionsList="photosSearch">
+        <extension 
+            ExtensionName="Google Photos"
+            ExtensionDeveloper="Google Inc"
+            ExtensionIcon="https://img.icons8.com/fluency/48/null/google-photos-new.png"
+            ExtensionDescription="Search in Google Photos"
+            ExtensionJSCore=""
+            ExtensionWebSearchRequest="https://photos.google.com/search/{0}"
+            ExtensionImageSearchRequest=""
+            ExtensionNewsSearchRequest=""
+            ExtensionVideoSearchRequest=""
+            ExtensionPlacesSearchRequest="" />
     </extensionsList>
 </extensionsStore>
 
