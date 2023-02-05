@@ -1,0 +1,1 @@
+﻿document.getElementsByTagName(\"header\")[0].remove();
