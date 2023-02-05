@@ -27,7 +27,7 @@
             ExtensionVideoSearchRequest="https://www.bing.com/videos/search?q={0}"
             ExtensionPlacesSearchRequest="https://www.bing.com/maps?q={0}" />
     </extensionsList>
-    <extensionsList extensionsType="photosSearch">
+    <extensionsList extensionType="photosSearch">
         <extension 
             ExtensionName="Google Photos"
             ExtensionType="SearchPhotos"
