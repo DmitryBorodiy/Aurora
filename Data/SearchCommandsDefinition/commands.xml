@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<commandsDefinition>
+  <command id="Google.Search">
+    <language name="en"> <!-- id 0 -->
+      <action
+        text="Open Google"
+        actionId="shell:https://google.com"
+        actionIcon="ms-appx:///Assets/icons8-google-96.png" />
+    </language>
+    <language name="uk"> <!-- id 1 -->
+      <action
+        text="Відкрити Google"
+        actionId="shell:https://google.com"
+        actionIcon="ms-appx:///Assets/icons8-google-96.png" />
+    </language>
+    <language name="ru"> <!-- id 2 -->
+      <action
+        text="Открыть Google"
+        actionId="shell:https://google.com"
+        actionIcon="ms-appx:///Assets/icons8-google-96.png" />
+    </language>
+  </command>
+  <command id="Windows.Settings">
+    <language name="en">
+      <!-- id 0 -->
+      <action
+        text="Open device settings"
+        actionId="shell:ms-settings:"
+        actionIcon="ms-appx:///Assets/icons8-settings-96.png" />
+    </language>
+    <language name="uk">
+      <!-- id 1 -->
+      <action
+        text="Відкрити налаштування пристрою"
+        actionId="shell:ms-settings:"
+        actionIcon="ms-appx:///Assets/icons8-settings-96.png" />
+    </language>
+    <language name="ru">
+      <!-- id 2 -->
+      <action
+        text="Открыть параметры устройства"
+        actionId="shell:ms-settings:"
+        actionIcon="ms-appx:///Assets/icons8-settings-96.png" />
+    </language>
+  </command>
+  <command id="Windows.Settings.WiFi">
+    <language name="en">
+      <!-- id 0 -->
+      <action
+        text="Open Wi-Fi settings"
+        actionId="shell:ms-settings:network-wifi"
+        actionIcon="ms-appx:///Assets/icons8-wi-fi-96.png" />
+    </language>
+    <language name="uk">
+      <!-- id 1 -->
+      <action
+        text="Відкрити налаштування Wi-Fi"
+        actionId="shell:ms-settings:network-wifi"
+        actionIcon="ms-appx:///Assets/icons8-wi-fi-96.png" />
+    </language>
+    <language name="ru">
+      <!-- id 2 -->
+      <action
+        text="Открыть параметры Wi-Fi"
+        actionId="shell:ms-settings:network-wifi"
+        actionIcon="ms-appx:///Assets/icons8-wi-fi-96.png" />
+    </language>
+  </command>
+  <command id="Windows.Settings.Bluetooth">
+    <language name="en">
+      <!-- id 0 -->
+      <action
+        text="Open bluetooth settings"
+        actionId="shell:ms-settings:bluetooth"
+        actionIcon="ms-appx:///Assets/icons8-bluetooth-96.png" />
+    </language>
+    <language name="uk">
+      <!-- id 1 -->
+      <action
+        text="Відкрити налаштування Bluetooth"
+        actionId="shell:ms-settings:bluetooth"
+        actionIcon="ms-appx:///Assets/icons8-bluetooth-96.png" />
+    </language>
+    <language name="ru">
+      <!-- id 2 -->
+      <action
+        text="Открыть параметры Bluetooth"
+        actionId="shell:ms-settings:bluetooth"
+        actionIcon="ms-appx:///Assets/icons8-bluetooth-96.png" />
+    </language>
+  </command>
+</commandsDefinition>
