@@ -30,6 +30,7 @@
     <extensionsList extensionsList="photosSearch">
         <extension 
             ExtensionName="Google Photos"
+            ExtensionType="SearchPhotos"
             ExtensionDeveloper="Google Inc"
             ExtensionIcon="https://img.icons8.com/fluency/48/null/google-photos-new.png"
             ExtensionDescription="Search in Google Photos"
