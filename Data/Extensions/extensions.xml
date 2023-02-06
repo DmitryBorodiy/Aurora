@@ -1,4 +1,4 @@
-﻿<!-- type:Extensions -->
+<!-- type:Extensions -->
 <?xml version="1.0" encoding="utf-8" ?>
 <extensionsStore>
     <extensionsList extensionType="webSearch">
@@ -13,7 +13,8 @@
             ExtensionImageSearchRequest="https://www.google.com/search?q={0}&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiO7Ziznv_8AhWPgf0HHYn6Ch4Q_AUoAnoECAEQBA&biw=1536&bih=714"
             ExtensionNewsSearchRequest="https://www.google.com/search?q={0}&source=lnms&tbm=nws"
             ExtensionVideoSearchRequest="https://www.google.com/search?q={0}&tbm=vid"
-            ExtensionPlacesSearchRequest="https://www.google.com/maps?q={0}" />
+            ExtensionPlacesSearchRequest="https://www.google.com/maps?q={0}"
+		    SubscribitionNeeded="False" />
         <extension 
             ExtensionName="Bing"
             ExtensionType="AllTypes"
@@ -25,7 +26,8 @@
             ExtensionImageSearchRequest="https://www.bing.com/images/search?q={0}"
             ExtensionNewsSearchRequest="https://www.bing.com/news/search?q={0}"
             ExtensionVideoSearchRequest="https://www.bing.com/videos/search?q={0}"
-            ExtensionPlacesSearchRequest="https://www.bing.com/maps?q={0}" />
+            ExtensionPlacesSearchRequest="https://www.bing.com/maps?q={0}"
+			SubscribitionNeeded="False" />
     </extensionsList>
     <extensionsList extensionType="photosSearch">
         <extension 
@@ -39,7 +41,8 @@
             ExtensionImageSearchRequest=""
             ExtensionNewsSearchRequest=""
             ExtensionVideoSearchRequest=""
-            ExtensionPlacesSearchRequest="" />
+            ExtensionPlacesSearchRequest=""
+			SubscribitionNeeded="True" />
     </extensionsList>
 </extensionsStore>
 
