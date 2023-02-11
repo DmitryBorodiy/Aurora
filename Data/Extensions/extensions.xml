@@ -15,6 +15,7 @@
             ExtensionVideoSearchRequest="https://www.google.com/search?q={0}&tbm=vid"
             ExtensionPlacesSearchRequest="https://www.google.com/maps?q={0}"
 	    AuthUrl=""
+	    SupportedQuerys=""
 	    IsSignInNeeded="False"
             SubscribitionNeeded="False" />
         <extension 
@@ -29,6 +30,7 @@
             ExtensionNewsSearchRequest="https://www.bing.com/news/search?q={0}"
             ExtensionVideoSearchRequest="https://www.bing.com/videos/search?q={0}"
             ExtensionPlacesSearchRequest="https://www.bing.com/maps?q={0}"
+	    SupportedQuerys="[web]=https://www.bing.com/?q={0},[images]=https://www.bing.com/images/search?q={0},[news]=https://www.bing.com/news/search?q={0},[places]=https://www.bing.com/maps?q={0},[videos]=https://www.bing.com/videos/search?q={0}"
 	    AuthUrl=""
 	    IsSignInNeeded="False"
 	    SubscribitionNeeded="False" />
