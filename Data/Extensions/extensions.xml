@@ -44,7 +44,7 @@
             ExtensionDescription="Search in Google Photos"
             ExtensionJSCore=""
             ExtensionWebSearchRequest="https://photos.google.com/search/{0}"
-            ExtensionImageSearchRequest=""
+            ExtensionImageSearchRequest="https://photos.google.com/search/{0}"
             ExtensionNewsSearchRequest=""
             ExtensionVideoSearchRequest=""
             ExtensionPlacesSearchRequest=""
