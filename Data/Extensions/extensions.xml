@@ -49,7 +49,8 @@
             ExtensionVideoSearchRequest=""
             ExtensionPlacesSearchRequest=""
 	    AuthUrl="https://photos.google.com/login"
-	    IsSignInNeeded="False"
+	    SupportedQuerys="[images]=https://photos.google.com/search/{0}"
+	    IsSignInNeeded="True"
     	    SubscribitionNeeded="True" />
     </extensionsList>
 </extensionsStore>
