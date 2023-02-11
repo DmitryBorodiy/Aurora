@@ -14,7 +14,9 @@
             ExtensionNewsSearchRequest="https://www.google.com/search?q={0}&source=lnms&tbm=nws"
             ExtensionVideoSearchRequest="https://www.google.com/search?q={0}&tbm=vid"
             ExtensionPlacesSearchRequest="https://www.google.com/maps?q={0}"
-		    SubscribitionNeeded="False" />
+	    AuthUrl=""
+	    IsSignInNeeded="False"
+            SubscribitionNeeded="False" />
         <extension 
             ExtensionName="Bing"
             ExtensionType="AllTypes"
@@ -27,7 +29,8 @@
             ExtensionNewsSearchRequest="https://www.bing.com/news/search?q={0}"
             ExtensionVideoSearchRequest="https://www.bing.com/videos/search?q={0}"
             ExtensionPlacesSearchRequest="https://www.bing.com/maps?q={0}"
-			SubscribitionNeeded="False" />
+	    IsSignInNeeded="False"
+	    SubscribitionNeeded="False" />
     </extensionsList>
     <extensionsList extensionType="photosSearch">
         <extension 
@@ -42,7 +45,8 @@
             ExtensionNewsSearchRequest=""
             ExtensionVideoSearchRequest=""
             ExtensionPlacesSearchRequest=""
-			SubscribitionNeeded="True" />
+	    IsSignInNeeded="False"
+    	    SubscribitionNeeded="True" />
     </extensionsList>
 </extensionsStore>
 
