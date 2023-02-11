@@ -1,7 +1,54 @@
-﻿<!-- type:Extensions -->
+﻿<!-- type:AssistantResponces -->
 <?xml version="1.0" encoding="utf-8" ?>
-<answers>
-    <answer
-        
+<answers Type="WebSearch" IsRandom="True">
+    <!-- Using for responcing in chat or voice -->
+    <textAnswer
+        ResponeType="Text"
+        IsArgsSupported="False"
+        AssistantEmoji="Interest"
+        AnswerText="Here's what I was able to find."
+        AnswerCulture="en" />
+    <textAnswer
+        ResponeType="Text"
+        IsArgsSupported="False"
+        AssistantEmoji="Interest"
+        AnswerText="I think it will be interesting for you."
+        AnswerCulture="en" />
+    <textAnswer
+        ResponeType="Text"
+        IsArgsSupported="False"
+        AssistantEmoji="Interest"
+        AnswerText="I think this should help you."
+        AnswerCulture="en" />
+    <textAnswer
+        ResponeType="Text"
+        IsArgsSupported="False"
+        AssistantEmoji="Happy"
+        AnswerText="I think this should help you, or almost help you)"
+        AnswerCulture="en" />
+    <!-- Using for launch apps with message, web sites, settings and more -->
+    <textAnswer
+        ResponeType="Launch"
+        IsArgsSupported="True"
+        AssistantEmoji="Process"
+        AnswerText="Sure, I opening {0}"
+        AnswerCulture="en" />
+    <textAnswer
+        ResponeType="Launch"
+        IsArgsSupported="True"
+        AssistantEmoji="Process"
+        AnswerText="Sure, opening {0}"
+        AnswerCulture="en" />
+    <textAnswer
+        ResponeType="Launch"
+        IsArgsSupported="True"
+        AssistantEmoji="Process"
+        AnswerText="Yeah, opening {0}"
+        AnswerCulture="en" />
+    <textAnswer
+        ResponeType="Launch"
+        IsArgsSupported="True"
+        AssistantEmoji="Process"
+        AnswerText="Opening {0}"
         AnswerCulture="en" />
 </answers>
