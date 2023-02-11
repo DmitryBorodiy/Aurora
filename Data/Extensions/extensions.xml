@@ -15,7 +15,7 @@
             ExtensionVideoSearchRequest="https://www.google.com/search?q={0}&tbm=vid"
             ExtensionPlacesSearchRequest="https://www.google.com/maps?q={0}"
 	    AuthUrl=""
-	    SupportedQuerys=""
+	    SupportedQuerys="[web]=https://www.google.com/search?q={0},[images]=https://www.google.com.ua/search?q={0}&source=lnms&tbm=isch,[news]=https://www.google.com.ua/search?q={0}&source=lmns&tbm=nws,[places]=https://maps.google.com.ua/maps?q={0},[videos]=https://www.google.com.ua/search?q={0}&tbm=vid"
 	    IsSignInNeeded="False"
             SubscribitionNeeded="False" />
         <extension 
