@@ -29,6 +29,7 @@
             ExtensionNewsSearchRequest="https://www.bing.com/news/search?q={0}"
             ExtensionVideoSearchRequest="https://www.bing.com/videos/search?q={0}"
             ExtensionPlacesSearchRequest="https://www.bing.com/maps?q={0}"
+	    AuthUrl=""
 	    IsSignInNeeded="False"
 	    SubscribitionNeeded="False" />
     </extensionsList>
@@ -45,6 +46,7 @@
             ExtensionNewsSearchRequest=""
             ExtensionVideoSearchRequest=""
             ExtensionPlacesSearchRequest=""
+	    AuthUrl="https://photos.google.com/login"
 	    IsSignInNeeded="False"
     	    SubscribitionNeeded="True" />
     </extensionsList>
