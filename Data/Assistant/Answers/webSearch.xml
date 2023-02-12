@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!-- type:AssistantResponces -->
 <answers Type="WebSearch" IsRandom="True">
-    <!-- Using for responcing in chat or voice -->
     <textAnswer
         ResponeType="Text"
         IsArgsSupported="False"
@@ -26,7 +24,6 @@
         AssistantEmoji="Happy"
         AnswerText="I think this should help you, or almost help you)"
         AnswerCulture="en" />
-    <!-- Using for launch apps with message, web sites, settings and more -->
     <textAnswer
         ResponeType="Launch"
         IsArgsSupported="True"
