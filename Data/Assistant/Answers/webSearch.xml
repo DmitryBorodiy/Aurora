@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<answers Type="WebSearch" IsRandom="True">
+<answers Type="WebSearch" IsRandom="true">
     <textAnswer
         ResponeType="Text"
-        IsArgsSupported="False"
+        IsArgsSupported="false"
         AssistantEmoji="Interest"
         AnswerText="Here's what I was able to find."
         AnswerCulture="en" />
     <textAnswer
         ResponeType="Text"
-        IsArgsSupported="False"
+        IsArgsSupported="false"
         AssistantEmoji="Interest"
         AnswerText="I think it will be interesting for you."
         AnswerCulture="en" />
     <textAnswer
         ResponeType="Text"
-        IsArgsSupported="False"
+        IsArgsSupported="false"
         AssistantEmoji="Interest"
         AnswerText="I think this should help you."
         AnswerCulture="en" />
     <textAnswer
         ResponeType="Text"
-        IsArgsSupported="False"
+        IsArgsSupported="false"
         AssistantEmoji="Happy"
         AnswerText="I think this should help you, or almost help you)"
         AnswerCulture="en" />
     <textAnswer
         ResponeType="Launch"
-        IsArgsSupported="True"
+        IsArgsSupported="true"
         AssistantEmoji="Process"
         AnswerText="Sure, I opening {0}"
         AnswerCulture="en" />
     <textAnswer
         ResponeType="Launch"
-        IsArgsSupported="True"
+        IsArgsSupported="true"
         AssistantEmoji="Process"
         AnswerText="Sure, opening {0}"
         AnswerCulture="en" />
     <textAnswer
         ResponeType="Launch"
-        IsArgsSupported="True"
+        IsArgsSupported="true"
         AssistantEmoji="Process"
         AnswerText="Yeah, opening {0}"
         AnswerCulture="en" />
     <textAnswer
         ResponeType="Launch"
-        IsArgsSupported="True"
+        IsArgsSupported="true"
         AssistantEmoji="Process"
         AnswerText="Opening {0}"
         AnswerCulture="en" />
