@@ -11,4 +11,14 @@
         IconSource="https://img.icons8.com/fluency/96/null/facebook-new.png"
         ShellUri="https://www.facebook.com"
         Title="Facebook" />
+    <suggestion
+        Type="Setting"
+        IconSource="https://img.icons8.com/fluency/96/null/wifi.png"
+        ShellUri="ms-settings:network-wifi"
+        Title="Wi-Fi settings" />
+    <suggestion
+        Type="Setting"
+        IconSource="https://img.icons8.com/fluency/96/null/settings.png"
+        ShellUri="ms-settings:network-status"
+        Title="Network & internet settings" />
 </suggestions>
