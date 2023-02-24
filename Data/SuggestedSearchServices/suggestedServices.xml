@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<suggestions>
+    <!-- Social media -->
+    <suggestion 
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/instagram-new.png"
+        Title="Instagram" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/facebook-new.png"
+        Title="Facebook" />
+</suggestions>
