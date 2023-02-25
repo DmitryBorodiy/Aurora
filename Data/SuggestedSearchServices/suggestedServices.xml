@@ -12,6 +12,104 @@
         ShellUri="https://www.facebook.com"
         Title="Facebook" />
     <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/dribbble.png"
+        ShellUri="https://www.dribbble.com"
+        Title="Dribbble" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/feedly.png"
+        ShellUri="https://www.feedly.com"
+        Title="Feedly" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/line-me.png"
+        ShellUri="https://line.me/"
+        Title="LINE" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/linkedin.png"
+        ShellUri="https://www.linkedin.com"
+        Title="Linkedin" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/patreon.png"
+        ShellUri="https://www.patreon.com"
+        Title="Patreon" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/stackexchange.png"
+        ShellUri="https://www.stackexchange.com"
+        Title="Stackexchange" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/tiktok.png"
+        ShellUri="https://www.tiktok.com"
+        Title="TikTok" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/--tinder.png"
+        ShellUri="https://www.tinder.com"
+        Title="Tinder" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/tumblr.png"
+        ShellUri="https://www.tumblr.com"
+        Title="Tumblr" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/twitter.png"
+        ShellUri="https://www.twitter.com"
+        Title="Twitter" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/vk-circled.png"
+        ShellUri="https://vk.com"
+        Title="Vkontakte" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/yelp.png"
+        ShellUri="https://www.yelp.com"
+        Title="Yelp" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/pinterest.png"
+        ShellUri="https://www.pinterest.com"
+        Title="Pinterest" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/digg.png"
+        ShellUri="https://www.digg.com"
+        Title="Digg" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/reddit.png"
+        ShellUri="https://www.reddit.com"
+        Title="Reddit" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/youtube-play.png"
+        ShellUri="https://www.youtube.com"
+        Title="YouTube" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/flickr.png"
+        ShellUri="https://www.flickr.com"
+        Title="Flickr" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/amazon-prime-video.png"
+        ShellUri="https://www.primevideo.com/"
+        Title="Amazon prime video" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/twitch.png"
+        ShellUri="https://www.twitch.com"
+        Title="Twitch" />
+    <!-- Media -->
+
+    <!-- Settings -->
+    <suggestion
         Type="Setting"
         IconSource="https://img.icons8.com/fluency/96/null/wifi.png"
         ShellUri="ms-settings:network-wifi"
