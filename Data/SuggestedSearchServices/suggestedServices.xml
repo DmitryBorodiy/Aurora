@@ -131,8 +131,47 @@
         IconSource="https://img.icons8.com/fluency/96/null/stackoverflow.png"
         ShellUri="https://www.stackoverflow.com"
         Title="Stackoverflow" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/discord-logo.png"
+        ShellUri="https://www.discord.com"
+        Title="Discord" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/telegram-app.png"
+        ShellUri="https://web.telegram.org"
+        Title="Telegram" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/viber.png"
+        ShellUri="https://www.viber.com"
+        Title="Viber" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/weixing.png"
+        ShellUri="https://www.wechat.com"
+        Title="WeChat" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/skype.png"
+        ShellUri="https://www.skype.com"
+        Title="Skype" />
     <!-- Media -->
-
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/spotify.png"
+        ShellUri="https://open.spotify.com"
+        Title="Spotify" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/apple-music.png"
+        ShellUri="https://music.apple.com/us/browse"
+        Title="Apple Music" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/github.png"
+        ShellUri="https://www.github.com"
+        Title="GitHub" />
     <!-- Settings -->
     <suggestion
         Type="Setting"
