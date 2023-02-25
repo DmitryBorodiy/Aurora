@@ -20,5 +20,5 @@
         Type="Setting"
         IconSource="https://img.icons8.com/fluency/96/null/settings.png"
         ShellUri="ms-settings:network-status"
-        Title="Network & internet settings" />
+        Title="Network settings" />
 </suggestions>
