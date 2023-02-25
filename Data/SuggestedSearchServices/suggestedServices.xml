@@ -106,6 +106,31 @@
         IconSource="https://img.icons8.com/fluency/96/null/twitch.png"
         ShellUri="https://www.twitch.com"
         Title="Twitch" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/netflix-desktop-app.png"
+        ShellUri="https://www.netflix.com"
+        Title="Netflix" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/facebook-messenger--v2.png"
+        ShellUri="https://www.messenger.com"
+        Title="Messenger" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/whatsapp.png"
+        ShellUri="https://www.yelp.com"
+        Title="WhatsApp" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/github.png"
+        ShellUri="https://www.github.com"
+        Title="GitHub" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/stackoverflow.png"
+        ShellUri="https://www.stackoverflow.com"
+        Title="Stackoverflow" />
     <!-- Media -->
 
     <!-- Settings -->
