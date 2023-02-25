@@ -172,6 +172,17 @@
         IconSource="https://img.icons8.com/fluency/96/null/github.png"
         ShellUri="https://www.github.com"
         Title="GitHub" />
+    <!-- Gaming -->
+    <suggestion
+        Type="App"
+        IconSource="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Xbox_app_logo.svg/640px-Xbox_app_logo.svg.png"
+        ShellUri="https://www.xbox.com"
+        Title="Xbox" />
+    <suggestion
+        Type="App"
+        IconSource="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Xbox_app_logo.svg/640px-Xbox_app_logo.svg.png"
+        ShellUri="msxbox://"
+        Title="Launch Xbox" />
     <!-- Settings -->
     <suggestion
         Type="Setting"
