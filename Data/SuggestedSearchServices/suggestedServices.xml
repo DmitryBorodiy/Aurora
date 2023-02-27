@@ -128,6 +128,16 @@
         Title="GitHub" />
     <suggestion
         Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/microsoft-todo-2019.png"
+        ShellUri="https://to-do.microsoft.com/tasks/?auth=1"
+        Title="My tasks in To Do" />
+    <suggestion
+        Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/microsoft-todo-2019.png"
+        ShellUri="ms-todo://"
+        Title="Open To Do" />
+    <suggestion
+        Type="App"
         IconSource="https://img.icons8.com/fluency/96/null/stackoverflow.png"
         ShellUri="https://www.stackoverflow.com"
         Title="Stackoverflow" />
@@ -167,11 +177,6 @@
         IconSource="https://img.icons8.com/fluency/96/null/apple-music.png"
         ShellUri="https://music.apple.com/us/browse"
         Title="Apple Music" />
-    <suggestion
-        Type="App"
-        IconSource="https://img.icons8.com/fluency/96/null/github.png"
-        ShellUri="https://www.github.com"
-        Title="GitHub" />
     <!-- Gaming -->
     <suggestion
         Type="App"
