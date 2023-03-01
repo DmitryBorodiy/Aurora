@@ -188,6 +188,16 @@
         IconSource="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Xbox_app_logo.svg/640px-Xbox_app_logo.svg.png"
         ShellUri="msxbox://"
         Title="Launch Xbox" />
+    <suggestion
+        Type="Game"
+        IconSource="https://play-lh.googleusercontent.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP"
+        ShellUri="https://www.minecraft.com"
+        Title="Minecraft" />
+    <suggestion
+        Type="Game"
+        IconSource="https://play-lh.googleusercontent.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP"
+        ShellUri="minecraft://"
+        Title="Play Minecraft" />
     <!-- Settings -->
     <suggestion
         Type="Setting"
