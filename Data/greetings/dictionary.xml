@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Greetings>
+    <Dictionary triggerTime="day">
+        <Greeting 
+            emotion="[normal]" 
+            content="Welcome back{0}" />
+    </Dictionary>
+</Greetings>
