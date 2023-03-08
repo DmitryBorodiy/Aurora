@@ -3,6 +3,11 @@
     <!-- Social media -->
     <suggestion 
         Type="App"
+        IconSource="https://img.icons8.com/fluency/96/null/weather.png"
+        ShellUri="shell:weather"
+        Title="Weather" />
+    <suggestion 
+        Type="App"
         IconSource="https://img.icons8.com/fluency/96/null/instagram-new.png"
         ShellUri="https://www.instagram.com"
         Title="Instagram" />
