@@ -100,6 +100,11 @@ header{
     top: 2px;
 }
 
+.fluent-icon{
+    font-size: 20px;
+    font-family: 'FluentIcons-Filled', sans-serif;
+}
+
 #navigation-bar{
     
 }
