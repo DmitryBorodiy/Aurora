@@ -32,6 +32,22 @@
     header{
         background-color: rgba(250, 250, 250, 42%);
     }
+
+    .fluent-hyperlink{
+        color: rgb(131, 131, 131);
+    }
+
+    .fluent-hyperlink:hover{
+        background-color: rgba(24, 24, 24, 10%);
+    }
+    
+    .fluent-hyperlink:focus{
+        background-color: rgba(24, 24, 24, 10%);
+    }
+    
+    .fluent-hyperlink:active{
+        background-color: rgba(24, 24, 24, 10%);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,6 +64,22 @@
 
     header{
         background-color: rgba(25, 25, 25, 42%);
+    }
+
+    .fluent-hyperlink{
+        color: rgb(220, 220, 220);
+    }
+
+    .fluent-hyperlink:hover{
+        background-color: rgba(255, 255, 255, 8%);
+    }
+    
+    .fluent-hyperlink:focus{
+        background-color: rgba(255, 255, 255, 8%);
+    }
+    
+    .fluent-hyperlink:active{
+        background-color: rgba(255, 255, 255, 8%);
     }
 }
 
@@ -106,5 +138,40 @@ header{
 }
 
 #navigation-bar{
-    
+    position: relative;
+    display: inline-flex;
+    float: right;
+    top: 18px;
+    right: 32px;
+}
+
+.fluent-hyperlink{
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    display: inherit;
+    font-weight: lighter;
+    padding: 5px 9px 3px 8px;
+    border-radius: 6px;
+}
+
+.hyperlink-icon{
+    position: relative;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.hyperlink-label{
+    position: relative;
+    font-size: 14px;
+    left: 6px;
+    margin-right: 4px;
+    bottom: 2px;
+    padding: 0px;
+    padding-inline: 0px;
+    line-height: 0px;
+}
+
+.stack-layout{
+    display: inherit;
 }
