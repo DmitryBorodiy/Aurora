@@ -48,6 +48,10 @@
     .fluent-hyperlink:active{
         background-color: rgba(24, 24, 24, 10%);
     }
+
+    button{
+        color: rgb(32, 32, 32);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -81,6 +85,10 @@
     .fluent-hyperlink:active{
         background-color: rgba(255, 255, 255, 8%);
     }
+
+    button{
+        color: rgb(240, 240, 240);
+    }
 }
 
 body{
@@ -103,7 +111,8 @@ header{
     vertical-align: middle;
     align-items: center;
     display: inline-flex;
-    margin-left: 20px;
+    left: 20px;
+    position: fixed;
     margin-top: 2px;
 }
 
@@ -112,6 +121,10 @@ header{
     display: inline-block;
     font-size: 20px;
     margin-bottom: 22px;
+}
+
+#branding-logo{
+    position: relative;
 }
 
 .vertical-sep{
@@ -123,8 +136,8 @@ header{
     height: 36px;
     position: relative;
     float: right;
-    top: 18px;
-    right: 20px;
+    top: 19px;
+    right: 19px;
 }
 
 #page-tag{
@@ -174,4 +187,14 @@ header{
 
 .stack-layout{
     display: inherit;
+}
+
+#mobile-menu-button{
+    visibility: hidden;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: transparent;
+    position: fixed;
+    top: 25px;
+    left: 18px;
 }
