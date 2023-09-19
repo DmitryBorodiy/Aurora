@@ -52,6 +52,14 @@
     button{
         color: rgb(32, 32, 32);
     }
+
+    #page-title{
+        background-color: rgb(220, 220, 220);
+    }
+
+    .placeholder-text{
+        color: rgb(56, 56, 56);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -89,6 +97,14 @@
     button{
         color: rgb(240, 240, 240);
     }
+
+    #page-title{
+        background-color: rgb(42, 42, 42);
+    }
+
+    .placeholder-text{
+        color: rgb(131, 131, 131);
+    }
 }
 
 body{
@@ -103,7 +119,8 @@ header{
     position: fixed;
     height: 74px;
     width: 100%;
-    backdrop-filter: blur(30%);
+    backdrop-filter: blur(80px);
+    z-index: 1111111111;
 }
 
 #branding-div{
@@ -197,4 +214,38 @@ header{
     position: fixed;
     top: 25px;
     left: 18px;
+}
+
+#page-title{
+    height: 120px;
+    padding-top: 120px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 40px;
+    border-radius: 0px 0px 6px 6px;
+}
+
+#title-ui{
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+#page-title-box{
+    position: relative;
+    left: 20px;
+}
+
+#page-content{
+    width: 100%;
+}
+
+.date-box{
+    display: inline-flex;
+    align-items: center;
+}
+
+.placeholder-text{
+    padding-inline: 0px;
+    line-height: 0px;
 }
