@@ -99,7 +99,7 @@
     }
 
     #page-title{
-        background-color: rgb(42, 42, 42);
+        background-color: rgb(38, 38, 38);
     }
 
     .placeholder-text{
@@ -121,6 +121,10 @@ header{
     width: 100%;
     backdrop-filter: blur(80px);
     z-index: 1111111111;
+}
+
+h2{
+    font-weight: lighter;
 }
 
 #branding-div{
@@ -171,7 +175,7 @@ header{
     position: relative;
     display: inline-flex;
     float: right;
-    top: 18px;
+    top: 20px;
     right: 32px;
 }
 
@@ -181,7 +185,7 @@ header{
     text-align: center;
     display: inherit;
     font-weight: lighter;
-    padding: 5px 9px 3px 8px;
+    padding: 4px 9px 2px 8px;
     border-radius: 6px;
 }
 
@@ -194,9 +198,9 @@ header{
 .hyperlink-label{
     position: relative;
     font-size: 14px;
-    left: 6px;
+    left: 7px;
     margin-right: 4px;
-    bottom: 2px;
+    bottom: 1px;
     padding: 0px;
     padding-inline: 0px;
     line-height: 0px;
@@ -221,7 +225,7 @@ header{
     padding-top: 120px;
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 40px;
+    padding-bottom: 33px;
     border-radius: 0px 0px 6px 6px;
 }
 
@@ -234,15 +238,26 @@ header{
 #page-title-box{
     position: relative;
     left: 20px;
+    font-size: 36px;
+    line-height: 0px;
 }
 
 #page-content{
     width: 100%;
 }
 
+#privacy-policy-doc{
+    font-weight: lighter;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+}
+
 .date-box{
     display: inline-flex;
     align-items: center;
+    margin-top: 12px;
+    margin-left: 5px;
 }
 
 .placeholder-text{
