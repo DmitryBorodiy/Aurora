@@ -19,33 +19,43 @@ window.onload = (event) => {
     brandingTitle = document.getElementById("branding-title");
     pageTag = document.getElementById("page-tag");
     mobileMenuButton = document.getElementById("mobile-menu-button");
+    mobileFeedbackButton = document.getElementById("mobile-feedback-button");
 
     getProductButton.addEventListener("click", GetProduct);
     sendFeedbackButton.addEventListener("click", SendReview);
+    mobileFeedbackButton.addEventListener("click", GetProduct);
 };
 
 window.onresize = (event) => {
     var windowWidth = getWindowWidth();
 
     if(windowWidth < 560){
-        brandingTitle.style.visibility = "collapse";
         document.getElementsByTagName("hr")[0].style.visibility = "collapse";
         headerUI.style.display = "table";
         headerUI.style.textAlign = "center";
         pageTag.style.visibility = "collapse";
         sendFeedbackButton.style.visibility = "collapse";
-        brandingBox.style.visibility = "collapse";
         mobileMenuButton.style.visibility = "visible";
+        mobileFeedbackButton.style.visibility = "visible";
+
+        //#region BrandingAdapt
+        brandingBox.style.left = "68px";
+        brandingBox.style.marginTop = "4px";
+        //#endregion
     }
     else{
-        brandingTitle.style.visibility = "visible";
         document.getElementsByTagName("hr")[0].style.visibility = "visible";
         headerUI.style.display = null;
         headerUI.style.textAlign = null;
         pageTag.style.visibility = "visible";
         sendFeedbackButton.style.visibility = "visible";
-        brandingBox.style.visibility = "visible";
         mobileMenuButton.style.visibility = "collapse";
+        mobileFeedbackButton.style.visibility = "collapse";
+
+        //#region BrandingAdapt
+        brandingBox.style.left = "20px";
+        brandingBox.style.marginTop = "2px";
+        //#endregion
     }
 };
 
@@ -57,6 +67,7 @@ var bradingIcon;
 var headerUI;
 var pageTag;
 var mobileMenuButton;
+var mobileFeedbackButton;
 
 function getWindowWidth() {
     return Math.max(

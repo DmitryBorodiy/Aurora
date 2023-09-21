@@ -30,11 +30,12 @@
     }
 
     header{
-        background-color: rgba(250, 250, 250, 42%);
+        background-color: rgba(255, 255, 255, 32%);
+        backdrop-filter: blur(35px);
     }
 
     .fluent-hyperlink{
-        color: rgb(131, 131, 131);
+        color: rgb(70, 70, 70);
     }
 
     .fluent-hyperlink:hover{
@@ -60,6 +61,14 @@
     .placeholder-text{
         color: rgb(56, 56, 56);
     }
+
+    #mobile-feedback-button:hover{
+        background-color: rgb(30, 30, 30, 32%);
+    }
+    
+    #mobile-menu-button:hover{
+        background-color: rgb(30, 30, 30, 32%);
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -76,6 +85,7 @@
 
     header{
         background-color: rgba(25, 25, 25, 42%);
+        backdrop-filter: blur(56px);
     }
 
     .fluent-hyperlink{
@@ -105,6 +115,14 @@
     .placeholder-text{
         color: rgb(131, 131, 131);
     }
+
+    #mobile-feedback-button:hover{
+        background-color: rgb(255, 255, 255, 8%);
+    }
+    
+    #mobile-menu-button:hover{
+        background-color: rgb(255, 255, 255, 8%);
+    }
 }
 
 body{
@@ -119,7 +137,6 @@ header{
     position: fixed;
     height: 74px;
     width: 100%;
-    backdrop-filter: blur(80px);
     z-index: 1111111111;
 }
 
@@ -157,7 +174,7 @@ h2{
     height: 36px;
     position: relative;
     float: right;
-    top: 19px;
+    top: 20px;
     right: 19px;
 }
 
@@ -216,16 +233,21 @@ h2{
     border-radius: 5px;
     border-color: transparent;
     position: fixed;
-    top: 25px;
+    top: 22px;
     left: 18px;
+    z-index: 111;
+    height: 36px;
+    width: 36px;
+    padding: 0px;
+    align-items: center;
+    vertical-align: middle;
 }
 
 #page-title{
-    height: 120px;
     padding-top: 120px;
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: 33px;
+    padding-bottom: 18px;
     border-radius: 0px 0px 6px 6px;
 }
 
@@ -233,13 +255,14 @@ h2{
     display: inline-flex;
     vertical-align: middle;
     align-items: center;
+    position: relative;
+    bottom: 22px;
 }
 
 #page-title-box{
     position: relative;
     left: 20px;
     font-size: 36px;
-    line-height: 0px;
 }
 
 #page-content{
@@ -256,11 +279,29 @@ h2{
 .date-box{
     display: inline-flex;
     align-items: center;
-    margin-top: 12px;
     margin-left: 5px;
+    position: relative;
+    bottom: 32px;
 }
 
 .placeholder-text{
     padding-inline: 0px;
     line-height: 0px;
+}
+
+#mobile-feedback-button{
+    visibility: hidden;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: transparent;
+    position: fixed;
+    top: 20px;
+    right: 126px;
+    float: right;
+    z-index: 111;
+    height: 36px;
+    width: 36px;
+    padding: 0px;
+    align-items: center;
+    vertical-align: middle;
 }
