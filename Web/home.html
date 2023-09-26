@@ -11,15 +11,37 @@
 
         <!-- Main styles -->
         <link rel="stylesheet" href="styles/style.css" />
-        <link rel="stylesheet" href="../fonts/FluentSystemIcons-Regular.css" />
+        <link rel="stylesheet" href="styles/animation.css" />
+        <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
 
         <!-- JS -->
         <script type="module" src="index.js"></script>
+        <script src="main.js"></script>
     </head>
-    <body id="bodyLayout">
+    <body id="rootBody">
         <fluent-design-system-provider id="fluent-design-provider">
             <div id="rootLayout">
-                
+                <section id="hero-container">
+                    <div id="aurora-animation">
+                        <div class="up"></div>
+                        <div class="down"></div>
+                        <div class="left"></div>
+                    </div>
+                    <div id="hero-container-content">
+                        <div id="hero-container-text">
+                            <span class="fluent-badge"><a class="label">Productive and ambient</a></span>
+                            <h1 id="hero-title" style="line-height: 8px; font-size: 42px;">Meets new <b class="highlighted-text">era</b> of web search</h1>
+                            <p id="hero-description">
+                                Aurora is the ultimate app for exploring the web and discovering new things. Whether you want to search across multiple services, social networks, online stores, music services and video hosting, or just browse web pages in a fast and beautiful browser, Aurora has you covered. You can also use the AI assistant to get personalized recommendations and answers to your questions. Aurora lets you achieve more with less effort and time. Download Aurora today and start your journey on the Internet!
+                            </p>
+                            <div id="hero-actions">
+                                <fluent-button id="hero-get-product" appearance="accent" onclick="GetProduct();">
+                                    <p style="padding: 12px;">Try for free</p>
+                                </fluent-button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </fluent-design-system-provider>
     </body>

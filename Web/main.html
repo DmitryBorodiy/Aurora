@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Aurora - search, browse and explore</title>
+
+        <!-- Fluent UI for web  -->
+        <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+
+        <!-- Main styles -->
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
+
+        <!-- JS -->
+        <script type="module" src="index.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body id="bodyLayout" onload="Page_OnLoaded()" onresize="Page_OnResize()">
+        <fluent-design-system-provider id="fluent-design-provider">
+            <div id="rootLayout">
+                <header>
+                    <div id="branding-div" onclick="NavigateFrame('home.html')">
+                        <img id="branding-logo" height="34" width="35" src="assets/Search.png" />
+                        <p id="branding-title">Aurora</p>
+                        <hr class="vertical-sep" style="margin-top: 12px; margin-left: 17px;" />
+                    </div>
+                    <nav id="navigation-menu">
+                        <button onclick="NavigateFrame('home.html')" class="fluent-hyperlink-selected">
+                            <i class="icon self-icon icon-ic_fluent_home_20_regular"></i>
+                            <p class="text-label">Home</p>
+                        </button>
+                        <button onclick="NavigateFrame('news.html')" class="fluent-hyperlink" style="margin-left: 6px;">
+                            <i class="icon self-icon icon-ic_fluent_news_20_regular"></i>
+                            <p class="text-label">News</p>
+                        </button>
+                        <button onclick="NavigateFrame('subscription.html')" class="fluent-hyperlink" style="margin-left: 6px;">
+                            <i class="icon self-icon icon-ic_fluent_premium_20_regular"></i>
+                            <p class="text-label">Premium</p>
+                        </button>
+                    </nav>
+                    <fluent-button id="get-product-command" appearance="accent" onclick="GetProduct();">
+                        <p style="padding: 4px;">Get Aurora</p>
+                    </fluent-button>
+                    <button id="feedback-command" class="icon-button" onclick="SendReview();">
+                        <i class="icon self-icon icon-ic_fluent_person_feedback_20_regular"></i>
+                    </button>
+                    <button id="support-ukraine" class="icon-button">
+                        <img id="ua-flag" height="14" width="20" src="https://cdn.webshopapp.com/shops/94414/files/58163266/ukraine-flag-clipart-free-download.jpg" />
+                    </button>
+                </header>
+                <iframe id="frame" src="home.html"></iframe>
+            </div>
+        </fluent-design-system-provider>
+    </body>
+</html>
