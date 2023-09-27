@@ -11,12 +11,14 @@ import {
 var navigationBar;
 var branding;
 var headerSeparator;
+var appScreenshot;
 var windowTheme = "Light";
 
 window.onload = (event) => {
     navigationBar = document.getElementById("navigation-menu");
     branding = document.getElementById("branding-div");
     headerSeparator = document.getElementsByTagName("hr")[0];
+    appScreenshot = document.getElementById("app-screenshot");
 
     ApplyTheme();
 
@@ -50,11 +52,13 @@ function Page_OnResize(){
         var pageWidth = getWindowWidth();
 
         if(pageWidth < 700){
+            //appScreenshot.style.top = "px";
             headerSeparator.style.visibility = "collapse";
             navigationBar.style.visibility = "collapse";
             branding.style.left = "60px";
         }
         else{
+            //appScreenshot.style.top = "42px";
             headerSeparator.style.visibility = "visible";
             navigationBar.style.visibility = "visible";
             branding.style.left = "20px";
