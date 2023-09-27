@@ -11,15 +11,15 @@
 }
 
 #hero-container-text{
-    animation: navigation-transition 2.2s ease-in-out;
+    animation: navigation-transition 1.8s ease-in-out;
 }
 
 #aurora-animation{
-    height: 650px;
+    height: 630px;
     width: 100%;
     margin: 0px;
     padding: 0px;
-    position: fixed;
+    position: absolute;
     overflow: hidden;
 }
 

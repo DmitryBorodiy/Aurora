@@ -96,12 +96,24 @@ body{
     #hero-description{
         color: rgb(50, 50, 50);
     }
+
+    #app-screenshot{
+        background-image: url(../assets/app-main-view-light.png);
+    }
+
+    header{
+        background-color: rgba(255, 255, 255, 42%);
+    }
 }
 
 @media(prefers-color-scheme: dark){
     body{
         background-color: rgb(28, 28, 28);
         color: rgb(240, 240, 240);
+    }
+
+    #app-screenshot{
+        background-image: url(../assets/app-main-view-dark.png);
     }
 
     .vertical-sep{
@@ -178,6 +190,7 @@ header{
     height: 74px;
     width: 100%;
     z-index: 1111111111;
+    backdrop-filter: blur(56px);
 }
 
 h2{
@@ -280,7 +293,7 @@ h2{
 }
 
 #hero-container-content{
-    position: fixed;
+    position: absolute;
     height: 650px;
     width: 100%;
     text-align: center;
@@ -326,4 +339,14 @@ h2{
 
 #hero-get-product{
     height: 40px;
+}
+
+#app-screenshot{
+    position: relative;
+    top: 42px;
+    width: 100%;
+    height: 680px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

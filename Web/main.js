@@ -6,7 +6,7 @@ var supportUkraine;
 
 function Page_OnLoaded() {
     headerUI = document.getElementsByTagName("header")[0];
-    //rootFrame = document.getElementById("frame");
+    rootFrame = document.getElementById("frame");
     feedbackCommand = document.getElementById("feedback-command");
     getProductButton = document.getElementById("get-product-command");
     supportUkraine = document.getElementById("feedback-command");
@@ -18,8 +18,8 @@ function Page_OnLoaded() {
 function Page_OnResize() {
     var windowWidth = getWindowWidth();
 
-    rootFrame.style.height = getWindowHeight() + "px";
-    rootFrame.style.width = getWindowWidth() + "px";
+    document.getElementById("frame").style.height = getWindowHeight() + "px";
+    document.getElementById("frame").style.width = getWindowWidth() + "px";
 };
 
 function getWindowWidth() {

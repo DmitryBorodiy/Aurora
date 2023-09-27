@@ -8,6 +8,8 @@ import {
     SwatchRGB
 } from "https://unpkg.com/@fluentui/web-components@2.0.0";
 
+var windowTheme = "Light";
+
 window.onload = (event) => {
     ApplyTheme();
 };
@@ -19,10 +21,14 @@ function ApplyTheme(){
         if(currentTheme.matches){
             var root = document.getElementById("fluent-design-provider");
             baseLayerLuminance.setValueFor(root, StandardLuminance.DarkMode);
+
+            windowTheme = "Dark";
         }
         else{
             var root = document.getElementById("fluent-design-provider");
             baseLayerLuminance.setValueFor(root, StandardLuminance.LightMode);
+
+            windowTheme = "Light";
         }
     }
     catch(e){
