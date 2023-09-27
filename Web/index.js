@@ -10,11 +10,13 @@ import {
 
 var navigationBar;
 var branding;
+var headerSeparator;
 var windowTheme = "Light";
 
 window.onload = (event) => {
     navigationBar = document.getElementById("navigation-menu");
     branding = document.getElementById("branding-div");
+    headerSeparator = document.getElementsByTagName("hr")[0];
 
     ApplyTheme();
 
@@ -48,10 +50,12 @@ function Page_OnResize(){
         var pageWidth = getWindowWidth();
 
         if(pageWidth < 700){
+            headerSeparator.style.visibility = "collapse";
             navigationBar.style.visibility = "collapse";
-            branding.style.left = "90px";
+            branding.style.left = "60px";
         }
         else{
+            headerSeparator.style.visibility = "visible";
             navigationBar.style.visibility = "visible";
             branding.style.left = "20px";
         }
