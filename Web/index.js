@@ -12,6 +12,10 @@ var navigationBar;
 var branding;
 var headerSeparator;
 var appScreenshot;
+var supportUkraine;
+var sendFeedback;
+var mobileMenuButton;
+
 var windowTheme = "Light";
 
 window.onload = (event) => {
@@ -19,10 +23,15 @@ window.onload = (event) => {
     branding = document.getElementById("branding-div");
     headerSeparator = document.getElementsByTagName("hr")[0];
     appScreenshot = document.getElementById("app-screenshot");
+    supportUkraine = document.getElementById("support-ukraine");
+    sendFeedback = document.getElementById("feedback-command");
+    mobileMenuButton = document.getElementById("mobile-menu-button");
 
     ApplyTheme();
 
     window.addEventListener("resize", Page_OnResize);
+
+    Page_OnResize();
 };
 
 function ApplyTheme(){
@@ -51,17 +60,23 @@ function Page_OnResize(){
     try{
         var pageWidth = getWindowWidth();
 
-        if(pageWidth < 700){
+        if(pageWidth < 620){
             //appScreenshot.style.top = "px";
+            mobileMenuButton.style.visibility = "visible";
             headerSeparator.style.visibility = "collapse";
             navigationBar.style.visibility = "collapse";
             branding.style.left = "60px";
+            sendFeedback.style.visibility = "collapse";
+            supportUkraine.style.visibility = "collapse";
         }
         else{
             //appScreenshot.style.top = "42px";
+            mobileMenuButton.style.visibility = "collapse";
             headerSeparator.style.visibility = "visible";
             navigationBar.style.visibility = "visible";
             branding.style.left = "20px";
+            sendFeedback.style.visibility = "visible";
+            supportUkraine.style.visibility = "visible";
         }
     }
     catch(e){
