@@ -112,6 +112,7 @@ body{
     .fluent-card{
         background-color: rgba(255, 255, 255, 1);
         border: 1px solid rgba(0, 0, 0, 0.06);
+    }
 }
 
 @media(prefers-color-scheme: dark){
