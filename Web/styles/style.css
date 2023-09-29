@@ -35,6 +35,10 @@ body{
         color: rgb(32, 32, 32);
     }
 
+    .placeholder{
+        color: rgb(42, 42, 42);
+    }
+
     .vertical-sep{
         height: 26px;
         border-right: 1px rgb(42, 42, 42);
@@ -104,12 +108,20 @@ body{
     header{
         background-color: rgba(255, 255, 255, 42%);
     }
+
+    .fluent-card{
+        background-color: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 @media(prefers-color-scheme: dark){
     body{
         background-color: rgb(28, 28, 28);
         color: rgb(240, 240, 240);
+    }
+
+    .placeholder{
+        color: rgb(160, 160, 160)
     }
 
     #app-screenshot{
@@ -183,6 +195,11 @@ body{
     #hero-description{
         color: rgb(180, 180, 180);
     }
+
+    .fluent-card{
+        background-color: rgba(40, 40, 40, 1);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
 }
 
 header{
@@ -194,7 +211,7 @@ header{
 }
 
 h2{
-    font-weight: lighter;
+    font-size: 32px;
 }
 
 #branding-div{
@@ -291,7 +308,7 @@ h2{
 
 #hero-container{
     width: 100%;
-    padding-bottom: 320px;
+    padding-bottom: 200px;
 }
 
 #hero-container-content{
@@ -345,7 +362,7 @@ h2{
 
 #app-screenshot{
     position: relative;
-    top: 60px;
+    top: 120px;
     width: 100%;
     height: 680px;
     background-position: center top;
@@ -364,18 +381,55 @@ h2{
 }
 
 #features{
-    width: 100%;
-    margin-top: 60px;
+    padding-left: 56px;
+    padding-right: 56px;
+    margin-top: 12px;
 }
 
 #features-box{
+    top: 26px;
     width: 100%;
-    display: table;
-    text-align: center;
-    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
 }
 
 .fluent-card{
     display: inline-block;
-    
+    flex-grow: 1;
+    flex-basis: 330px;
+    border-radius: 9px;
+    padding: 24px;
+    box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.11);
+    -moz-box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.11);
+}
+
+.fluent-card:hover{
+    box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.5);
+}
+
+.card-icon{
+    font-size: 52px;
+    background: -webkit-linear-gradient(#0676c1, #01e496);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.table-grid{
+    display: inline-flex;
+    text-align: left;
+    column-gap: 8px;
+    width: 100%;
+}
+
+.fluent-badge-accent{
+    border-radius: 48px;
+    padding: 4px;
+    font-size: 12px;
+    background-color: #4fc0fc;
+    color: rgb(32, 32, 32);
 }
