@@ -329,7 +329,8 @@ h2{
 }
 
 .label{
-    padding: 4px;
+    padding: 6px;
+    font-weight: 600;
 }
 
 .fluent-badge{
@@ -429,8 +430,16 @@ h2{
 
 .fluent-badge-accent{
     border-radius: 48px;
-    padding: 4px;
+    padding: 6px;
+    font-weight: 600;
     font-size: 12px;
     background-color: #4fc0fc;
     color: rgb(32, 32, 32);
+}
+
+em{
+    font-style: normal;
+    background: -webkit-linear-gradient(60deg,#0070c4, #3ce259);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
