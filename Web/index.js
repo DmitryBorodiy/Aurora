@@ -15,6 +15,8 @@ var appScreenshot;
 var supportUkraine;
 var sendFeedback;
 var mobileMenuButton;
+var mobileMenuSidebar;
+var menuBackdrop;
 
 var windowTheme = "Light";
 
@@ -26,6 +28,8 @@ window.onload = (event) => {
     supportUkraine = document.getElementById("support-ukraine");
     sendFeedback = document.getElementById("feedback-command");
     mobileMenuButton = document.getElementById("mobile-menu-button");
+    mobileMenuSidebar = document.getElementById("mobile-menu-sidebar");
+    menuBackdrop = document.getElementById("menu-backdrop");
 
     ApplyTheme();
 

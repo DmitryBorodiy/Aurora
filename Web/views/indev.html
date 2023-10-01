@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Aurora - search, browse and explore</title>
+
+        <!-- Fluent UI for web  -->
+        <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+
+        <!-- Main styles -->
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/animation.css" />
+        <link rel="stylesheet" href="../fonts/FluentSystemIcons-Regular.css" />
+
+        <!-- JS -->
+        <script type="module" src="../index.js"></script>
+    </head>
+    <body id="rootBody" style="position: absolute; height: 100%; width: 100%; display: grid; align-items: center; text-align: center;">
+        <fluent-design-system-provider id="fluent-design-provider">
+            <div id="rootLayout">
+                <div class="centerized-layout">
+                    <div id="indev-ui" class="center-div">
+                        <img width="96" height="96" src="https://img.icons8.com/fluency/96/code.png" alt="code"/>
+                        <h2>This feature is in development</h2>
+                        <p class="placeholder">
+                            This feature is a development plan and is not currently available for widespread use. Stay tuned for updates and perhaps you will be the first to try something new.
+                        </p>
+                        <fluent-button style="position: relative; top: 20px;" appearance="accent" onclick="document.location.href = '../home.html';">Go to home page</fluent-button>
+                    </div>
+                </div>
+            </div>
+        </fluent-design-system-provider>
+    </body>
+</html>

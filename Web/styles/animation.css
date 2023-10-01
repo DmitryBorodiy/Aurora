@@ -99,3 +99,39 @@
         transform: scale(1);
     }
 }
+
+@keyframes menu-sidebar-hide {
+    0%{
+        transform: translateX(0);
+        opacity: 100%;
+    }
+    
+    100%{
+        transform: translateX(-26);
+        opacity: 0%;
+        visibility: collapse;
+    }
+}
+
+@keyframes menu-sidebar-show {
+    0%{
+        transform: translateX(-26);
+        opacity: 0%;
+        visibility: collapse;
+    }
+    
+    100%{
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+.show-menu-sidebar{
+    animation: menu-sidebar-show 1.2s ease-out;
+    animation-play-state: running;
+}
+
+.hide-menu-sidebar{
+    animation: menu-sidebar-hide 1.2s ease-out;
+    animation-play-state: running;
+}

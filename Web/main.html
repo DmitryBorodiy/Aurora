@@ -26,7 +26,7 @@
         <fluent-design-system-provider id="fluent-design-provider">
             <div id="rootLayout">
                 <header>
-                    <button id="mobile-menu-button" class="icon-button">
+                    <button id="mobile-menu-button" class="icon-button" onclick="MobileMenuButton_OnClick()">
                         <i class="icon icon-ic_fluent_line_horizontal_3_20_regular self-icon" style="left: 1px;"></i>
                     </button>
                     <div id="branding-div" onclick="NavigateFrame('home.html')">
@@ -59,6 +59,12 @@
                     </button>
                 </header>
                 <iframe id="frame" src="home.html"></iframe>
+            </div>
+            <div id="sidebar-shell-backdrop">
+                <div id="mobile-menu-sidebar">
+
+                </div>
+                <div id="menu-backdrop" onclick="SetMenuOpened(false);"></div>
             </div>
         </fluent-design-system-provider>
     </body>

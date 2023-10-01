@@ -3,6 +3,10 @@ var rootFrame;
 var getProductButton;
 var feedbackCommand;
 var supportUkraine;
+var mobileMenuSidebar;
+var mobileMenuBackdrop;
+
+var IsMenuOpen = false;
 
 function Page_OnLoaded() {
     headerUI = document.getElementsByTagName("header")[0];
@@ -10,6 +14,8 @@ function Page_OnLoaded() {
     feedbackCommand = document.getElementById("feedback-command");
     getProductButton = document.getElementById("get-product-command");
     supportUkraine = document.getElementById("feedback-command");
+    mobileMenuSidebar = document.getElementById("mobile-menu-sidebar");
+    mobileMenuBackdrop = document.getElementById("sidebar-shell-backdrop");
 
     getProductButton.addEventListener("click", GetProduct);
     feedbackCommand.addEventListener("click", SendReview);
@@ -70,5 +76,37 @@ function SendReview(){
     }
     catch(e){
         console.log(e);
+    }
+}
+
+function SetMenuOpened(isOpen){
+    IsMenuOpen = isOpen;
+
+    if(mobileMenuSidebar == null)
+    {
+        mobileMenuSidebar = document.getElementById("mobile-menu-sidebar");
+        mobileMenuBackdrop = document.getElementById("sidebar-shell-backdrop");
+    }
+
+    if(isOpen == true){
+        mobileMenuSidebar.classList.remove("hide-menu-sidebar");
+        mobileMenuSidebar.classList.add("show-menu-sidebar");
+
+        mobileMenuBackdrop.style.visibility = "visible";
+    }
+    else{
+        mobileMenuSidebar.classList.remove("show-menu-sidebar");
+        mobileMenuSidebar.classList.add("hide-menu-sidebar");
+
+        mobileMenuBackdrop.style.visibility = "collapse";
+    }
+}
+
+function MobileMenuButton_OnClick(){
+    if(IsMenuOpen == false){
+        SetMenuOpened(true);
+    }
+    else{
+        SetMenuOpened(false);
     }
 }

@@ -113,6 +113,18 @@ body{
         background-color: rgba(255, 255, 255, 1);
         border: 1px solid rgba(0, 0, 0, 0.06);
     }
+
+    #addons-image-view{
+        background-image: url('../assets/extensions-icons.png');
+    }
+
+    #mobile-menu-sidebar{
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .section-separator{
+        border: 0.2px solid rgba(220, 220, 220, 26%);
+    }
 }
 
 @media(prefers-color-scheme: dark){
@@ -122,7 +134,7 @@ body{
     }
 
     .placeholder{
-        color: rgb(160, 160, 160)
+        color: rgb(190, 190, 190);
     }
 
     #app-screenshot{
@@ -200,6 +212,19 @@ body{
     .fluent-card{
         background-color: rgba(40, 40, 40, 1);
         border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #addons-image-view{
+        background-image: url('../assets/extensions-icons-dark.png');
+    }
+
+    .section-separator{
+        border: 0.2px solid rgba(100, 100, 100, 26%);
+    }
+
+    #mobile-menu-sidebar{
+        background-color: rgba(30, 30, 30, 0.6);
+        border: 0.6px solid rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -442,4 +467,91 @@ em{
     background: -webkit-linear-gradient(60deg,#0070c4, #3ce259);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.flex-section{
+    padding-left: 56px;
+    padding-right: 56px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#addons-section{
+    padding-top: 30px;
+    height: 380px;
+}
+
+.section-column{
+    flex-grow: 1;
+    flex-basis: 420px;
+    min-height: 320px;
+}
+
+.section-title{
+    font-size: 32px;
+    position: relative;
+    top: 10px;
+}
+
+.section-description{
+    position: relative;
+}
+
+.section-button{
+    position: relative;
+    top: 10px;
+}
+
+#addons-image-view{
+    height: 90%;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: 8px;
+    left: 56px;
+}
+
+.center-div{
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+
+#indev-ui{
+    max-width: 520px;
+}
+
+.section-separator{
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 4px;
+}
+
+#mobile-menu-sidebar{
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    width: 342px;
+    margin-top: 73x;
+    top: 0px;
+    z-index: 111111111111;
+    border-radius: 0px 8px 8px 0px;
+    backdrop-filter: blur(42px);
+}
+
+#sidebar-shell-backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+#menu-backdrop{
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
 }
