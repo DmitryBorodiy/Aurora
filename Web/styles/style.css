@@ -125,6 +125,10 @@ body{
     .section-separator{
         border: 0.2px solid rgba(220, 220, 220, 26%);
     }
+
+    fluent-option{
+        color: rgb(30, 30, 30);
+    }
 }
 
 @media(prefers-color-scheme: dark){
@@ -225,6 +229,10 @@ body{
     #mobile-menu-sidebar{
         background-color: rgba(30, 30, 30, 0.6);
         border: 0.6px solid rgba(255, 255, 255, 0.1);
+    }
+
+    fluent-option{
+        color: rgb(240, 240, 240);
     }
 }
 
@@ -534,7 +542,7 @@ em{
     left: 0px;
     height: 100%;
     width: 342px;
-    margin-top: 73x;
+    margin-top: 73px;
     top: 0px;
     z-index: 111111111111;
     border-radius: 0px 8px 8px 0px;
@@ -554,4 +562,51 @@ em{
     position: absolute;
     top: 0;
     height: 100%;
+}
+
+#mobile-search-bar{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    top: 0px;
+}
+
+#mobile-sidebar-menu{
+    margin-left: 20px;
+    margin-right: 22px;
+    display: block;
+    position: relative;
+    top: -10px;
+}
+
+#menu-items{
+    width: 100%;
+    border: none;
+}
+
+fluent-option{
+    height: 42px;
+    background: transparent;
+}
+
+#menu-items:focus{
+    border: none;
+}
+
+#menu-items:active{
+    border: none;
+}
+
+#menu-items:hover{
+    border: none;
+}
+
+.field-icon{
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
+    z-index: 1111111111;
 }
