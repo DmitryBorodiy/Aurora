@@ -38,6 +38,9 @@
                                 <fluent-button id="hero-get-product" appearance="accent" onclick="GetProduct();">
                                     <p style="padding: 12px;">Try for free</p>
                                 </fluent-button>
+                                <fluent-button id="hero-get-product" style="position: relative; left: 10px;">
+                                    <p style="padding: 12px;">See on GitHub</p>
+                                </fluent-button>
                             </div>
                             <div id="app-screenshot"></div>
                         </div>
@@ -338,13 +341,32 @@
                 <hr class="section-separator" />
                 <br />
                 <section id="premium-section">
-                    <div id="premium-card">
-
+                    <div class="premium-card">
+                        <img alt="premium-icon" height="60px" width="60px" src="assets/icons8-jewel-96.png" /><br />
+                        <br />
+                        <span class="fluent-badge" style="top: 10px; position: relative;">
+                            <a class="label">Personal assistant</a>
+                        </span>
+                        <h2>Achieve more, because <em>you can!</em></h2>
+                        <p>
+                            Become a premium user and forget about ads that prevent you from enjoying your AI assistant. Discover all the assistant's capabilities that will help you in any task and situation. Work with artificial intelligence without restrictions and receive unique content created especially for you.
+                        </p>
+                        <fluent-button id="get-premium-button" appearance="accent" onclick="document.location.href = 'views/premium.html';">
+                            <p>4.99$ per 6 months</p>
+                        </fluent-button>
                     </div>
                 </section>
                 <br />
                 <footer>
+                    <div class="footer-column">
 
+                    </div>
+                    <div class="footer-column">
+
+                    </div>
+                    <div class="footer-column">
+
+                    </div>
                 </footer>
             </div>
         </fluent-design-system-provider>

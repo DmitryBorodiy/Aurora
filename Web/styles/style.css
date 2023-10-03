@@ -138,6 +138,14 @@ body{
         background-color: rgb(250, 250, 250);
         border: 0.6px solid rgba(30, 30, 30, 20%);
     }
+
+    footer{
+        border: 0.1px solid rgba(42, 42, 42, 80%);
+        background-color: rgb(230, 230, 230);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
 }
 
 @media(prefers-color-scheme: dark){
@@ -251,6 +259,14 @@ body{
     .app-logo{
         background-color: rgb(42, 42, 42);
         border: 0.6px solid rgba(255, 255, 255, 12%);
+    }
+
+    footer{
+        border: 0.1px solid rgba(250, 250, 250, 5%);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        background-color: rgb(32, 32, 32);
     }
 }
 
@@ -708,4 +724,48 @@ fluent-option{
 
 .fluent-hyperlink-control:active{
     background-color: rgba(230, 230, 230, 0.3);
+}
+
+.premium-card{
+    padding: 32px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 16px;
+    display: inline-block;
+    max-width: 720px;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    color: rgb(42, 42, 42);
+    background: linear-gradient(210deg, #ABFFA4, #75ADDB);
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.2);
+}
+
+#premium-section{
+    text-align: center;
+    display: table;
+    position: relative;
+    width: 100%;
+}
+
+#get-premium-button{
+    position: relative;
+    margin-top: 12px;
+    height: 40px;
+    width: 160px;
+}
+
+footer{
+    min-height: 220px;
+    margin-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.footer-column{
+    flex-basis: 280px;
+
 }

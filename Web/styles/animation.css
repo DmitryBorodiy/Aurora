@@ -126,6 +126,18 @@
     }
 }
 
+@keyframes premium-card-transition {
+    0%{
+        transform: translateY(-42px);
+        opacity: 0%;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
 .show-menu-sidebar{
     animation: menu-sidebar-show 1.2s ease-out;
     animation-play-state: running;
