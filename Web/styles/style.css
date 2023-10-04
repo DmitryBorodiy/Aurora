@@ -767,5 +767,17 @@ footer{
 
 .footer-column{
     flex-basis: 280px;
+}
 
+.button-content{
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.button-icon{
+    position: relative;
+    top: 2px;
 }
