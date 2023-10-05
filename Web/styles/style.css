@@ -783,6 +783,7 @@ footer{
 .footer-column{
     flex-basis: 230px;
     padding: 38px;
+    flex-grow: 1;
 }
 
 .button-content{
