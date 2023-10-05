@@ -34,9 +34,17 @@ body{
         background-color: rgb(240, 240, 240);
         color: rgb(32, 32, 32);
     }
+    
+    fluent-divider{
+        border-top: calc(var(--stroke-width) * 1px) solid rgba(0, 0, 0, 6%);
+    }
 
     .placeholder{
         color: rgb(42, 42, 42);
+    }
+
+    .subtitle{
+        color: hsla(0, 0%, 0%, 60.63%);
     }
 
     .vertical-sep{
@@ -140,7 +148,7 @@ body{
     }
 
     footer{
-        border: 0.1px solid rgba(42, 42, 42, 80%);
+        border: 0.1px solid rgba(42, 42, 42, 12%);
         background-color: rgb(230, 230, 230);
         border-left: none;
         border-right: none;
@@ -154,8 +162,16 @@ body{
         color: rgb(240, 240, 240);
     }
 
+    fluent-divider{
+        border-top: calc(var(--stroke-width) * 1px) solid rgba(255, 255, 255, 6%);
+    }
+
     .placeholder{
         color: rgb(190, 190, 190);
+    }
+
+    .subtitle{
+        color: #909898;
     }
 
     #app-screenshot{
@@ -733,9 +749,8 @@ fluent-option{
     border-radius: 16px;
     display: inline-block;
     max-width: 720px;
-    width: 100%;
-    padding-left: 32px;
-    padding-right: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
     color: rgb(42, 42, 42);
     background: linear-gradient(210deg, #ABFFA4, #75ADDB);
     box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.2);
@@ -758,7 +773,7 @@ fluent-option{
 }
 
 footer{
-    min-height: 220px;
+    min-height: 190px;
     margin-top: 56px;
     display: flex;
     flex-wrap: wrap;
@@ -766,7 +781,8 @@ footer{
 }
 
 .footer-column{
-    flex-basis: 280px;
+    flex-basis: 230px;
+    padding: 38px;
 }
 
 .button-content{
@@ -780,4 +796,56 @@ footer{
 .button-icon{
     position: relative;
     top: 2px;
+}
+
+.branding-span{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.branding-title{
+    font-size: 24px;
+    position: relative;
+    left: 12px;
+}
+
+.subtitle{
+    font-weight: bold;
+}
+
+.links-list{
+    width: 100%;
+    display: grid;
+    position: relative;
+    left: -8px;
+}
+
+.link-list-item{
+    width: 100%;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 1px;
+}
+
+.menu-item-icon{
+    font-size: 20px;
+    position: relative;
+    top: 1px;
+}
+
+.menu-item-label{
+    position: relative;
+    margin-left: 10px;
+}
+
+#search-ui{
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }

@@ -23,6 +23,9 @@
         <!-- JS -->
         <script type="module" src="index.js"></script>
         <script src="main.js"></script>
+
+        <!-- Google custom search -->
+        <script async src="https://cse.google.com/cse.js?cx=a2c93e9887f704b6d"></script>
     </head>
     <body id="bodyLayout" onload="Page_OnLoaded()" onresize="Page_OnResize()">
         <fluent-design-system-provider id="fluent-design-provider">
@@ -65,16 +68,66 @@
             <div id="sidebar-shell-backdrop">
                 <div id="mobile-menu-sidebar">
                     <fluent-text-field id="mobile-search-bar" appearance="outline" placeholder="Search here">
-                        <i class="field-icon icon icon-ic_fluent_search_20_regular"></i>
+                        <i id="mobile-search-command" class="field-icon icon icon-ic_fluent_search_20_regular" onclick="MakeSearch();"></i>
                     </fluent-text-field>
                     <span id="mobile-sidebar-menu">
-                        <fluent-listbox id="menu-items" aria-labelledby="lb_label">
-                            <fluent-option value="fn">Foxtrot November</fluent-option>
-                            <fluent-option value="gs">Golf Sierra</fluent-option>
-                            <fluent-option selected value="j">Juliet</fluent-option>
-                            <fluent-option value="kr">Kilo Romeo</fluent-option>
-                            <fluent-option value="l">Lima</fluent-option>
-                            <fluent-option value="m">Mike</fluent-option>
+                        <fluent-listbox id="menu-items" aria-labelledby="lb_label" onclick="SetMenuOpened(false);">
+                            <fluent-option onclick="NavigateFrame('home.html#hero-container');" value="fn" selected>
+                                <span class="menu-item">
+                                    <i class="menu-item-icon icon icon-ic_fluent_home_16_regular"></i>
+                                    <p class="menu-item-label">Home</p>
+                                </span>
+                            </fluent-option>
+                            <fluent-option onclick="NavigateFrame('home.html#features');" value="fn" selected>
+                                <span class="menu-item">
+                                    <i class="menu-item-icon icon icon-ic_fluent_star_20_regular"></i>
+                                    <p class="menu-item-label">Features</p>
+                                </span>
+                            </fluent-option>
+                            <fluent-option onclick="NavigateFrame('home.html#addons-section');" value="fn" selected>
+                                <span class="menu-item">
+                                    <i class="menu-item-icon icon icon-ic_fluent_apps_20_regular"></i>
+                                    <p class="menu-item-label">Extensions</p>
+                                </span>
+                            </fluent-option>
+                            <fluent-option onclick="NavigateFrame('home.html#ai-features');" value="fn" selected>
+                                <span class="menu-item">
+                                    <img alt="assistant" height="18px" width="19px" src="assets/Assistant.png" class="menu-item-icon"></img>
+                                    <p class="menu-item-label">Assistant</p>
+                                </span>
+                            </fluent-option>
+                            <fluent-divider></fluent-divider>
+                            <fluent-option onclick="NavigateFrame('news.html');" value="fn" selected>
+                                <span class="menu-item">
+                                    <i class="menu-item-icon icon icon-ic_fluent_news_20_regular"></i>
+                                    <p class="menu-item-label">News</p>
+                                </span>
+                            </fluent-option>
+                            <fluent-option onclick="SendReview();" value="fn" selected>
+                                <span class="menu-item">
+                                    <i class="menu-item-icon icon icon-ic_fluent_mail_20_regular"></i>
+                                    <p class="menu-item-label">Connect with developer</p>
+                                </span>
+                            </fluent-option>
+                            <fluent-option onclick="NavigateFrame('news.html');" value="fn" selected>
+                                <span class="menu-item">
+                                    <img alt="assistant" height="18px" width="19px" src="https://img.icons8.com/fluency/48/github.png" class="menu-item-icon"></img>
+                                    <p class="menu-item-label">Star on GitHub</p>
+                                </span>
+                            </fluent-option>
+                            <fluent-divider></fluent-divider>
+                            <fluent-option onclick="GetProduct();" value="fn" selected>
+                                <span class="menu-item">
+                                    <i class="menu-item-icon icon icon-ic_fluent_store_microsoft_20_regular"></i>
+                                    <p class="menu-item-label">Get Aurora</p>
+                                </span>
+                            </fluent-option>
+                            <fluent-option onclick="NavigateFrame('views/premium.html');" value="fn" selected>
+                                <span class="menu-item">
+                                    <img alt="assistant" height="18px" width="19px" src="assets/icons8-jewel-96.png" class="menu-item-icon"></img>
+                                    <p class="menu-item-label">Get Premium</p>
+                                </span>
+                            </fluent-option>
                         </fluent-listbox>
                     </span>
                 </div>

@@ -5,6 +5,9 @@ var feedbackCommand;
 var supportUkraine;
 var mobileMenuSidebar;
 var mobileMenuBackdrop;
+var searchBar;
+var searchCommand;
+var SearchUI;
 
 var IsMenuOpen = false;
 
@@ -16,9 +19,12 @@ function Page_OnLoaded() {
     supportUkraine = document.getElementById("feedback-command");
     mobileMenuSidebar = document.getElementById("mobile-menu-sidebar");
     mobileMenuBackdrop = document.getElementById("sidebar-shell-backdrop");
+    searchBar = document.getElementById("mobile-search-bar");
+    searchCommand = document.getElementById("mobile-search-command");
 
     getProductButton.addEventListener("click", GetProduct);
     feedbackCommand.addEventListener("click", SendReview);
+    searchCommand.addEventListener("click", MakeSearch);
 };
 
 function Page_OnResize() {
@@ -108,5 +114,32 @@ function MobileMenuButton_OnClick(){
     }
     else{
         SetMenuOpened(false);
+    }
+}
+
+function Search(query){
+    try{
+        var rootUrl = "https://cse.google.com/cse?cx=a2c93e9887f704b6d#gsc.tab=0&gsc.q=" + query.toString();
+        window.open(rootUrl);
+    }
+    catch(e){
+        console.log(e);
+    }
+}
+
+function MakeSearch(){
+    try{
+        if(searchBar == null){
+            searchBar = document.getElementById("mobile-search-bar");
+        }
+
+        var searchQuery = searchBar.value.toString();
+
+        if(searchQuery != null && searchBar != null){
+            Search(searchQuery.toString());
+        }
+    }
+    catch(e){
+        console.log(e);
     }
 }
