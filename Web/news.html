@@ -23,11 +23,82 @@
         <!-- JS -->
         <script type="module" src="index.js"></script>
         <script src="main.js"></script>
+        
+        <script>
+            var NewsLayout;
+
+            function NewsLayout_OnResize(){
+                try{
+                    if(NewsLayout == null){
+                        NewsLayout = document.getElementById("rootNewsLayout");
+                    }
+
+                    if(NewsLayout != null){
+                        var windowWidth = getWindowWidth();
+
+                        if(windowWidth < 600){
+                            NewsLayout.style.paddingLeft = "36px";
+                            NewsLayout.style.paddingRight = "36px";
+                        }
+                        else{
+                            NewsLayout.style.paddingLeft = "120px";
+                            NewsLayout.style.paddingRight = "120px";
+                        }
+                    }
+                }
+                catch(e){
+                    console.log(e);
+                }
+            }
+
+            function getWindowWidth() {
+                return Math.max(
+                document.body.scrollWidth,
+                document.documentElement.scrollWidth,
+                document.body.offsetWidth,
+                document.documentElement.offsetWidth,
+                document.documentElement.clientWidth
+                );
+            }
+        </script>
     </head>
     <body id="rootBody">
-        <fluent-design-system-provider id="fluent-design-provider">
-            <div id="rootLayout">
-
+        <fluent-design-system-provider id="fluent-design-provider" style="display: table; width: 100%;">
+            <div id="hero-image">
+                <span class="acrylic-effect"></span>
+                <div id="rootNewsLayout" class="news-layout" onclick="NewsLayout_OnResize();">
+                    <section id="main-news">
+                        <div id="news-hero-text" class="section-column" style="flex-basis: 500px;">
+                            <div class="table-grid">
+                                <span class="fluent-badge" style="display: inline-block;">
+                                    <a class="label">Oct 9, 2023</a>
+                                </span>
+                                <span class="fluent-badge-accent" style="display: inline-block; height: 12px; margin-left: 2px;">
+                                    <a class="label" style="position: relative; bottom: 2px;">Beta</a>
+                                </span>
+                            </div>
+                            <h1 class="news-hero-title">Introducing first Beta version!</h1>
+                            <p class="placeholder">
+                                First release of beta channel version to the Microsoft Store and first beta public release.
+                            </p>
+                            <fluent-button class="news-hero-button" appearance="accent">Try now</fluent-button>
+                        </div>
+                        <div class="section-column" style="flex-basis: 500px;">
+                            <div id="app-screenshot" style="
+                                top: -36px;
+                                bottom: 100px;
+                                position: relative;
+                                height: 460px;
+                                width: 80%;
+                                display: inline-block;
+                                background-position: center;
+                                "></div>
+                        </div>
+                    </section>
+                    <section id="blog-posts">
+    
+                    </section>
+                </div>
             </div>
         </fluent-design-system-provider>
     </body>

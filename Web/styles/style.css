@@ -40,6 +40,10 @@ body{
         border-top: calc(var(--stroke-width) * 1px) solid rgba(0, 0, 0, 6%);
     }
 
+    .acrylic-effect{
+        background-color: rgba(255, 255, 255, 60%);
+    }
+
     .placeholder{
         color: rgb(42, 42, 42);
     }
@@ -165,6 +169,10 @@ body{
 
     fluent-divider{
         border-top: calc(var(--stroke-width) * 1px) solid rgba(255, 255, 255, 6%);
+    }
+
+    .acrylic-effect{
+        background-color: rgba(0, 0, 0, 50%);
     }
 
     .placeholder{
@@ -508,6 +516,7 @@ h2{
 .table-grid{
     display: inline-flex;
     text-align: left;
+    align-items: center;
     column-gap: 8px;
     width: 100%;
 }
@@ -898,4 +907,68 @@ footer{
     background-position: center center;
     border-radius: 12px;
     background-image: url('../assets/search-design-card0.png');
+}
+
+.news-layout{
+    top: 26px;
+    width: 100%;
+    display: block;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 160px;
+    padding-bottom: 42px;
+    position: relative;
+    z-index: 11111111111111111;
+}
+
+#main-news{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 42px;
+    width: 100%;
+    z-index: 11111111111;
+}
+
+#blog-posts{
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    z-index: 11111111111;
+}
+
+.news-hero-title{
+    font-size: 42px;
+}
+
+#news-hero-text{
+    max-width: 320px;
+}
+
+.news-hero-button{
+    position: relative;
+    min-height: 38px;
+    min-width: 100px;
+    top: 20px;
+}
+
+#hero-image{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-image: url('https://images.hdqwalls.com/wallpapers/aurora-background-0i.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.acrylic-effect{
+    backdrop-filter: blur(80px);
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 100%;
 }
