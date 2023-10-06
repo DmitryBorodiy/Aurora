@@ -900,6 +900,7 @@ footer{
 #theme-view-box{
     bottom: 42px;
     margin: 12px;
+    left: 24px;
     height: 400px;
     position: relative;
     background-size: contain;
