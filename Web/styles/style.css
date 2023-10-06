@@ -856,8 +856,7 @@ footer{
 #looks-beautiful{
     padding-right: 56px;
     padding-left: 56px;
-    padding-top: 60px;
-    padding-bottom: 42px;
+    padding-top: 110px;
     min-height: 200px;
     display: flex;
     flex-grow: 1;
@@ -894,7 +893,6 @@ footer{
     margin: 12px;
     height: 400px;
     position: relative;
-    padding-bottom: 60px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
