@@ -8,6 +8,7 @@ var mobileMenuBackdrop;
 var searchBar;
 var searchCommand;
 var SearchUI;
+var ThemeView;
 
 var IsMenuOpen = false;
 
@@ -21,6 +22,7 @@ function Page_OnLoaded() {
     mobileMenuBackdrop = document.getElementById("sidebar-shell-backdrop");
     searchBar = document.getElementById("mobile-search-bar");
     searchCommand = document.getElementById("mobile-search-command");
+    ThemeView = document.getElementById("theme-view-box");
 
     getProductButton.addEventListener("click", GetProduct);
     feedbackCommand.addEventListener("click", SendReview);

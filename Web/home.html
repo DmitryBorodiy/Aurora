@@ -8,6 +8,8 @@
 
         <!-- Fluent UI for web  -->
         <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
 
         <!-- Main styles -->
         <link rel="stylesheet" href="styles/style.css" />
@@ -17,7 +19,21 @@
 
         <!-- JS -->
         <script type="module" src="index.js"></script>
-        <script src="main.js"></script>
+        <script src="main.js" defer></script>
+        <script src="home.js"></script>
+
+        <script defer>
+            function SetThemeImage(image){
+                try{
+                    $('#theme-view-box').hide("fast");
+                    $('#theme-view-box').css('background-image', 'url(' + image + ')');
+                    $('#theme-view-box').show("slow");
+                }
+                catch(e){
+                    console.log(e);
+                }
+            }
+        </script>
     </head>
     <body id="rootBody">
         <fluent-design-system-provider id="fluent-design-provider">
@@ -204,13 +220,22 @@
                 <br />
                 <hr class="section-separator" style="margin-top: 80px;" />
                 <br />
-                <section id="looks-beautiful">
-                    <div class="pic-ctn">
-                        <img src="assets/search-design-card0.png" alt="" class="pic">
-                        <img src="assets/search-design-card1.png" alt="" class="pic">
-                        <img src="assets/search-design-card2.png" alt="" class="pic">
-                        <img src="assets/search-design-card3.png" alt="" class="pic">
-                        <img src="assets/search-design-card4.png" alt="" class="pic">
+                <section class="flex-section" id="looks-beautiful">
+                    <div class="section-column">
+                        <span class="fluent-badge">
+                            <a class="label">Personalization</a>
+                        </span>
+                        <h2>Comfort at home is the main thing</h2>
+                        <p class="placeholder">
+                            With our app, you can customize your home page to suit your preferences and needs. You can pin your favorite apps and websites to access them easily. You can also change your home page wallpaper to match your mood and style. And if you want to enjoy some live beautiful views, you can choose from our collection of stunning wallpapers that update in real time. Make your home page more comfortable and enjoyable with Aurora home page.
+                        </p>
+                        <div id="theme-picker">
+                            <button id="theme-0" class="theme-item" style="background-image: url('https://images.pexels.com/photos/2441454/pexels-photo-2441454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');" onclick="SetThemeImage('assets/search-design-card4.png');"></button>
+                            <button id="theme-1" class="theme-item" style="background-image: url('https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');" onclick="SetThemeImage('assets/search-design-card1.png');"></button>
+                        </div>
+                    </div>
+                    <div class="section-column">
+                        <div id="theme-view-box"></div>
                     </div>
                 </section>
                 <br />

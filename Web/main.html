@@ -15,6 +15,8 @@
         <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
         <!-- Fast UI framework -->
         <script type="module" src="https://cdn.jsdelivr.net/npm/@microsoft/fast-components/dist/fast-components.min.js"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
 
         <!-- Main styles -->
         <link rel="stylesheet" href="styles/style.css" />
@@ -88,6 +90,12 @@
                                 <span class="menu-item">
                                     <i class="menu-item-icon icon icon-ic_fluent_apps_20_regular"></i>
                                     <p class="menu-item-label">Extensions</p>
+                                </span>
+                            </fluent-option>
+                            <fluent-option onclick="NavigateFrame('home.html#looks-beautiful');" value="fn" selected>
+                                <span class="menu-item">
+                                    <i class="menu-item-icon icon icon-ic_fluent_paint_brush_20_regular"></i>
+                                    <p class="menu-item-label">Personalize</p>
                                 </span>
                             </fluent-option>
                             <fluent-option onclick="NavigateFrame('home.html#ai-features');" value="fn" selected>

@@ -854,8 +854,50 @@ footer{
 }
 
 #looks-beautiful{
-    width: 100%;
-    text-align: center;
-    display: block;
-    padding-bottom: 82px;
+    padding-right: 56px;
+    padding-left: 56px;
+    padding-top: 60px;
+    padding-bottom: 42px;
+    min-height: 200px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 76px;
+}
+
+#theme-picker{
+    display: table;
+    position: relative;
+    top: 18px;
+    left: -7px;
+}
+
+.theme-item{
+    height: 72px;
+    width: 72px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 20%);
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 500%;
+    margin: 5px;
+}
+
+.theme-item:focus{
+    border: 4px solid rgba(32, 32, 32, 96%);
+}
+
+#theme-view-box{
+    bottom: 42px;
+    margin: 12px;
+    height: 400px;
+    position: relative;
+    padding-bottom: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 12px;
+    background-image: url('../assets/search-design-card0.png');
 }
