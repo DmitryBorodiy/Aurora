@@ -926,7 +926,7 @@ footer{
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    gap: 42px;
+    gap: 72px;
     width: 100%;
     z-index: 11111111111;
 }
@@ -956,7 +956,7 @@ footer{
 }
 
 #hero-image{
-    position: absolute;
+    position: relative;
     top: 0px;
     width: 100%;
     background-image: url('https://images.hdqwalls.com/wallpapers/aurora-background-0i.jpg');

@@ -18,6 +18,7 @@
 
         <!-- Main styles -->
         <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/animation.css" />
         <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
 
         <!-- JS -->
@@ -36,9 +37,9 @@
                     if(NewsLayout != null){
                         var windowWidth = getWindowWidth();
 
-                        if(windowWidth < 600){
-                            NewsLayout.style.paddingLeft = "36px";
-                            NewsLayout.style.paddingRight = "36px";
+                        if(windowWidth < 960){
+                            NewsLayout.style.paddingLeft = "56px";
+                            NewsLayout.style.paddingRight = "56px";
                         }
                         else{
                             NewsLayout.style.paddingLeft = "120px";
@@ -62,12 +63,12 @@
             }
         </script>
     </head>
-    <body id="rootBody">
-        <fluent-design-system-provider id="fluent-design-provider" style="display: table; width: 100%;">
+    <body id="rootBody" onresize="NewsLayout_OnResize();">
+        <fluent-design-system-provider id="fluent-design-provider" style="width: 100%;">
             <div id="hero-image">
                 <span class="acrylic-effect"></span>
                 <div id="rootNewsLayout" class="news-layout" onclick="NewsLayout_OnResize();">
-                    <section id="main-news">
+                    <section id="main-news" style="animation: navigation-transition 1.2s ease-in-out;">
                         <div id="news-hero-text" class="section-column" style="flex-basis: 500px;">
                             <div class="table-grid">
                                 <span class="fluent-badge" style="display: inline-block;">
@@ -81,11 +82,12 @@
                             <p class="placeholder">
                                 First release of beta channel version to the Microsoft Store and first beta public release.
                             </p>
-                            <fluent-button class="news-hero-button" appearance="accent">Try now</fluent-button>
+                            <fluent-button class="news-hero-button" appearance="accent" onclick="window.open('https://apps.microsoft.com/detail/aurora-search-browse-and-explore/9MXZLDLCTFWL');">Try now</fluent-button>
                         </div>
-                        <div class="section-column" style="flex-basis: 500px;">
+                        <div class="section-column" style="flex-basis: 500px; animation: navigation-transition 1.2s ease-in-out;">
                             <div id="app-screenshot" style="
-                                top: -36px;
+                                top: -26px;
+                                left: -26px;
                                 bottom: 100px;
                                 position: relative;
                                 height: 460px;
