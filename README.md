@@ -11,7 +11,7 @@
 Aurora is the ultimate app for exploring the web and discovering new things. Whether you want to search across multiple services, social networks, online stores, music services and video hosting, or just browse web pages in a fast and convenient browser. You can also use the AI assistant to get personalized recommendations and answers to your questions. Aurora lets you achieve more with less effort and time. Download Aurora today and start your journey on the Internet!
 
 <div style="display: table; position: relative; left: -18px; width: 100%;">
-    <a href="https://apps.microsoft.com/detail/9MXZLDLCTFWL" style="display: inline-block; padding: 0px;">
+    <a href="https://apps.microsoft.com/detail/9MXZLDLCTFWL" style="display: inline-block; padding: 0px; position: relative; left: -20px;">
         <picture>
             <source media="(prefers-color-scheme: dark)" srcset="Web\assets\github\ms-store-get-dark.png" />
             <img height="100px" alt="Get from Microsoft Store" src="Web\assets\github\ms-store-get-light.png" style="object-fit: contain;" />
