@@ -973,3 +973,19 @@ footer{
     display: block;
     height: 100%;
 }
+
+.support-path{
+    flex-basis: 160px;
+    height: 160px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+#support-paths{
+    /*gap: 20px;*/
+    column-gap: 12px;
+    row-gap: 12px;
+    text-align: left;
+    padding: 0;
+    padding-top: 12px;
+}

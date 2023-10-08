@@ -17,17 +17,137 @@
         <script type="module" src="https://cdn.jsdelivr.net/npm/@microsoft/fast-components/dist/fast-components.min.js"></script>
 
         <!-- Main styles -->
-        <link rel="stylesheet" href="styles/style.css" />
-        <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../fonts/FluentSystemIcons-Regular.css" />
 
         <!-- JS -->
-        <script type="module" src="index.js"></script>
+        <script type="module" src="../index.js"></script>
+
+        <style>
+            #rootBody{
+                padding-top: 82px;
+                width: 100%;
+                height: 100%;
+                display: inline-flex;
+                align-items: center;
+                text-align: center;
+            }
+
+            #rootLayout{
+                max-width: 500px;
+                padding-left: 36px;
+                padding-right: 36px;
+                display: inline-block;
+                vertical-align: middle;
+                text-align: left;
+            }
+            
+            h3{
+                font-size: 24px;
+            }
+
+            footer{
+                text-align: left;
+            }
+        </style>
     </head>
     <body id="rootBody">
         <fluent-design-system-provider id="fluent-design-provider" style="display: table; width: 100%;">
             <div id="rootLayout">
-
+                <h3>Developer support is very important</h3>
+                <p class="placeholder">
+                    The best way to say thank you for developing the project and working on it is to support us in this difficult work.
+                </p>
+                <div id="support-paths" class="flex-section">
+                    <fluent-button class="support-path" onclick="window.open('https://www.microsoft.com/store/apps/9MXZLDLCTFWL');">
+                        <div style="position: relative; top: 2px;">
+                            <img height="32px" width="32px" src="https://upload.wikimedia.org/wikipedia/en/0/08/Microsoft_Store_app_icon.png" />
+                            <p class="support-path-label">Star in Microsoft Store</p>
+                        </div>
+                    </fluent-button>
+                    <fluent-button class="support-path" onclick="window.open('https://github.com/DmitryBorodiy/Aurora/issues/new');">
+                        <div style="position: relative; top: 2px;">
+                            <img height="32px" width="32px" src="https://img.icons8.com/fluency/96/idea.png" />
+                            <p class="support-path-label">Suggest a feature</p>
+                        </div>
+                    </fluent-button>
+                    <fluent-button class="support-path" onclick="document.location.href = '../views/premium.html';">
+                        <div style="position: relative; top: 2px;">
+                            <img height="32px" width="32px" src="../assets/icons8-jewel-96.png" />
+                            <p class="support-path-label">Buy premium</p>
+                        </div>
+                    </fluent-button>
+                    <fluent-button class="support-path" onclick="window.open('https://www.paypal.com/donate/?hosted_button_id=98V72XBCA3Z72');">
+                        <div style="position: relative; top: 2px;">
+                            <img height="32px" width="32px" src="https://img.icons8.com/fluency/96/paypal.png" />
+                            <p class="support-path-label">Donate with PayPal</p>
+                            <div id="donate-button-container">
+                                <div id="donate-button"></div>
+                                    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                                    <script>
+                                        PayPal.Donation.Button({
+                                        env:'production',
+                                        hosted_button_id:'98V72XBCA3Z72',
+                                        image: {
+                                        src:'https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif',
+                                        alt:'Donate with PayPal button',
+                                        title:'PayPal - The safer, easier way to pay online!',
+                                        }
+                                        }).render('#donate-button');
+                                    </script>
+                                </div>
+                            </div>                           
+                        </div>
+                    </fluent-button>
+                </div>
             </div>
+            <br />
+                <footer>
+                    <div class="footer-column">
+                        <span class="branding-span">
+                            <img class="branding-logo" alt="logo" height="41px" width="42px" src="../assets/Search.png" />
+                            <a class="branding-title">Aurora</a>
+                        </span>
+                        <div class="table-grid" style="position: relative; top: 18px; left: -4px;">
+                            <button class="icon-button" style="display: inline-block; position: relative;">
+                                <img height="20px" width="20px" alt="GitHub" src="https://img.icons8.com/fluency/48/github.png" />
+                            </button>
+                            <button class="icon-button" style="display: inline-block; position: relative;">
+                                <img height="24px" width="24px" alt="Twitter" src="https://img.icons8.com/fluency/48/twitterx--v1.png" />
+                            </button>
+                        </div>
+                        <br />
+                        <a class="placeholder subtitle" style="position: relative; top: 32px;">Copyright © 2023</a>
+                    </div>
+                    <div class="footer-column">
+                        <p class="placeholder subtitle">Pages</p>
+                        <div class="links-list">
+                            <span class="link-list-item">
+                                <a href="#hero-container" class="fluent-hyperlink-control">Home</a>
+                            </span>
+                            <span class="link-list-item">
+                                <a href="../news.html" class="fluent-hyperlink-control">News</a>
+                            </span>
+                            <span class="link-list-item">
+                                <a href="../views/premium.html" class="fluent-hyperlink-control">Premium</a>
+                            </span>
+                            <span class="link-list-item">
+                                <a href="https://www.microsoft.com/store/apps/9MXZLDLCTFWL" class="fluent-hyperlink-control">Get Aurora</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <p class="placeholder subtitle">Docs</p>
+                        <div class="links-list">
+                            <span class="link-list-item">
+                                <a href="../privacy/index.html" class="fluent-hyperlink-control">Privacy Policy</a>
+                            </span>
+                            <span class="link-list-item">
+                                <a href="mailto:dima.borodiy@outlook.com" class="fluent-hyperlink-control">Contact developer</a>
+                            </span>
+                        </div>
+                    </div>
+                </footer>
         </fluent-design-system-provider>
     </body>
 </html>

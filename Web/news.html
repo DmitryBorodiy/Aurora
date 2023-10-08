@@ -28,6 +28,15 @@
         <script>
             var NewsLayout;
 
+            function Page_OnLoaded(){ 
+                try{
+                    NewsLayout_OnResize();
+                }
+                catch(e){
+                    console.log(e);
+                }
+            }
+
             function NewsLayout_OnResize(){
                 try{
                     if(NewsLayout == null){
