@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta http-equiv="content-language" content="en" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Aurora - search, browse and explore</title>
 
-        <meta name="description" content="Aurora is the ultimate app for exploring the web and discovering new things. Whether you want to search across multiple services, social networks, online stores, music services and video hosting, or just browse web pages in a fast and convenient browser. You can also use the AI assistant to get personalized recommendations and answers to your questions. Aurora lets you achieve more with less effort and time. Download Aurora today and start your journey on the Internet!" />
+        <meta name="description" content="Aurora is the ultimate app for exploring the web and discovering new things." />
         <meta name="keywords" content="Google, Aurora, Web browser, Microsoft, Bing, DuckDuckGo, Yahoo, Edge, Chrome, Office, YouTube, Search, Apps, Microsoft Store, Web, AI, Social media" />
         <meta name="og:title" content="Aurora - search, browse and explore" />
         <meta name="og:url" content="https://dmitryborodiy.github.io/Aurora/Web/main.html" />
@@ -28,6 +29,12 @@
         <!-- JS -->
         <script src="splashscreen.js"></script>
         <script type="module" src="index.js"></script>
+
+        <style>
+            body, html{
+                overflow: hidden;
+            }
+        </style>
     </head>
     <body id="bodyLayout">
         <fluent-design-system-provider id="fluent-design-provider">
@@ -35,5 +42,6 @@
                 <img id="logo-asset" alt="splashscreen" height="74" width="76" src="assets/Search.png" />
             </div>
         </fluent-design-system-provider>
+        <h1 style="visibility: collapse;">Aurora - search, browse and explore</h1>
     </body>
 </html>
