@@ -18,7 +18,7 @@ Aurora is the ultimate app for exploring the web and discovering new things. Whe
         </picture>
     </a>
     <br />
-    <a href="Web\index.html" style="display: inline-block; padding: 0px; position: relative; left: 16px; margin: 0px;">
+    <a href="https://dmitryborodiy.github.io/Aurora/Web" style="display: inline-block; padding: 0px; position: relative; left: 0px; margin: 0px;">
         <picture>
             <source media="(prefers-color-scheme: dark)" srcset="Web\assets\github\view-website-dark.png">
             <img height="73px" alt="View website" src="Web\assets\github\view-website-light.png">
