@@ -1,4 +1,4 @@
-<image src="assets/beta_build231016.png" style="border-radius: 12px;" />
+![Image](assets/beta_build231016.png)
 <br />
 <br />
 <h1>New build for you!🎉</h1> 
