@@ -1,4 +1,4 @@
-![Image](assets/beta_build231016.png)
+![Image](https://dmitryborodiy.github.io/Aurora/Web/updates/assets/beta_build231016.png)
 <br />
 <br />
 <h1>New build for you!🎉</h1> 
