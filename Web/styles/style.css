@@ -989,3 +989,63 @@ footer{
     padding: 0;
     padding-top: 12px;
 }
+
+#view-benefits{
+    display: block;
+    width: 100%;
+    margin-top: 26px;
+    padding-left: 56px;
+    padding-right: 56px;
+}
+
+.news-card{
+    display: inline-block;
+    height: 320px;
+    width: 400px;
+    padding: 0;
+}
+
+.table{
+    width: 100%;
+    display: table;
+}
+
+#blog-posts{
+    padding-left: 116px;
+    padding-right: 116px;
+    display: block;
+}
+
+.card-image{
+    width: 100%;
+    display: block;
+    top: 0px;
+    left: 0px;
+    height: 230px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card-layout-content{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    padding: 4px 16px 16px 16px;
+    display: block;
+    align-items: center;
+}
+
+.card-action{
+    float: right;
+    position: relative;
+    vertical-align: middle;
+}
+
+#markdown-container{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 42px;
+}

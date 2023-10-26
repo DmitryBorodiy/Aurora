@@ -32,8 +32,11 @@
                         <p style="margin-left: 32px; margin-right: 32px;">
                             Become a premium user and forget about ads that prevent you from enjoying your AI assistant. Discover all the assistant's capabilities that will help you in any task and situation. Work with artificial intelligence without restrictions and receive unique content created especially for you.
                         </p>
-                        <fluent-button id="get-premium-button" appearance="accent" onclick="window.open('aurora-search:premium');">
-                            <p>2.99$ per 6 months</p>
+                        <fluent-tooltip id="tooltip" anchor="get-premium-button">
+                            When you subscribe, you're not just unlocking premium features; you're actively supporting the continuous improvement and development of our services.
+                        </fluent-tooltip>
+                        <fluent-button id="get-premium-button" aria-describedby="tooltip" appearance="accent" onclick="document.location.href = 'premium.html#view-benefits';">
+                            <p>Review benefits</p>
                         </fluent-button>
                     </div>
                     <br />
@@ -66,7 +69,50 @@
                                     By purchasing Premium, you not only get access to exclusive assistant features, but also support the developer who puts his time, energy and creativity into creating this product. You help him pay for server maintenance costs, tool licenses, and other necessary resources. You also motivate him to continue to develop and improve the assistant, add new features and fix bugs. You can also give him your feedback and wishes to make the assistant even more useful and enjoyable for you.
                                 </p>
                             </div>
+                            <div class="fluent-card" style="flex-basis: 330px; text-align: left; max-width: none;">
+                                <i class="icon card-icon icon-ic_fluent_bookmark_multiple_16_regular" style="font-size: 62px;"></i>
+                                <h3>Don't miss important things</h3>
+                                <p>
+                                    Your digital treasure chest for the things that truly matter. Pin search results, AI assistant answers, and everything you find valuable. Don't miss out on a single piece of essential information.
+                                </p>
+                            </div>
+                            <div class="fluent-card" style="flex-basis: 330px; text-align: left; max-width: none;">
+                                <i class="icon card-icon icon-ic_fluent_wallpaper_24_regular" style="font-size: 62px;"></i>
+                                <h3>Live Wallpapers</h3>
+                                <p>
+                                    Elevate your device's home screen with captivating live wallpapers. Watch as your background comes alive with dynamic animations and ever-changing scenes.
+                                </p>
+                            </div>
+                            <div class="fluent-card" style="flex-basis: 330px; text-align: left; max-width: none;">
+                                <i class="icon card-icon icon-ic_fluent_eye_tracking_16_regular" style="font-size: 62px;"></i>
+                                <h3>AI vision features</h3>
+                                <p>
+                                    Our AI Vision features redefine the way you interact with the visual world. Whether you're a traveler, a photography enthusiast, or someone looking to enhance daily life, AI Vision adds a layer of intelligence and insight that enriches your experiences.
+                                </p>
+                                <span class="fluent-badge-accent" style="bottom: 2px; position: relative;">
+                                    <a class="label">Coming soon</a>
+                                </span>
+                            </div>
+                            <div class="fluent-card" style="flex-basis: 330px; text-align: left; max-width: none;">
+                                <i class="icon card-icon icon-ic_fluent_developer_board_search_24_regular" style="font-size: 62px;"></i>
+                                <h3>Development and coding</h3>
+                                <p>
+                                    With AI, development becomes faster, more efficient, and less error-prone. Our AI-powered services integrate seamlessly with industry-standard tools like GitHub and Stack Overflow, ensuring that you have everything you need to succeed as a developer. Join the revolution in development. Embrace AI for issue resolution, coding efficiency, and project management. Welcome to the future of coding.
+                                </p>
+                                <span class="fluent-badge-accent" style="bottom: 2px; position: relative;">
+                                    <a class="label">Coming soon</a>
+                                </span>
+                            </div>
                         </div>
+                </section>
+                <br />
+                <section id="view-benefits">
+                    <div>
+                        <h2>Review benefits</h2>
+                        <p class="placeholder">
+                            Welcome to the subscription program, where you'll enjoy a world of exclusive perks and advantages. We believe in making your experience with us not just good, but exceptional. Here's what you can look forward to as a benefit:
+                        </p>
+                    </div>
                 </section>
                 <footer>
                     <div class="footer-column">

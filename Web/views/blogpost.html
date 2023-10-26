@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Aurora - news and updates</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+
+        <!-- Fluent UI for web  -->
+        <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+        <!-- Fast UI framework -->
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@microsoft/fast-components/dist/fast-components.min.js"></script>
+
+        <!-- Main styles -->
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/animation.css" />
+        <link rel="stylesheet" href="../fonts/FluentSystemIcons-Regular.css" />
+
+        <!-- JS -->
+        <script type="module" src="../index.js"></script>
+
+        <style>
+            img{
+                max-height: 480px;
+                border-radius: 8px;
+                text-align: center;
+                width: 100%;
+                max-width: 720px;
+            }
+        </style>
+    </head>
+    <body id="rootLayout">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+            const url = window.localStorage.getItem("blogpost_page").toString();
+
+            fetch(url)
+                .then((response) => response.text())
+                .then((markdown) => {
+                    renderMarkdown(markdown);
+                })
+                .catch((error) => console.error('Error fetching Markdown:', error));
+
+            function renderMarkdown(markdown) {
+                const html = marked.parse(markdown.toString());
+                console.log(html);
+                
+                const markdownContainer = document.getElementById('markdown-container');
+                markdownContainer.innerHTML = html;
+            }
+        </script>
+        <div id="markdown-container"></div>
+    </body>
+</html>
