@@ -145,3 +145,12 @@ function MakeSearch(){
         console.log(e);
     }
 }
+
+function GetPremiumSubscription(){
+    try{
+        window.open("aurora:premium");
+    }
+    catch(e){
+        console.log(e);
+    }
+}

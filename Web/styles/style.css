@@ -992,7 +992,6 @@ footer{
 
 #view-benefits{
     display: block;
-    width: 100%;
     margin-top: 26px;
     padding-left: 56px;
     padding-right: 56px;
@@ -1048,4 +1047,37 @@ footer{
     width: 100%;
     height: auto;
     padding: 42px;
+}
+
+#subscription-benefits-box{
+    padding: 0px;
+}
+
+.card-title{
+    line-height: 12px;
+    font-size: 28px;
+    position: relative;
+    bottom: 12px;
+}
+
+.card-subtitle{
+    font-size: 18px;
+    margin-top: 6px;
+    position: relative;
+    bottom: 14px;
+    font-weight: 600;
+}
+
+.gradient{
+    background: linear-gradient(90deg, rgba(0,112,196,1) 0%, rgba(60,226,89,1) 100%);
+}
+
+.table-item{
+    display: inline-block;
+    margin: 6px;
+}
+
+.subscribe-button{
+    width: 142px;
+    height: 38px;
 }
