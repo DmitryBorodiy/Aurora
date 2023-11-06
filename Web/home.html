@@ -25,9 +25,16 @@
         <script defer>
             function SetThemeImage(image){
                 try{
-                    $('#theme-view-box').hide("fast");
-                    $('#theme-view-box').css('background-image', 'url(' + image + ')');
-                    $('#theme-view-box').show("slow");
+                    $('#theme-view-box').animate({
+                        transform: 'translateY(-42px)',
+                        opacity: 0
+                    }, 200,  function() {
+                        $(this).css('background-image', 'url(' + image + ')');
+                        $(this).animate({
+                            transform: 'translateY(0px)',
+                            opacity: 1
+                        });
+                    });
                 }
                 catch(e){
                     console.log(e);
@@ -35,7 +42,7 @@
             }
         </script>
     </head>
-    <body id="rootBody">
+    <body id="rootBody" onresize="HomePage_OnResize();" onload="HomePage_OnLoaded();">
         <fluent-design-system-provider id="fluent-design-provider">
             <div id="rootLayout">
                 <section id="hero-container">
@@ -220,22 +227,24 @@
                 <br />
                 <hr class="section-separator" style="margin-top: 80px;" />
                 <br />
-                <section class="flex-section" id="looks-beautiful">
+                <section class="flex-section" id="looks-beautiful" style="gap: 80px;">
                     <div class="section-column">
                         <span class="fluent-badge">
                             <a class="label">Personalization</a>
                         </span>
                         <h2>Comfort at home is the main thing</h2>
                         <p class="placeholder">
-                            With our app, you can customize your home page to suit your preferences and needs. You can pin your favorite apps and websites to access them easily. You can also change your home page wallpaper to match your mood and style. And if you want to enjoy some live beautiful views, you can choose from our collection of stunning wallpapers that update in real time. Make your home page more comfortable and enjoyable with Aurora home page.
+                            Customize your home page to suit your preferences and needs. You can pin your favorite apps and websites to access them easily. You can also change your home page wallpaper to match your mood and style. And if you want to enjoy some live beautiful views, you can choose from our collection of stunning wallpapers that update in real time. Make your home page more comfortable and enjoyable with Aurora home page.
                         </p>
                         <div id="theme-picker">
                             <button id="theme-0" class="theme-item" style="background-image: url('https://images.pexels.com/photos/2441454/pexels-photo-2441454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');" onclick="SetThemeImage('assets/search-design-card4.png');"></button>
                             <button id="theme-1" class="theme-item" style="background-image: url('https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');" onclick="SetThemeImage('assets/search-design-card1.png');"></button>
                             <button id="theme-2" class="theme-item" style="background-image: url('https://www.bing.com/th?id=OHR.WhitsundaySwirl_EN-US2946291997_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp');" onclick="SetThemeImage('assets/search-design-card2.png');"></button>
-                            <button id="theme-3" class="theme-item" style="background-image: url('https://www.bing.com/th?id=OHR.VuittonFoundation_EN-US2808914200_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp');" onclick="SetThemeImage('assets/search-design-card3.png');"></button>
+                            <button id="theme-3" class="theme-item" style="background-image: url('https://get.wallhere.com/photo/Halo-Halo-Infinite-Master-Chief-science-fiction-military-soldier-Xbox-Xbox-One-video-games-1403207.jpg'); background-position-x: -200px;" onclick="SetThemeImage('assets/search-design-card3.png');"></button>
                             <button id="theme-4" class="theme-item" style="background-image: url('https://images.hdqwalls.com/wallpapers/aurora-background-0i.jpg');" onclick="SetThemeImage('assets/search-design-card0.png');"></button>
                         </div>
+                        <br />
+                        <fluent-button id="customize-home-action" appearance="accent" onclick="window.open('aurora:wallpaper-picker');">Customize your home</fluent-button>
                     </div>
                     <div class="section-column">
                         <div id="theme-view-box"></div>
@@ -244,7 +253,7 @@
                 <br />
                 <hr class="section-separator" style="margin-top: 80px;" />
                 <br />
-                <section id="addons-section" class="flex-section">
+                <section id="addons-section" class="flex-section" style="gap: 100px;">
                     <div class="section-column">
                         <span class="fluent-badge-accent" style="background-color: #D9BA41; top: 10px; position: relative;;">
                             <a class="label">Indev</a>
@@ -272,6 +281,7 @@
                     <p id="ai-features-description" class="placeholder">
                         Assistant is a smart, friendly and helpful voice assistant that helps you in your daily life. You can communicate with the assistant by voice or text using natural language. The assistant can help you with a variety of tasks, such as finding information, managing your calendar, reminders, entertainment, and more. The assistant can also provide you with personalized recommendations and advice, tailored to your preferences and interests.
                     </p>
+                    <fluent-button id="open-assistant-action" appearance="accent" onclick="window.open('aurora:assistant');">Ask Assistant</fluent-button>
                     <br />
                     <div id="what-can-ai">
                         <div class="fluent-card" style="flex-basis: 200px;">
@@ -280,6 +290,28 @@
                             <p class="placeholder">
                                 Get answers to questions that are not so easy to find. Generative AI allows you to find information by asking just one question.
                             </p>
+                            <div class="table">
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Explain the concept of AI.</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">How do I bake chocolate cookies?</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">How can I start online business?</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Define quantum computing</a>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="fluent-card" style="flex-basis: 200px;">
                             <i class="card-icon icon icon-ic_fluent_chess_20_regular"></i>
@@ -287,6 +319,23 @@
                             <p class="placeholder">
                                 Use the capabilities of a personal assistant to relax and escape from everyday tasks.
                             </p>
+                            <div class="table" style="line-height: 20px;">
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Tell me a joke.</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Surprise me.</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Let's play a game.</a>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="fluent-card" style="flex-basis: 200px;">
                             <i class="card-icon icon icon-ic_fluent_briefcase_24_regular"></i>
@@ -294,6 +343,23 @@
                             <p class="placeholder">
                                 The assistant can help you plan events, manage email, organize to-do lists, and more. The assistant can also integrate with various apps and services to make your work easier.
                             </p>
+                            <div class="table" style="line-height: 20px;">
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">What do I need to do today?</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Create a task for Tuesday of this week.</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Remind me about the meeting</a>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="fluent-card" style="flex-basis: 200px;">
                             <i class="card-icon icon-ic_fluent_globe_search_24_regular"></i>
@@ -301,6 +367,28 @@
                             <p class="placeholder">
                                 Searching and analyzing information on the Internet on sites and web resources is an important task that the assistant does well.
                             </p>
+                            <div class="table">
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Find recent COVID-19 statistics.</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Search for healthy breakfast recipes.</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Look up famous quotes by Albert Einstein.</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Find information on climate change effects.</a>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                         <div class="fluent-card" style="flex-basis: 200px;">
                             <i class="card-icon icon-ic_fluent_circle_image_24_regular"></i>
@@ -308,6 +396,28 @@
                             <p class="placeholder">
                                 Searching for images is easier than ever, find everything you need thanks to integration with popular image search and processing services, or generate the image you need using DALLE from OpenAI.
                             </p>
+                            <div class="table">
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Create futuristic cityscape.</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Design a sci-fi character using AI.</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Generate a sunset beach scene.</a>
+                                    </span>
+                                </div>
+                                <div class="table-item">
+                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
+                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Design a digital logo for a startup.</a>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <br />

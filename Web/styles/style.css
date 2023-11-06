@@ -401,7 +401,7 @@ h2{
 
 #hero-container{
     width: 100%;
-    padding-bottom: 200px;
+    padding-bottom: 260px;
 }
 
 #hero-container-content{
@@ -413,7 +413,8 @@ h2{
 #hero-container-text{
     width: 100%;
     text-align: center;
-    margin-top: 180px;
+    position: relative;
+    top: 180px;
 }
 
 .highlighted-text{
@@ -456,7 +457,7 @@ h2{
 
 #app-screenshot{
     position: relative;
-    top: 120px;
+    top: 70px;
     width: 100%;
     height: 680px;
     background-position: center top;
@@ -570,14 +571,13 @@ em{
 }
 
 #addons-image-view{
-    height: 90%;
+    height: 120%;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
     bottom: 8px;
-    left: 56px;
 }
 
 .center-div{
@@ -694,6 +694,11 @@ fluent-option{
     flex-basis: 130px;
     flex-wrap: wrap;
     gap: 16px;
+    position: relative;
+    top: 76px;
+}
+
+#open-assistant-action{
     position: relative;
     top: 12px;
 }
@@ -899,14 +904,14 @@ footer{
 
 #theme-view-box{
     bottom: 42px;
-    margin: 12px;
-    left: 24px;
     height: 400px;
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 12px;
+    position: relative;
+    top: 9%;
     background-image: url('../assets/search-design-card0.png');
 }
 
@@ -1080,4 +1085,9 @@ footer{
 .subscribe-button{
     width: 142px;
     height: 38px;
+}
+
+#customize-home-action{
+    position: relative;
+    top: 32px;
 }

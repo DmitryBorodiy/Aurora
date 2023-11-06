@@ -65,7 +65,6 @@ function Page_OnResize(){
         var pageWidth = getWindowWidth();
 
         if(pageWidth < 620){
-            //appScreenshot.style.top = "px";
             mobileMenuButton.style.visibility = "visible";
             headerSeparator.style.visibility = "collapse";
             navigationBar.style.visibility = "collapse";
@@ -74,7 +73,6 @@ function Page_OnResize(){
             supportUkraine.style.visibility = "collapse";
         }
         else{
-            //appScreenshot.style.top = "42px";
             mobileMenuButton.style.visibility = "collapse";
             headerSeparator.style.visibility = "visible";
             navigationBar.style.visibility = "visible";
