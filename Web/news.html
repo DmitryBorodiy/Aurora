@@ -73,8 +73,8 @@
             }
         </script>
     </head>
-    <body id="rootBody" onresize="NewsPage_OnResize()" onload="NewsPage_OnLoad()">
-        <fluent-design-system-provider id="fluent-design-provider" style="width: 100%;">
+    <body id="rootBody" onresize="NewsPage_OnResize()" onload="Page_OnLoaded()">
+        <fluent-design-system-provider id="fluent-design-provider" style="width: 100%;" onload="Page_OnLoaded()">
             <div id="hero-image">
                 <span class="acrylic-effect"></span>
                 <div id="rootNewsLayout" class="news-layout" onclick="NewsLayout_OnResize();">
@@ -82,29 +82,28 @@
                         <div id="news-hero-text" class="section-column" style="flex-basis: 500px;">
                             <div class="table-grid">
                                 <span class="fluent-badge" style="display: inline-block;">
-                                    <a class="label">Oct 9, 2023</a>
+                                    <a class="label">November 25, 2023</a>
                                 </span>
                                 <span class="fluent-badge-accent" style="display: inline-block; height: 12px; margin-left: 2px;">
                                     <a class="label" style="position: relative; bottom: 2px;">Beta</a>
                                 </span>
                             </div>
-                            <h1 class="news-hero-title">Introducing first Beta version!</h1>
+                            <h1 class="news-hero-title">Introducing new build for you!🎉</h1>
                             <p class="placeholder">
-                                First release of beta channel version to the Microsoft Store and first beta public release.
+                                In this latest update, we're thrilled to unveil the integration of GPT-4 to enhance your assistant's capabilities. With GPT-4, your AI assistant is now more knowledgeable and capable than ever before, ready to assist you in various tasks, answer questions, and provide valuable insights.
                             </p>
-                            <fluent-button class="news-hero-button" appearance="accent" onclick="window.open('https://apps.microsoft.com/detail/aurora-search-browse-and-explore/9MXZLDLCTFWL');">Try now</fluent-button>
+                            <fluent-button class="news-hero-button" appearance="accent" onclick="LaunchBlogPostPage('https://dmitryborodiy.github.io/Aurora/Web/updates/beta_build231110.md');">Learn more</fluent-button>
                         </div>
-                        <div class="section-column" style="flex-basis: 500px; animation: navigation-transition 1.2s ease-in-out;">
+                        <div class="section-column" style="flex-basis: 500px; animation: navigation-transition 1.2s ease-in-out; text-align: right;">
                             <div id="app-screenshot" style="
-                                top: -26px;
-                                left: -26px;
+                                top: 30px;
+                                right: 110px;
                                 bottom: 100px;
                                 position: relative;
                                 height: 460px;
                                 width: 80%;
                                 display: inline-block;
-                                background-position: center;
-                                "></div>
+                                background-position: center;"></div>
                         </div>
                     </section>
                 </div>
@@ -113,19 +112,41 @@
             <section id="blog-posts">
                 <h2>Blog posts</h2>
                 <br />
-                <div class="table" style="margin-top: 12px;">
+                <div id="blog-posts-grid" class="table-grid" style="margin-top: 12px;">
                     <div class="fluent-card news-card" onclick="LaunchBlogPostPage('https://dmitryborodiy.github.io/Aurora/Web/updates/beta_build231016.md');">
                         <span class="card-image" style="background-image: url('updates/assets/beta_build231016.png');"></span>
                         <div class="card-layout-content">
                             <h5 style="
                             line-height: 0px;
                             padding: 0px;
-                            font-size: 16px;
+                            font-size: 18px;
                             ">What's new in beta_build 231016</h5>
+                            <p style="padding-right: 32px;">
+                                Signifies a significant milestone, serving as a comprehensive update that rectifies a multitude of issues and introduces several compelling new features. Below, you'll find an overview of the major changes highlighted in this document
+                            </p>
                             <p class="placeholder" style="
                             line-height: 2px;
+                            padding-top: 6px;
                             ">Cumulative update - 26.10.2023</p>
-                            <fluent-button class="card-action" style="position: relative;right: 36px;bottom: 45px;">Read</fluent-button>
+                            <fluent-button class="card-action" appearance="accent" style="padding-top: 10px; float: left; margin-bottom: 16px;">Learn more</fluent-button>
+                        </div>
+                    </div>
+                    <div class="fluent-card news-card" onclick="LaunchBlogPostPage('https://dmitryborodiy.github.io/Aurora/Web/updates/beta_build231110.md');">
+                        <span class="card-image" style="background-image: url('updates/assets/beta_build231110.png');"></span>
+                        <div class="card-layout-content">
+                            <h5 style="
+                            line-height: 0px;
+                            padding: 0px;
+                            font-size: 18px;
+                            ">What's new in beta_build 231110</h5>
+                            <p style="padding-right: 32px;">
+                                In this latest update, I thrilled to unveil the integration of GPT-4 to enhance your assistant's capabilities. With GPT-4, your AI assistant is now more knowledgeable and capable than ever before, ready to assist you in various tasks, answer questions, and provide valuable insights.
+                            </p>
+                            <p class="placeholder" style="
+                            padding-top: 6px;
+                            line-height: 2px;
+                            ">Cumulative update - 25.11.2023</p>
+                            <fluent-button class="card-action" appearance="accent" style="padding-top: 10px; float: left; margin-bottom: 16px;">Learn more</fluent-button>
                         </div>
                     </div>
                 </div>
@@ -180,3 +201,8 @@
         </fluent-design-system-provider>
     </body>
 </html>
+
+<script>
+    NewsPage_OnLoad();
+    setTimeout(NewsLayout_OnResize, 3500);
+</script>

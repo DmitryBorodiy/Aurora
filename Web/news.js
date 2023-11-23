@@ -1,6 +1,10 @@
 var RootNewsLayout;
 var BlogPosts;
 
+window.onload += function() { 
+    NewsPage_OnLoad();
+};
+
 function NewsPage_OnLoad(){
     try{
         RootNewsLayout = document.getElementById("rootNewsLayout");
@@ -29,13 +33,15 @@ function NewsPage_OnResize(){
     try{
         var windowWidth = getWindowWidth();
 
-        if(windowWidth > 620){
+        if(windowWidth < 800){
             document.getElementById("blog-posts").style.paddingLeft = "36px";
+            document.getElementById("blog-posts").style.paddingRight = "30px";
             document.getElementById("rootNewsLayout").style.paddingLeft = "42px";
         }
-        else if(windowWidth < 620){
-            document.getElementById("blog-posts").style.paddingLeft = "116px";
-            document.getElementById("rootNewsLayout").style.paddingLeft = "120px";
+        else if(windowWidth > 800){
+            document.getElementById("blog-posts").style.paddingLeft = "90px";
+            document.getElementById("blog-posts").style.paddingRight = "90px";
+            document.getElementById("rootNewsLayout").style.paddingLeft = "90px";
         }
     }
     catch(e){

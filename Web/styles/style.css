@@ -919,7 +919,7 @@ footer{
     top: 26px;
     width: 100%;
     display: block;
-    padding-left: 120px;
+    padding-left: 90px;
     padding-right: 120px;
     padding-top: 160px;
     padding-bottom: 42px;
@@ -937,12 +937,16 @@ footer{
 }
 
 #blog-posts{
-    width: 100%;
     margin-top: 32px;
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
     z-index: 11111111111;
+}
+
+#blog-posts-grid{
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .news-hero-title{
@@ -969,6 +973,7 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
+    padding-bottom: 90px;
 }
 
 .acrylic-effect{
@@ -1004,7 +1009,6 @@ footer{
 
 .news-card{
     display: inline-block;
-    height: 320px;
     width: 400px;
     padding: 0;
 }
@@ -1044,7 +1048,8 @@ footer{
 .card-action{
     float: right;
     position: relative;
-    vertical-align: middle;
+    height: 46px;
+    width: 142px;
 }
 
 #markdown-container{
