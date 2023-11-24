@@ -35,14 +35,13 @@
     <body id="bodyLayout" onload="Page_OnLoaded()" onresize="Page_OnResize()">
         <fluent-design-system-provider id="fluent-design-provider">
             <div id="rootLayout">
-                <header>
+                <header id="header-ui">
                     <button id="mobile-menu-button" class="icon-button" onclick="MobileMenuButton_OnClick()">
                         <i class="icon icon-ic_fluent_line_horizontal_3_20_regular self-icon" style="left: 1px;"></i>
                     </button>
                     <div id="branding-div" onclick="NavigateFrame('home.html')">
                         <img id="branding-logo" height="34" width="35" src="assets/Search.png" />
                         <p id="branding-title">Aurora</p>
-                        <hr class="vertical-sep" style="margin-top: 12px; margin-left: 17px;" />
                     </div>
                     <nav id="navigation-menu">
                         <button onclick="NavigateFrame('home.html')" class="fluent-hyperlink-selected">
@@ -58,15 +57,17 @@
                             <p class="text-label">Premium</p>
                         </button>
                     </nav>
-                    <fluent-button id="get-product-command" appearance="accent" onclick="GetProduct();">
-                        <p style="padding: 4px;">Get Aurora</p>
-                    </fluent-button>
-                    <button id="feedback-command" class="icon-button" onclick="SendReview();">
-                        <i class="icon self-icon icon-ic_fluent_person_feedback_20_regular"></i>
-                    </button>
-                    <button id="support-ukraine" class="icon-button" onclick="NavigateFrame('views/support.html');">
-                        <img id="ua-flag" height="14" width="20" src="https://cdn.webshopapp.com/shops/94414/files/58163266/ukraine-flag-clipart-free-download.jpg" />
-                    </button>
+                    <nav id="header-actions">
+                        <button id="support-ukraine" class="icon-button" onclick="NavigateFrame('views/support.html');">
+                            <img id="ua-flag" height="14" width="20" src="https://cdn.webshopapp.com/shops/94414/files/58163266/ukraine-flag-clipart-free-download.jpg" />
+                        </button>
+                        <button id="feedback-command" class="icon-button" onclick="SendReview();">
+                            <i class="icon self-icon icon-ic_fluent_person_feedback_20_regular"></i>
+                        </button>
+                        <fluent-button id="get-product-command" appearance="accent" onclick="GetProduct();">
+                            <p style="padding: 4px;">Get Aurora</p>
+                        </fluent-button>
+                    </nav>
                 </header>
                 <iframe id="frame" src="home.html"></iframe>
             </div>

@@ -29,11 +29,27 @@ body{
     body{
         background-color: rgb(240, 240, 240);
         color: rgb(32, 32, 32);
-    }
 
-    body{
-        background-color: rgb(240, 240, 240);
-        color: rgb(32, 32, 32);
+        --sb-track-color: #f5f5f5;
+        --sb-thumb-color: #d6d6d6;
+        --sb-size: 10px;
+      
+        scrollbar-color: var(--sb-thumb-color) 
+                         var(--sb-track-color);
+    }
+      
+    body::-webkit-scrollbar {
+        width: var(--sb-size);
+    }
+      
+    body::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 10px;
+    }
+      
+    body::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 10px;
     }
     
     fluent-divider{
@@ -122,10 +138,6 @@ body{
         background-image: url(../assets/app-main-view-light.png);
     }
 
-    header{
-        background-color: rgba(255, 255, 255, 42%);
-    }
-
     .fluent-card{
         background-color: rgba(255, 255, 255, 1);
         border: 1px solid rgba(0, 0, 0, 0.06);
@@ -165,6 +177,24 @@ body{
     body{
         background-color: rgb(28, 28, 28);
         color: rgb(240, 240, 240);
+        --sb-track-color: #202020;
+        --sb-thumb-color: #989898;
+        --sb-size: 10px;
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+  
+    body::-webkit-scrollbar {
+        width: var(--sb-size) 
+    }
+    
+    body::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 10px;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 10px;
     }
 
     fluent-divider{
@@ -191,11 +221,6 @@ body{
         height: 26px;
         border-right: 1px;
         border-color: rgb(130, 130, 130);
-    }
-
-    header{
-        background-color: rgba(25, 25, 25, 76%);
-        backdrop-filter: blur(56px);
     }
 
     .fluent-hyperlink:hover{
@@ -297,10 +322,9 @@ body{
 
 header{
     position: fixed;
-    height: 74px;
+    height: 76px;
     width: 100%;
     z-index: 1111111111;
-    backdrop-filter: blur(56px);
 }
 
 h2{
@@ -363,11 +387,9 @@ h2{
 }
 
 #get-product-command{
-    height: 36px;
-    position: relative;
+    height: 38px;
+    width: 114px;
     float: right;
-    top: 20px;
-    right: 19px;
 }
 
 .icon-button{
@@ -380,23 +402,31 @@ h2{
 }
 
 #feedback-command{
-    position: fixed;
-    top: 20px;
-    right: 126px;
     height: 36px;
     width: 36px;
+    float: right;
 }
 
 #support-ukraine{
-    position: fixed;
-    top: 20px;
-    right: 168px;
     height: 36px;
     width: 36px;
+    float: right;
 }
 
 #ua-flag{
     border-radius: 3px;
+}
+
+#header-actions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 20px;
+    right: 34px;
+    gap: 10px;
+    vertical-align: middle;
+    align-items: flex-end;
 }
 
 #hero-container{
@@ -487,11 +517,12 @@ h2{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 36px;
 }
 
 .fluent-card{
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     flex-grow: 1;
     flex-basis: 330px;
     border-radius: 9px;
@@ -715,6 +746,7 @@ fluent-option{
     background: transparent;
     border: none;
     box-shadow: none;
+    display: inline-block;
 }
 
 .flat-card:hover{
@@ -1008,7 +1040,7 @@ footer{
 }
 
 .news-card{
-    display: inline-block;
+    display: flex;
     width: 400px;
     padding: 0;
 }
