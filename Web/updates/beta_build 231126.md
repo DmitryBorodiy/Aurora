@@ -1,6 +1,6 @@
 ![Image](assets/beta_build231126.png)
 
-# Rollout of patches and fixes for version 1.4 🔧⚙️
+# Rollout of patches and fixes 🔧⚙️
 *beta_build 231126 (**Cumulative update**)*
 
 In this update, the ChatGPT module for the AI assistant has been fixed, addressing any issues. The release includes stability and productivity improvements, along with important security updates for an enhanced user experience.
@@ -28,3 +28,5 @@ In this update, the ChatGPT module for the AI assistant has been fixed, addressi
 • Recent history experience on the home page was optimized and fixed.
 
 • The bugs related to the OpenAI GPT module for the assistant have been successfully identified and resolved in this update.
+
+• The bug affecting the daily weather display has been successfully identified and fixed in this update.

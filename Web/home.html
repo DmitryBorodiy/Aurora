@@ -15,12 +15,14 @@
         <link rel="stylesheet" href="styles/style.css" />
         <link rel="stylesheet" href="styles/animation.css" />
         <link rel="stylesheet" href="styles/carousel.css" />
+        <link rel="stylesheet" href="styles/segmented.css" />
         <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
 
         <!-- JS -->
         <script type="module" src="index.js"></script>
         <script src="main.js" defer></script>
         <script src="home.js"></script>
+        <script src="modules/segmented.js"></script>
 
         <script defer>
             function SetThemeImage(image){
@@ -39,6 +41,10 @@
                 catch(e){
                     console.log(e);
                 }
+            }
+
+            function SetInteractiveScreenshot(path) { 
+                // TODO : Change flip view selected item.
             }
         </script>
     </head>
@@ -72,7 +78,35 @@
                                     </span>
                                 </fluent-button>
                             </div>
-                            <div id="app-screenshot"></div>
+                            <div id="segmented-ui" class="ios13-segmented-control">
+                                <span class="selection"></span>
+                        
+                                <div class="option" onclick="SetScreenshotDisplayByIndex(0);">
+                                    <input type="radio" id="metro" name="sample" value="metro" checked>
+                                    <label for="metro"><span>Home</span></label>
+                                </div>
+
+                                <div class="option" onclick="SetScreenshotDisplayByIndex(1);">
+                                    <input type="radio" id="explore" name="sample" value="explore" onclick="SetInteractiveScreenshot('explore-{0}-screen.png');">
+                                    <label for="explore"><span>Explore</span></label>
+                                </div>
+                        
+                                <div class="option" onclick="SetScreenshotDisplayByIndex(2);">
+                                    <input type="radio" id="bus" name="sample" value="bus" onclick="SetInteractiveScreenshot('assistant-{0}-screen.png');">
+                                    <label for="bus"><span>Assistant</span></label>
+                                </div>
+                        
+                                <div class="option" onclick="SetScreenshotDisplayByIndex(3);">
+                                    <input type="radio" id="train" name="sample" value="train" onclick="SetInteractiveScreenshot('search-{0}-screen.png');">
+                                    <label for="train"><span>Search</span></label>
+                                </div>
+                            </div>
+                            <div id="app-screenshot">
+                                <div id="home-screen" class="app-screenshot app-screenshot-base" style="display: block; visibility: visible;"></div>
+                                <div id="explore-screen" class="app-screenshot app-screenshot-explore"></div>
+                                <div id="assistant-screen" class="app-screenshot app-screenshot-assistant"></div>
+                                <div id="search-screen" class="app-screenshot app-screenshot-search"></div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -169,7 +203,8 @@
                             </div>
                         </div>
                         <div class="fluent-card">
-                            <img class="card-icon" height="46px" width="46px" src="assets/Assistant.png" style="position: relative; top: 6px; padding-bottom: 18px;" />
+                            <img class="card-icon" height="46px" width="46px" src="assets/Assistant.png" />
+                            <br />
                             <h3>Assistant is always nearby</h3>
                             <p>
                                 With the Assistant, you can get complex answers based on artificial intelligence, search for the information you need, generate text, images, source code, and much more. The assistant can help you with various tasks such as writing essays, poems, songs, celebrity parodies, creating graphic works, programming, improving and optimizing your content and much more.

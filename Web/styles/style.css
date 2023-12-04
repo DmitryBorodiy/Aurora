@@ -134,8 +134,20 @@ body{
         color: rgb(50, 50, 50);
     }
 
-    #app-screenshot{
+    .app-screenshot-base{
         background-image: url(../assets/app-main-view-light.png);
+    }
+
+    .app-screenshot-explore{
+        background-image: url(../assets/explore-light-screen.png);
+    }
+
+    .app-screenshot-assistant{
+        background-image: url(../assets/assistant-light-screen.png);
+    }
+
+    .app-screenshot-search{
+        background-image: url(../assets/search-light-screen.png);
     }
 
     .fluent-card{
@@ -213,8 +225,20 @@ body{
         color: #909898;
     }
 
-    #app-screenshot{
+    .app-screenshot-base{
         background-image: url(../assets/app-main-view-dark.png);
+    }
+
+    .app-screenshot-explore{
+        background-image: url(../assets/explore-dark-screen.png);
+    }
+
+    .app-screenshot-assistant{
+        background-image: url(../assets/assistant-dark-screen.png);
+    }
+
+    .app-screenshot-search{
+        background-image: url(../assets/search-dark-screen.png);
     }
 
     .vertical-sep{
@@ -485,9 +509,11 @@ h2{
     height: 40px;
 }
 
-#app-screenshot{
+.app-screenshot{
+    visibility: collapse;
+    display: none;
     position: relative;
-    top: 70px;
+    top: 160px;
     width: 100%;
     height: 680px;
     background-position: center top;
@@ -508,7 +534,8 @@ h2{
 #features{
     padding-left: 56px;
     padding-right: 56px;
-    margin-top: 12px;
+    position: relative;
+    top: 32px;
 }
 
 #features-box{
@@ -724,7 +751,7 @@ fluent-option{
     flex-grow: 1;
     flex-basis: 130px;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 36px;
     position: relative;
     top: 76px;
 }
@@ -964,7 +991,7 @@ footer{
     flex-grow: 1;
     flex-wrap: wrap;
     gap: 72px;
-    width: 100%;
+    padding-right: 120px;
     z-index: 11111111111;
 }
 
@@ -1127,4 +1154,12 @@ footer{
 #customize-home-action{
     position: relative;
     top: 32px;
+}
+
+#segmented-ui{
+    position: relative;
+    top: 170px;
+    display: inline-grid;
+    transform: scale(0.8);
+    right: 12px;
 }

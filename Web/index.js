@@ -110,6 +110,8 @@ function ApplyTheme(){
 
             windowTheme = "Light";
         }
+
+        window.localStorage.setItem("theme", windowTheme);
     }
     catch(e){
         console.log(e);
