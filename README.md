@@ -54,5 +54,5 @@ Aurora is the ultimate app for exploring the web and discovering new things. Whe
     <img height="320px" alt="Main app view" src="Web\assets\github\app-main-view-light.png">
 </picture><br />
 <br />
-<br />
-<img height="320px" src="Web\assets\github\screen0.png" /><br />
+<img height="320px" src="Web\assets\search-dark-screen.png" /><br />
+<img height="320px" src="Web\assets\assistant-dark-screen.png" /><br />
