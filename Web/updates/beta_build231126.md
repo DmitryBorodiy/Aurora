@@ -19,6 +19,7 @@ In this update, the ChatGPT module for the AI assistant has been fixed, addressi
 
 ## Sync settings page was updated
 
+<<<<<<< HEAD:Web/updates/beta_build 231126.md
 • Discover a more intuitive and personalized synchronization experience with our revamped Sync Settings page. Now featuring an enhanced design, effortless customization, and real-time status updates, managing your synchronization preferences has never been easier. 
 
 ## Bug fixes
@@ -30,3 +31,6 @@ In this update, the ChatGPT module for the AI assistant has been fixed, addressi
 • The bugs related to the OpenAI GPT module for the assistant have been successfully identified and resolved in this update.
 
 • The bug affecting the daily weather display has been successfully identified and fixed in this update.
+=======
+## Bug fixes
+>>>>>>> d0251b7a45220efae69a5f2db3ac34e0d5be0cb7:Web/updates/beta_build231126.md
