@@ -9,6 +9,7 @@ var searchBar;
 var searchCommand;
 var SearchUI;
 var ThemeView;
+var progressView;
 
 var IsMenuOpen = false;
 
@@ -23,6 +24,7 @@ function Page_OnLoaded() {
     searchBar = document.getElementById("mobile-search-bar");
     searchCommand = document.getElementById("mobile-search-command");
     ThemeView = document.getElementById("theme-view-box");
+    progressView = document.getElementById("progress-view-ui");
 
     getProductButton.addEventListener("click", GetProduct);
     feedbackCommand.addEventListener("click", SendReview);
@@ -57,7 +59,44 @@ function getWindowHeight() {
 }
 
 function NavigateFrame(page){
-    document.getElementById("frame").src = page.toString();
+    try {
+        document.getElementById("frame").src = page.toString();
+        SetProgressViewVisible(true);
+
+        var buttons = document.querySelectorAll('#navigation-menu button');
+
+        buttons.forEach(function (button) {
+            button.classList.remove('fluent-hyperlink-selected');
+            button.classList.add('fluent-hyperlink');
+        });
+
+        var clickedButton = event.currentTarget;
+        clickedButton.classList.add('fluent-hyperlink-selected');
+        clickedButton.classList.remove('fluent-hyperlink');
+    }
+    catch(e){
+        console.log(e);
+    }
+}
+
+function SetProgressViewVisible(isVisible){
+    try{
+        if(isVisible == true){
+            if(progressView != null){
+                progressView.style.visibility = "visible";
+                debugger;
+            }
+        }
+        else{
+            if(progressView != null){
+                progressView.style.visibility = "collapse";
+                debugger;
+            }
+        }
+    }
+    catch(e){
+        console.log(e);
+    }
 }
 
 function GetProduct(){

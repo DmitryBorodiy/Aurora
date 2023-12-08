@@ -16,8 +16,6 @@
 
         <!-- Fluent UI for web  -->
         <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
-        <!-- Fast UI framework -->
-        <script type="module" src="https://cdn.jsdelivr.net/npm/@microsoft/fast-components/dist/fast-components.min.js"></script>
         <!-- jQuery -->
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
 
@@ -52,7 +50,7 @@
                             <i class="icon self-icon icon-ic_fluent_news_20_regular"></i>
                             <p class="text-label">News</p>
                         </button>
-                        <button onclick="NavigateFrame('views/premium.html')" class="fluent-hyperlink" style="margin-left: 6px;">
+                        <button onclick="NavigateFrame('views/premium.v2.html')" class="fluent-hyperlink" style="margin-left: 6px;">
                             <i class="icon self-icon icon-ic_fluent_premium_20_regular"></i>
                             <p class="text-label">Premium</p>
                         </button>
@@ -144,6 +142,12 @@
                     </span>
                 </div>
                 <div id="menu-backdrop" onclick="SetMenuOpened(false);"></div>
+            </div>
+            <div id="progress-view-ui">
+                <span id="progress-view-context">
+                    <fluent-progress-ring class="pg-ring"></fluent-progress-ring>
+                    <label><b>Just moment</b></label>
+                </span>
             </div>
         </fluent-design-system-provider>
     </body>

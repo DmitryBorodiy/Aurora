@@ -42,10 +42,6 @@
                     console.log(e);
                 }
             }
-
-            function SetInteractiveScreenshot(path) { 
-                // TODO : Change flip view selected item.
-            }
         </script>
     </head>
     <body id="rootBody" onresize="HomePage_OnResize();" onload="HomePage_OnLoaded();">
@@ -74,7 +70,7 @@
                                 <fluent-button id="hero-get-product" style="position: relative; left: 10px;" onclick="window.open('https://github.com/DmitryBorodiy/Aurora');">
                                     <span class="button-content">
                                         <img width="20px" height="20px" src="https://img.icons8.com/fluency/48/github.png" alt="github"/>
-                                        <p style="padding: 12px;">See on GitHub</p>
+                                        <p style="padding: 12px;">Star on GitHub</p>
                                     </span>
                                 </fluent-button>
                             </div>
@@ -316,7 +312,7 @@
                     <p id="ai-features-description" class="placeholder">
                         Assistant is a smart, friendly and helpful voice assistant that helps you in your daily life. You can communicate with the assistant by voice or text using natural language. The assistant can help you with a variety of tasks, such as finding information, managing your calendar, reminders, entertainment, and more. The assistant can also provide you with personalized recommendations and advice, tailored to your preferences and interests.
                     </p>
-                    <fluent-button id="open-assistant-action" appearance="accent" onclick="window.open('aurora:assistant');">Ask Assistant</fluent-button>
+                    <fluent-button id="open-assistant-action" appearance="accent" onclick="window.open('aurora:assistant');" style="height: 38px; width: 146px;">Ask Assistant</fluent-button>
                     <br />
                     <div id="what-can-ai">
                         <div class="fluent-card" style="flex-basis: 200px;">

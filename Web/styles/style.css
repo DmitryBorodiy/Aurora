@@ -176,6 +176,10 @@ body{
         border: 0.6px solid rgba(30, 30, 30, 20%);
     }
 
+    #progress-view-ui{
+        background-color: rgba(255, 255, 255, 42%);
+    }
+
     footer{
         border: 0.1px solid rgba(42, 42, 42, 12%);
         background-color: rgb(230, 230, 230);
@@ -333,6 +337,10 @@ body{
     .app-logo{
         background-color: rgb(42, 42, 42);
         border: 0.6px solid rgba(255, 255, 255, 12%);
+    }
+
+    #progress-view-ui{
+        background-color: rgba(0, 0, 0, 50%);
     }
 
     footer{
@@ -1112,29 +1120,13 @@ footer{
 }
 
 #markdown-container{
-    position: absolute;
-    width: 100%;
     height: auto;
     padding: 42px;
+    padding-top: 80px;
 }
 
 #subscription-benefits-box{
     padding: 0px;
-}
-
-.card-title{
-    line-height: 12px;
-    font-size: 28px;
-    position: relative;
-    bottom: 12px;
-}
-
-.card-subtitle{
-    font-size: 18px;
-    margin-top: 6px;
-    position: relative;
-    bottom: 14px;
-    font-weight: 600;
 }
 
 .gradient{
@@ -1162,4 +1154,32 @@ footer{
     display: inline-grid;
     transform: scale(0.8);
     right: 12px;
+}
+
+#progress-view-ui{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    backdrop-filter: blur(200px);
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+#progress-view-context{
+    position: relative;
+    transform: scale(1.3);
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pg-ring{
+    display: inline-block;
+    position: relative;
+    right: 1px;
 }

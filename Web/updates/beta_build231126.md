@@ -1,4 +1,4 @@
-![Image](assets/beta_build231126.png)
+![Image](https://dmitryborodiy.github.io/Aurora/Web/updates/assets/beta_build231126.png)
 
 # Rollout of patches and fixes 🔧⚙️
 *beta_build 231126 (**Cumulative update**)*

@@ -20,6 +20,7 @@ var menuBackdrop;
 var rootFrame;
 var headerUI;
 var headerActions;
+var progressView;
 
 var windowTheme = "Light";
 
@@ -29,9 +30,11 @@ window.onload = (event) => {
 
         rootFrame.addEventListener('load', function() {
             HandleScrollingAttach();
+            SetProgressViewVisible(false);
         });
     }
 
+    progressView = document.getElementById("progress-view-ui");
     navigationBar = document.getElementById("navigation-menu");
     branding = document.getElementById("branding-div");
     appScreenshot = document.getElementById("app-screenshot");
@@ -43,6 +46,7 @@ window.onload = (event) => {
 
     HandleScrollingAttach();
     ApplyTheme();
+    SetProgressViewVisible(false);
 
     window.addEventListener("resize", Page_OnResize);
 
@@ -81,6 +85,24 @@ function HandleScrollingAttach(){
                         }
                     }
                 });
+            }
+        }
+    }
+    catch(e){
+        console.log(e);
+    }
+}
+
+function SetProgressViewVisible(isVisible){
+    try{
+        if(isVisible == true){
+            if(progressView != null){
+                progressView.style.visibility = "visible";
+            }
+        }
+        else{
+            if(progressView != null){
+                progressView.style.visibility = "collapse";
             }
         }
     }

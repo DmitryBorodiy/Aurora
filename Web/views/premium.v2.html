@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Aurora - premium subscription</title>
+
+        <link rel="stylesheet" href="../styles/premium.css" />
+        <link rel="stylesheet" href="../styles/animation.css" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../fonts/FluentSystemIcons-Regular.css" />
+
+        <!-- Fluent UI for web  -->
+        <script type="module" src="https://unpkg.com/@fluentui/web-components"></script>
+        <!-- jQuery -->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+
+        <script src="premium.js"></script>
+        <script type="module" src="../index.js"></script>
+    </head>
+    <body id="rootLayout">
+        <fluent-design-system-provider id="fluent-design-provider">
+            <div id="fluentContext">
+                <section id="premium-hero-container">
+                    <div id="hero-content">
+                        <span id="premium-branding">
+                            <svg class="premium-jewel-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 70 70" fill="none">
+                                <g filter="url(#filter0_f_1031_2000)">
+                                  <path d="M22.0005 17.9536L21.9248 30.8889C21.9213 31.487 22.5636 31.8671 23.0861 31.5761L39.4488 22.4633C39.9802 22.1673 40.6311 22.5654 40.6097 23.1732L39.8716 44.1925" stroke="url(#paint0_linear_1031_2000)" stroke-width="3.90625" stroke-linecap="round"/>
+                                </g>
+                                <g filter="url(#filter1_b_1031_2000)">
+                                  <path d="M9.27062 28.8779L17.284 12.8511C17.4164 12.5864 17.6869 12.4192 17.9828 12.4192H52.5816C52.8776 12.4192 53.1481 12.5864 53.2804 12.8511L61.2911 28.8724C61.4362 29.1627 61.3868 29.5125 61.1668 29.7512L35.5807 57.5149C35.269 57.8531 34.7341 57.8502 34.426 57.5087L9.38926 29.7505C9.17392 29.5118 9.12683 29.1655 9.27062 28.8779Z" fill="url(#paint1_linear_1031_2000)" fill-opacity="0.72"/>
+                                </g>
+                                <g filter="url(#filter2_f_1031_2000)">
+                                  <path d="M9.59668 29.3547L34.9999 57.5805M9.59668 29.3547L17.4578 12.5094C17.4835 12.4544 17.5387 12.4192 17.5994 12.4192H28.2257M9.59668 29.3547H22.016M60.9676 29.3547L34.9999 57.5805M60.9676 29.3547L53.1065 12.5094C53.0808 12.4544 53.0256 12.4192 52.9649 12.4192H41.7741M60.9676 29.3547H48.266M34.9999 57.5805L22.016 29.3547M34.9999 57.5805L48.266 29.3547M22.016 29.3547H34.9999M22.016 29.3547L28.2257 12.4192M34.9999 29.3547H35.5644H48.266M34.9999 29.3547H48.266M48.266 29.3547L41.7741 12.4192M41.7741 12.4192H28.2257" stroke="url(#paint2_linear_1031_2000)" stroke-opacity="0.9" stroke-width="0.9375" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                  <filter id="filter0_f_1031_2000" x="9.97168" y="6.00049" width="42.5918" height="50.145" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_1031_2000"/>
+                                  </filter>
+                                  <filter id="filter1_b_1031_2000" x="8.40698" y="11.6379" width="53.7478" height="46.9099" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feGaussianBlur in="BackgroundImageFix" stdDeviation="0.390625"/>
+                                    <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1031_2000"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1031_2000" result="shape"/>
+                                  </filter>
+                                  <filter id="filter2_f_1031_2000" x="8.88452" y="11.7942" width="52.7969" height="46.6389" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feGaussianBlur stdDeviation="0.078125" result="effect1_foregroundBlur_1031_2000"/>
+                                  </filter>
+                                  <linearGradient id="paint0_linear_1031_2000" x1="21.286" y1="-15.8563" x2="59.6762" y2="58.7492" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#000900"/>
+                                    <stop offset="0.981524" stop-color="#00B3FF"/>
+                                  </linearGradient>
+                                  <linearGradient id="paint1_linear_1031_2000" x1="59.2742" y1="12.4192" x2="11.8548" y2="50.2418" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#48FF50"/>
+                                    <stop offset="0.835044" stop-color="#86CCFF"/>
+                                  </linearGradient>
+                                  <linearGradient id="paint2_linear_1031_2000" x1="67.7418" y1="8.46757" x2="-9.03236" y2="62.0966" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.203127" stop-color="#F7FCFF"/>
+                                    <stop offset="1" stop-color="#AFFFBC"/>
+                                  </linearGradient>
+                                </defs>
+                            </svg>
+                            <p class="premium-branding-label">
+                                Premium
+                            </p>
+                        </span>
+                        <h1 class="hero-title">
+                            Achieve more because <b class="gradiented-text">you</b> can!
+                        </h1>
+                        <p class="hero-subtitle">
+                            Elevate your experience – become a premium user and bid farewell to disruptive ads hindering your enjoyment of the app. Unlock the full spectrum of AI web search and assistance capabilities, designed to assist you effortlessly in every task and situation. Access powerful AI search tools without constraints, and enjoy personalized search results and content tailored exclusively for you. Upgrade to premium and revolutionize your web searching experience today!
+                        </p>
+                        <br />
+                        <a href="#tariff-plans"><button id="subscribe-button">Subscribe now</button></a>
+                        <br />
+                        <a id="bottom-scroller-a" class="hyperlink" href="#features">
+                            <span id="bottom-scroller">
+                                <p>See benefits</p>
+                                <i class="icon icon-ic_fluent_arrow_circle_down_20_regular" style="font-size: 32px; position: relative; bottom: 8px;"></i>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+                <section id="features">
+                  <div id="features-content" class="reveal">
+                    <h2 id="features-content-title">
+                      Best features for users with <br /> premium subscription
+                    </h2>
+                    <br />
+                    <div id="features-flex" class="flex-layout">
+                      <div class="flex-card">
+                        <i class="icon icon-ic_fluent_stack_star_20_regular card-icon"></i>
+                        <h3 class="card-title">Forget about ads</h3>
+                        <p class="card-subtitle">
+                          Enjoy a full-fledged application without annoying ads that distract you from important matters and pleasures. Immerse yourself in the world of an AI-powered assistant that offers you many features and capabilities. Discover new horizons with artificial intelligence that works only for you.
+                        </p>
+                      </div>
+                      <div class="flex-card">
+                        <i class="card-icon icon icon-ic_fluent_text_grammar_wand_16_regular" style="font-size: 62px;"></i>
+                        <h3 class="card-title">Unlock full power of AI</h3>
+                        <p class="card-subtitle">
+                          Access the full potential of artificial intelligence. Use all the features of an AI assistant that can help you in any area of your life. Create unique content, communicate in different languages, find the information you need, and much more. Discover a new level of possibilities with the AI-powered assistant.
+                        </p>
+                      </div>
+                      <div class="flex-card">
+                        <i class="card-icon icon icon-ic_fluent_chat_12_regular" style="font-size: 62px;"></i>
+                        <h3 class="card-title">AI-Driven Insights</h3>
+                        <p class="card-subtitle">
+                          Unlock the boundless potential of your searches with the seamless integration of advanced AI answers directly into your web search results, mirroring the capabilities of renowned platforms. Immerse yourself in deeper insights, allowing you to precisely discover the information you're seeking with unparalleled accuracy and efficiency.
+                        </p>
+                      </div>
+                      <div class="flex-card">
+                        <i class="card-icon icon card-icon icon-ic_fluent_bookmark_multiple_16_regular" style="font-size: 62px;"></i>
+                        <h3 class="card-title">Don't miss important things</h3>
+                        <p class="card-subtitle">
+                          Your digital treasure chest for the things that truly matter. Pin search results, AI assistant answers, and everything you find valuable. Don't miss out on a single piece of essential information. <br /> <br /> <br />
+                        </p>
+                      </div>
+                      <div class="flex-card">
+                        <i class="card-icon icon icon-ic_fluent_trophy_16_regular" style="font-size: 62px;"></i>
+                        <h3 class="card-title">Everything Valuable</h3>
+                        <p class="card-subtitle">
+                          From noteworthy articles to essential findings, pin anything and everything you find valuable. Your digital treasure chest for the things that truly matter. Don't miss out on a single piece of essential information. Subscribe to Premium and turn your searches into a seamlessly organized digital journey!
+                        </p>
+                      </div>
+                      <div class="flex-card">
+                        <i class="card-icon icon card-icon icon-ic_fluent_wallpaper_24_regular" style="font-size: 62px;"></i>
+                        <h3 class="card-title">Live Wallpapers for Dynamic Displays</h3>
+                        <p class="card-subtitle">
+                          Ditch the static backgrounds! Immerse yourself in the captivating world of live wallpapers that dynamically shift and respond to your device's movements. Elevate your screen with mesmerizing visual experiences. <br /> <br /> <br />
+                        </p>
+                      </div>
+                      <div class="flex-card">
+                        <i class="card-icon icon card-icon icon-ic_fluent_eye_tracking_16_regular" style="font-size: 62px;"></i>
+                        <h3 class="card-title">AI vision features</h3>
+                        <p class="card-subtitle">
+                          Our AI Vision features redefine the way you interact with the visual world. Whether you're a traveler, a photography enthusiast, or someone looking to enhance daily life, AI Vision adds a layer of intelligence and insight that enriches your experiences. <br /> <br /> <br /> <br />
+                        </p>
+                        <span class="fluent-badge-accent" style="bottom: 2px; position: relative; width: 87px;">
+                          <a class="label">Coming soon</a>
+                        </span>
+                      </div>
+                      <div class="flex-card">
+                        <i class="card-icon icon card-icon icon-ic_fluent_developer_board_search_24_regular" style="font-size: 62px;"></i>
+                        <h3 class="card-title">Development and coding</h3>
+                        <p class="card-subtitle">
+                          With AI, development becomes faster, more efficient, and less error-prone. Our AI-powered services integrate seamlessly with industry-standard tools like GitHub and Stack Overflow, ensuring that you have everything you need to succeed as a developer. Join the revolution in development. Embrace AI for issue resolution, coding efficiency, and project management. Welcome to the future of coding.                        </p>
+                        <span class="fluent-badge-accent" style="bottom: 2px; position: relative; width: 87px;">
+                          <a class="label">Coming soon</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section id="tariff-plans" class="reveal">
+                  <div id="tariff-plans-context">
+                    <img height="60" width="60" src="../assets/green-sparkles-icon.png" /><br />
+                    <h2 style="padding-top: 4px;">Explore the ultimate: exceptional value, exclusive perks – your best aurora subscription experience!</h2>
+                    <p>
+                      Welcome to the subscription program, where you'll enjoy a world of exclusive perks and advantages. We believe in making your experience with us not just good, but exceptional. Here's what you can look forward to as a benefit:
+                    </p>
+                    <div id="tariff-plans-flex" class="flex-layout">
+                      <div class="flex-card tariff-card">
+                        <h3 class="card-title" style="padding: 0px; margin: 0px;">Monthly</h3>
+                        <h1 class="gradiented-text price-label" style="padding: 0px; padding-top: 2px; margin: 0px; background: -webkit-linear-gradient(89deg, rgba(0,112,196,1) 0%, rgba(60,226,89,1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">0.99$</h1>
+                        <p class="card-subtitle">
+                          Enjoy premium privileges all year round for an uninterrupted premium experience.
+                        </p>
+                        <ul class="tariff-features-list">
+                          <li class="tariff-feature-item">All features of premium</li>
+                          <br />
+                        </ul><br />
+                        <fluent-button class="subscribe-button" appearance="accent">Subscribe</fluent-button>
+                      </div>
+                      <div class="flex-card tariff-card">
+                        <h3 class="card-title" style="padding: 0px; margin: 0px;">3 months</h3>
+                        <h1 class="gradiented-text price-label" style="padding: 0px; padding-top: 2px; margin: 0px; background: -webkit-linear-gradient(89deg, rgba(0,112,196,1) 0%, rgba(60,226,89,1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">1.99$</h1>
+                        <p class="card-subtitle">
+                          Unlock premium perks every three months for those looking to experience the best.
+                        </p>
+                        <ul class="tariff-features-list">
+                          <li class="tariff-feature-item">All features of premium</li><br />
+                        </ul><br />
+                        <fluent-button class="subscribe-button" appearance="accent">Subscribe</fluent-button>
+                      </div>
+                      <div class="flex-card tariff-card">
+                        <h3 class="card-title" style="padding: 0px; margin: 0px;">Half a year</h3>
+                        <h1 class="gradiented-text price-label" style="padding: 0px; padding-top: 2px; margin: 0px; background: -webkit-linear-gradient(89deg, rgba(0,112,196,1) 0%, rgba(60,226,89,1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">2.99$</h1>
+                        <p class="card-subtitle">
+                          Indulge in premium perks every six months for a lasting premium experience.
+                        </p>
+                        <ul class="tariff-features-list">
+                          <li class="tariff-feature-item">All features of premium</li>
+                          <br />
+                        </ul><br />
+                        <fluent-button class="subscribe-button" appearance="accent">Subscribe</fluent-button>
+                      </div>
+                      <div class="flex-card tariff-card">
+                        <h3 class="card-title" style="padding: 0px; margin: 0px;">One year</h3>
+                        <h1 class="gradiented-text price-label" style="padding: 0px; padding-top: 2px; margin: 0px; background: -webkit-linear-gradient(89deg, rgba(0,112,196,1) 0%, rgba(60,226,89,1) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">3.99$</h1>
+                        <p class="card-subtitle">
+                          Enjoy premium privileges all year round for an uninterrupted premium experience.
+                        </p>
+                        <ul class="tariff-features-list">
+                          <li class="tariff-feature-item">All features of premium</li>
+                          <li class="tariff-feature-item">Best benefit</li>
+                        </ul><br />
+                        <fluent-button class="subscribe-button" appearance="accent">Subscribe</fluent-button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <br />
+                <footer>
+                    <div class="footer-column">
+                        <span class="branding-span">
+                            <img class="branding-logo" alt="logo" height="41px" width="42px" src="../assets/Search.png" />
+                            <a class="branding-title">Aurora</a>
+                        </span>
+                        <div class="table-grid" style="position: relative; top: 18px; left: -4px;">
+                            <button class="icon-button" style="display: inline-block; position: relative;">
+                                <img height="20px" width="20px" alt="GitHub" src="https://img.icons8.com/fluency/48/github.png" />
+                            </button>
+                            <button class="icon-button" style="display: inline-block; position: relative;">
+                                <img height="24px" width="24px" alt="Twitter" src="https://img.icons8.com/fluency/48/twitterx--v1.png" />
+                            </button>
+                        </div>
+                        <br />
+                        <a class="placeholder subtitle" style="position: relative; top: 32px;">Copyright © 2023</a>
+                    </div>
+                    <div class="footer-column">
+                        <p class="placeholder subtitle">Pages</p>
+                        <div class="links-list">
+                            <span class="link-list-item">
+                                <a href="#hero-container" class="fluent-hyperlink-control">Home</a>
+                            </span>
+                            <span class="link-list-item">
+                                <a href="news.html" class="fluent-hyperlink-control">News</a>
+                            </span>
+                            <span class="link-list-item">
+                                <a href="views/premium.html" class="fluent-hyperlink-control">Premium</a>
+                            </span>
+                            <span class="link-list-item">
+                                <a href="https://www.microsoft.com/store/apps/9MXZLDLCTFWL" class="fluent-hyperlink-control">Get Aurora</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <p class="placeholder subtitle">Docs</p>
+                        <div class="links-list">
+                            <span class="link-list-item">
+                                <a href="privacy/index.html" class="fluent-hyperlink-control">Privacy Policy</a>
+                            </span>
+                            <span class="link-list-item">
+                                <a href="mailto:dima.borodiy@outlook.com" class="fluent-hyperlink-control">Contact developer</a>
+                            </span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </fluent-design-system-provider>
+    </body>
+</html>
