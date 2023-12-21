@@ -1183,3 +1183,7 @@ footer{
     position: relative;
     right: 1px;
 }
+
+.ai-section-card{
+    flex-basis: 360px;
+}
