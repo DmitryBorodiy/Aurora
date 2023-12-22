@@ -8,6 +8,12 @@ The culmination of 2023, Build 231224, marks the final release for the year. Thi
 
 
 
+## Some improvements on news & explore view page
+
+• Switching between sections and content now uses a modern Segmented control that fits perfectly with the overall Fluent design system.
+
+• Work has been carried out in the area of optimizing content loading, switching between sections and content, and correcting errors.
+
 ## New OOBE search setup page
 
 ## Search privacy settings
@@ -27,3 +33,5 @@ The culmination of 2023, Build 231224, marks the final release for the year. Thi
 ## Bug fixes
 
 • The informational cards within the search feed have undergone a design enhancement in the latest update. Users can now enjoy an improved visual experience, thanks to the refined design elements. Additionally, any existing bugs related to the display of information on these cards have been diligently addressed and fixed. This update aims to provide a more polished and seamless user interface in the search feed.
+
+• The bugs on the news & explore page have been fixed.

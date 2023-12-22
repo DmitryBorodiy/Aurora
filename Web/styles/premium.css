@@ -301,6 +301,11 @@ h2{
     list-style-type: circle;
 }
 
+.premium-jewel-svg{
+    position: relative;
+    margin-right: 6px;
+}
+
 @keyframes transition-premium-branding {
     0%{
         opacity: 0;
