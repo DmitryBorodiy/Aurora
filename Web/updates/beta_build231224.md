@@ -44,6 +44,8 @@ The culmination of 2023, Build 231224, marks the final release for the year. Thi
 
 • A quick access button support for Stack Overflow has been added to the informational card.
 
+• The Search UI design has been elevated to new heights, embracing the latest Fluent Design guidelines for a polished and modernized user experience.
+
 ## Bug fixes
 
 • The informational cards within the search feed have undergone a design enhancement in the latest update. Users can now enjoy an improved visual experience, thanks to the refined design elements. Additionally, any existing bugs related to the display of information on these cards have been diligently addressed and fixed. This update aims to provide a more polished and seamless user interface in the search feed.
