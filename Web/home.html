@@ -17,12 +17,14 @@
         <link rel="stylesheet" href="styles/carousel.css" />
         <link rel="stylesheet" href="styles/segmented.css" />
         <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
         <!-- JS -->
         <script type="module" src="index.js"></script>
         <script src="main.js" defer></script>
         <script src="home.js"></script>
         <script src="modules/segmented.js"></script>
+        <script src="scripts/carousel.js" defer></script>
 
         <script defer>
             function SetThemeImage(image){
@@ -97,7 +99,7 @@
                                     <label for="train"><span>Search</span></label>
                                 </div>
                             </div>
-                            <div id="app-screenshot">
+                            <div id="app-screenshot" class="reveal active">
                                 <div id="home-screen" class="app-screenshot app-screenshot-base" style="display: block; visibility: visible;"></div>
                                 <div id="explore-screen" class="app-screenshot app-screenshot-explore"></div>
                                 <div id="assistant-screen" class="app-screenshot app-screenshot-assistant"></div>
@@ -106,13 +108,14 @@
                         </div>
                     </div>
                 </section>
-                <section id="features">
-                    <span class="fluent-badge">
+                <section id="features" class="reveal active">
+                    <img height="58px" width="58px" src="assets/green-sparkles-icon.png" /><br />
+                    <span class="fluent-badge" style="margin-top: 26px; display: inline-block;">
                         <a class="label">Features and productivity</a>
                     </span>
                     <h2 id="features-section-title">Best features for you</h2>
                     <p id="features-section-description" class="placeholder">
-                        We have prepared the best functions for you to <br />
+                        We have prepared the best functions for you to
                         make surfing the Internet even more convenient and enjoyable, and to make searching <br />
                         for the necessary information and interacting with AI as transparent and confidential as possible. <br />
                     </p>
@@ -256,35 +259,48 @@
                     </div>
                 </section>
                 <br />
-                <hr class="section-separator" style="margin-top: 80px;" />
+                <hr class="section-separator reveal active" style="margin-top: 80px;" />
                 <br />
-                <section class="flex-section" id="looks-beautiful" style="gap: 80px;">
-                    <div class="section-column">
-                        <span class="fluent-badge">
-                            <a class="label">Personalization</a>
-                        </span>
-                        <h2>Comfort at home is the main thing</h2>
-                        <p class="placeholder">
-                            Customize your home page to suit your preferences and needs. You can pin your favorite apps and websites to access them easily. You can also change your home page wallpaper to match your mood and style. And if you want to enjoy some live beautiful views, you can choose from our collection of stunning wallpapers that update in real time. Make your home page more comfortable and enjoyable with Aurora home page.
-                        </p>
-                        <div id="theme-picker">
-                            <button id="theme-0" class="theme-item" style="background-image: url('https://images.pexels.com/photos/2441454/pexels-photo-2441454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');" onclick="SetThemeImage('assets/search-design-card4.png');"></button>
-                            <button id="theme-1" class="theme-item" style="background-image: url('https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');" onclick="SetThemeImage('assets/search-design-card1.png');"></button>
-                            <button id="theme-2" class="theme-item" style="background-image: url('https://www.bing.com/th?id=OHR.WhitsundaySwirl_EN-US2946291997_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp');" onclick="SetThemeImage('assets/search-design-card2.png');"></button>
-                            <button id="theme-3" class="theme-item" style="background-image: url('https://get.wallhere.com/photo/Halo-Halo-Infinite-Master-Chief-science-fiction-military-soldier-Xbox-Xbox-One-video-games-1403207.jpg'); background-position-x: -200px;" onclick="SetThemeImage('assets/search-design-card3.png');"></button>
-                            <button id="theme-4" class="theme-item" style="background-image: url('https://images.hdqwalls.com/wallpapers/aurora-background-0i.jpg');" onclick="SetThemeImage('assets/search-design-card0.png');"></button>
+                <section id="looks-beautiful" class="reveal active">
+                    <div id="personalization-view-box">
+                        <div id="personalization-view-box-context">
+                            <span class="fluent-badge" style="top: 10px;position: relative; padding: 9px;">
+                                <a class="label">#Personalization</a>
+                            </span>
+                            <button id="personalization-box-share-command" class="icon-button">
+                                <i class="icon self-icon icon-ic_fluent_share_20_regular"></i>
+                            </button>
+                            <br />
+                            <div id="personalization-view-text">
+                                <h2>Love at first sight</h2>
+                                <p class="subtitle" style="position: relative; display: contents; top: -8px; font-weight: normal; max-width: 700px">
+                                    A convenient and pleasant interface will immerse you in the best experience<br /> of interaction with search and Internet surfing. Meet a new look every day with daily wallpapers and enjoy the best video wallpapers.
+                                </p><br />
+                                <fluent-button appearance="accent" onclick="window.open('aurora:wallpaper-picker');" style="position: relative; top: 20px;">Explore wallpapers</fluent-button>
+                                <div id="wallpaper-picker" style="margin-top: 56px;">
+                                    <button class="wallpaper-picker-item" style="background-image: url('assets/bgr4.jpg');"></button>
+                                    <button class="wallpaper-picker-item" style="background-image: url('assets/bgr2.jpg');"></button>
+                                    <button class="wallpaper-picker-item" style="background-image: url('assets/bgr0.jpg');"></button>
+                                    <button class="wallpaper-picker-item" style="background-image: url('assets/bgr1.jpg');"></button>
+                                    <button class="wallpaper-picker-item" style="background-image: url('assets/bgr3.jpg');"></button>
+                                </div>
+                                <div class="carousel">
+                                    <ul class="carousel__list">
+                                      <li class="carousel__item bgr4_scr" data-pos="-2">1</li>
+                                      <li class="carousel__item bgr2_scr" data-pos="-1">2</li>
+                                      <li class="carousel__item bgr0_scr" data-pos="0">3</li>
+                                      <li class="carousel__item bgr1_scr" data-pos="1">4</li>
+                                      <li class="carousel__item bgr3_scr" data-pos="2">5</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <br />
-                        <fluent-button id="customize-home-action" appearance="accent" onclick="window.open('aurora:wallpaper-picker');">Customize your home</fluent-button>
-                    </div>
-                    <div class="section-column">
-                        <div id="theme-view-box"></div>
                     </div>
                 </section>
                 <br />
-                <hr class="section-separator" style="margin-top: 80px;" />
+                <hr class="section-separator reveal active" style="margin-top: 80px;" />
                 <br />
-                <section id="addons-section" class="flex-section" style="gap: 100px;">
+                <section id="addons-section" class="flex-section reveal active" style="gap: 100px;">
                     <div class="section-column">
                         <span class="fluent-badge-accent" style="background-color: #D9BA41; top: 10px; position: relative;;">
                             <a class="label">Indev</a>
@@ -300,9 +316,9 @@
                     </div>
                 </section>
                 <br />
-                <hr class="section-separator" style="margin-top: 80px;" />
+                <hr class="section-separator reveal active" style="margin-top: 80px;" />
                 <br />
-                <section id="ai-features" class="centerized-section">
+                <section id="ai-features" class="centerized-section reveal active">
                     <img alt="assistant-logo" height="60px" width="60px" src="assets/Assistant.png" /><br /><br />
                     <span class="fluent-badge" style="top: 10px; position: relative;">
                         <a class="label">Personal AI assistant</a>
@@ -525,11 +541,11 @@
                     </div>
                 </section>
                 <br />
-                <hr class="section-separator" />
+                <hr class="section-separator reveal active" />
                 <br />
-                <section id="premium-section">
+                <section id="premium-section" class="reveal active">
                     <div class="premium-card">
-                        <img alt="premium-icon" height="60px" width="60px" src="assets/icons8-jewel-96.png" /><br />
+                        <img alt="premium-icon" height="60px" width="60px" src="assets/icons8-magic-96.png" /><br />
                         <br />
                         <span class="fluent-badge" style="top: 10px; position: relative;">
                             <a class="label">Premium for you</a>
@@ -538,13 +554,13 @@
                         <p>
                             Become a premium user and forget about ads that prevent you from enjoying your AI assistant. Discover all the assistant's capabilities that will help you in any task and situation. Work with artificial intelligence without restrictions and receive unique content created especially for you.
                         </p>
-                        <fluent-button id="get-premium-button" appearance="accent" onclick="document.location.href = 'views/premium.html';">
+                        <fluent-button id="get-premium-button" appearance="accent" onclick="document.location.href = 'views/premium.v2.html';">
                             <p>Review benefits</p>
                         </fluent-button>
                     </div>
                 </section>
                 <br />
-                <footer>
+                <footer class="reveal active">
                     <div class="footer-column">
                         <span class="branding-span">
                             <img class="branding-logo" alt="logo" height="41px" width="42px" src="assets/Search.png" />

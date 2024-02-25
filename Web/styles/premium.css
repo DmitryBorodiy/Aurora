@@ -111,6 +111,7 @@ h2{
 
 #premium-hero-container{
     display: block;
+    background-size: cover;
     background-image: url('../assets/premium-hero-mesh.svg');
     background-repeat: no-repeat;
     background-position: center center;

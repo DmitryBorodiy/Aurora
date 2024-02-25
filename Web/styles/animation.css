@@ -147,3 +147,15 @@
     animation: menu-sidebar-hide 1.2s ease-out;
     animation-play-state: running;
 }
+
+.reveal{
+    position: relative;
+    opacity: 0;
+    transform: translateY(-60px);
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0px);
+}

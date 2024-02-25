@@ -15,9 +15,13 @@ function HomePage_OnResize(){
 
         if(pageWidth < 510){
             document.getElementById("features").style.top = "-24px";
+            document.getElementById("looks-beautiful").style.paddingLeft = "24px";
+            document.getElementById("looks-beautiful").style.paddingRight = "24px";
         }
         else{
             document.getElementById("features").style.top = "32px";
+            document.getElementById("looks-beautiful").style.paddingLeft = "56px";
+            document.getElementById("looks-beautiful").style.paddingRight = "56px";
         }
 
         if(pageWidth < 490){
@@ -59,3 +63,31 @@ function SetScreenshotDisplayByIndex(index){
         console.log(e);
     }
 }
+
+//#region themes-slider
+
+
+
+//#endregion
+
+//#region scrolling animation
+
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+}
+
+window.addEventListener("scroll", reveal);
+
+reveal();
+
+//#endregion
