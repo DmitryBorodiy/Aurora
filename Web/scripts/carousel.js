@@ -14,6 +14,19 @@ carouselList.addEventListener('click', function (event) {
   update(newActive);
 });
 
+function selectById(id){
+  try{
+    var item = carouselItems[id];
+
+    if(item != null){
+      update(item);
+    }
+  }
+  catch(e){
+    console.log(e);
+  }
+}
+
 const update = function(newActive) {
   const newActivePos = newActive.dataset.pos;
 

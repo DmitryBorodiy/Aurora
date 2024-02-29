@@ -218,7 +218,7 @@ body{
     }
 
     .bgr4_scr{
-        background-image: url('../assets/bgr0_scr_light.png');
+        background-image: url('../assets/bgr4_scr_light.png');
     }
 }
 
@@ -409,7 +409,7 @@ body{
     }
 
     .bgr4_scr{
-        background-image: url('../assets/bgr0_scr_dark.png');
+        background-image: url('../assets/bgr4_scr_dark.png');
     }
 }
 
