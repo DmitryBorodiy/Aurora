@@ -34,6 +34,8 @@ The culmination of 2023, Build 231224, marks the final release for the year. Thi
 
 Furthermore, we've implemented sophisticated security algorithms designed to detect and block potentially unsafe websites and services, bolstering overall security measures. This proactive approach ensures that users can browse with confidence, knowing that their online interactions are safeguarded against potential threats. Stay protected and enjoy peace of mind with our latest privacy enhancements.
 
+• Starting from this update, Aurora will be sending crash reports and other telemetry data to developers to enhance service quality. If you prefer not to participate in this program, you can disable telemetry and sending crash data in the privacy settings, although this is not recommended for optimal service improvement.
+
 ## New features in AI assistant and bug fixes
 
 • Starting now, the assistant will no longer interpret or vocalize links and code blocks using voice. 
