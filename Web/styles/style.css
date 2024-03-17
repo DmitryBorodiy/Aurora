@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --animate-duration: 800ms;
     --animate-delay: 0.9s;
@@ -98,6 +100,15 @@ body{
         color: #5f5f5f;
     }
 
+    .flex-card{
+        background-color: rgb(250, 250, 250);
+        border: 0.8px solid rgba(0, 0, 0, 0.11);
+    }
+
+    .flex-card:hover{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px -1px;
+    }
+
     .fluent-hyperlink-selected{
         display: inline-flex;
         align-items: center;
@@ -139,8 +150,9 @@ body{
     }
 
     .fluent-badge{
-        background-color: rgba(246, 246, 246, 0.8);
+        background-color: rgba(250, 250, 250, 0.6);
         color: rgb(45, 45, 45);
+        backdrop-filter: blur(60px);
     }
 
     #hero-description{
@@ -258,6 +270,16 @@ body{
         background: rgba(0, 0, 0, 0.8);
     }
 
+    
+    .flex-card{
+        background-color: rgb(32, 32, 32);
+        border: 0.8px solid rgba(200, 200, 200, 0.05);
+    }
+
+    .flex-card:hover{
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 6px -1px;
+    }
+
     .acrylic-effect{
         background-color: rgba(0, 0, 0, 50%);
     }
@@ -345,8 +367,10 @@ body{
     }
 
     .fluent-badge{
-        background-color: rgba(56, 56, 56, 0.9);
+        background-color: rgba(6, 6, 6, 0.6);
         color: rgb(226, 226, 226);
+        backdrop-filter: blur(260px);
+
     }
 
     #hero-description{
@@ -420,6 +444,10 @@ header{
     z-index: 1111111111;
 }
 
+h1{
+    font-family: 'SegoeVariable', sans-serif;
+}
+
 h2{
     font-size: 32px;
 }
@@ -447,6 +475,18 @@ h2{
     top: 20px;
     left: 156px;
     display: inline-flex;
+}
+
+.flex-card{
+    padding: 30px;
+    flex-basis: 350px;
+    border-radius: 8px;
+    flex-grow: 4;
+    text-align: left;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px;
 }
 
 .fluent-hyperlink{
@@ -525,6 +565,7 @@ h2{
 #hero-container{
     width: 100%;
     padding-bottom: 260px;
+    margin-top: 0;
 }
 
 #hero-container-content{
@@ -537,7 +578,7 @@ h2{
     width: 100%;
     text-align: center;
     position: relative;
-    top: 180px;
+    top: 256px;
 }
 
 .highlighted-text{
@@ -563,16 +604,17 @@ h2{
     display: inline-block;
     font-weight: medium;
     position: relative;
-    font-size: 15px;
-    top: 8px;
+    font-size: 18px;
+    top: 26px;
 }
 
 #hero-actions{
     display: table;
     position: relative;
-    top: 18px;
+    top: 66px;
     width: 100%;
     text-align: center;
+    transform: scale(1.1);
 }
 
 #hero-get-product{
@@ -1224,6 +1266,7 @@ footer{
 #segmented-ui{
     position: relative;
     top: 170px;
+    margin-top: 146px;
     display: inline-grid;
     transform: scale(0.8);
     right: 12px;
@@ -1269,6 +1312,7 @@ footer{
     border-radius: 16px;
     backdrop-filter: blur(220px);
     text-align: center;
+    z-index: 1;
 }
 
 #personalization-box-share-command{
@@ -1329,3 +1373,18 @@ footer{
     right: 180px;
 }
 
+section{
+    margin-top: 66px;
+}
+
+#personalization-view-box-background{
+    width: 87%;
+    height: 87%;
+    display: block;
+    position: fixed;
+    z-index: 0;
+    border: none;
+    border-style: none;
+    object-fit: cover;
+    border-radius: 18px;
+}

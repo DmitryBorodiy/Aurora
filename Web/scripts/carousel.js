@@ -14,13 +14,16 @@ carouselList.addEventListener('click', function (event) {
   update(newActive);
 });
 
-function selectById(id){
+function selectById(id, background){
   try{
     var item = carouselItems[id];
 
     if(item != null){
       update(item);
     }
+    
+    document.getElementById("personalization-view-box-background").src = null;
+    document.getElementById("personalization-view-box-background").src = background.toString();
   }
   catch(e){
     console.log(e);
@@ -29,6 +32,7 @@ function selectById(id){
 
 const update = function(newActive) {
   const newActivePos = newActive.dataset.pos;
+  console.log(newActive);
 
   const current = elems.find((elem) => elem.dataset.pos == 0);
   const prev = elems.find((elem) => elem.dataset.pos == -1);

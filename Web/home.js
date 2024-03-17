@@ -91,3 +91,17 @@ window.addEventListener("scroll", reveal);
 reveal();
 
 //#endregion
+
+//#region Sharing
+
+function ShareUrl(url, title, text){
+    const shareData = {
+        title: title,
+        text: text,
+        url: url,
+    };
+    
+    navigator.share(shareData);
+}
+
+//#endregion

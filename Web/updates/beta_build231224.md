@@ -1,4 +1,4 @@
-![Image](assets/post-update231224.png)
+![Image](https://dmitryborodiy.github.io/Aurora/Web/updates/assets/post-update231224.png)
 
 # What's new in 231224 build? ✨
 
