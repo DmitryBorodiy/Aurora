@@ -1,10 +1,4 @@
 <img src="Web\assets\github-hero-art.png" />
-<div style="text-align: center;">
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="Web\assets\branding-logo-dark.png">
-        <img height="73px" alt="View website" src="Web\assets\branding-logo.png">
-    </picture>
-</div>
 
 ## Aurora - best web search experience
 
