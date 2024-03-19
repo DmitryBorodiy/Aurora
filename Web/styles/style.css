@@ -67,6 +67,10 @@ body{
         background: rgba(255, 255, 255, 0.6);
     }
 
+    #addons-view-box{
+        background: rgba(255, 255, 255, 0.9);
+    }
+
     fluent-divider{
         border-top: calc(var(--stroke-width) * 1px) solid rgba(0, 0, 0, 6%);
     }
@@ -270,6 +274,13 @@ body{
         background: rgba(0, 0, 0, 0.8);
     }
 
+    #addons-view-box{
+        background: rgba(40, 40, 40);
+    }
+
+    #addons-search-box{
+        background: rgba(56, 56, 56, 0.9);
+    }
     
     .flex-card{
         background-color: rgb(32, 32, 32);
@@ -289,7 +300,7 @@ body{
     }
 
     .subtitle{
-        color: #909898;
+        color: rgb(190, 190, 190);
     }
 
     .app-screenshot-base{
@@ -622,15 +633,24 @@ h2{
 }
 
 .app-screenshot{
-    visibility: collapse;
-    display: none;
     position: relative;
-    top: 160px;
-    width: 100%;
-    height: 680px;
-    background-position: center top;
-    background-size: contain;
+    top: 90px;
+    width: 70%;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    object-fit: scale-down;
+    border: 16px solid #101010;
+    margin: 0 auto;
+    display: grid;
+}
+
+#app-screen-img{
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #mobile-menu-button{
@@ -1072,13 +1092,25 @@ footer{
 
 #personalization-view-box{
     width: 100%;
-    background-image: url(../assets/bgr0.jpg);
     border-radius: 20px;
     background-size: cover;
     height: 880px;
-    -webkit-box-shadow: 0px 7px 42px 2px rgba(0,0,0,0.24);
-    -moz-box-shadow: 0px 7px 42px 2px rgba(0,0,0,0.24);
-    box-shadow: 0px 7px 42px 2px rgba(0,0,0,0.24);
+}
+
+#addons-view-box {
+    width: 100%;
+    border-radius: 18px;
+    padding-top: 66px;
+    padding-bottom: 44px;
+    object-fit: scale-down;
+}
+
+#addons-search-box{
+    height: 52px;
+    width: 42%;
+    border-radius: 40px;
+    position: relative;
+    margin: 0 auto;
 }
 
 #wallpaper-picker{
@@ -1265,7 +1297,7 @@ footer{
 
 #segmented-ui{
     position: relative;
-    top: 170px;
+    top: 60px;
     margin-top: 146px;
     display: inline-grid;
     transform: scale(0.8);
@@ -1374,17 +1406,159 @@ footer{
 }
 
 section{
-    margin-top: 66px;
+    margin-top: 44px;
 }
 
 #personalization-view-box-background{
-    width: 87%;
-    height: 87%;
-    display: block;
-    position: fixed;
+    width: 100%;
+    height: 92%;
+    position: absolute;
     z-index: 0;
     border: none;
     border-style: none;
     object-fit: cover;
     border-radius: 18px;
+    padding-right: 124px;
+    margin: 2px;
+}
+
+#search-box-mic{
+    float: left;
+    position: relative;
+    font-size: 24px;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    margin: auto 0;
+    display: inline-flex;
+}
+
+#search-box-find{
+    float: right;
+    position: relative;
+    font-size: 24px;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    margin: auto 0;
+    display: inline-flex;
+}
+
+#search-box-icons{
+    justify-content: center;
+    display: inline-flex;
+    position: relative;
+    top: 50%;
+    left: 46%;
+    margin: auto 0;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+    vertical-align: middle;
+    object-fit: scale-down;
+    gap: 20px;
+}
+
+#addons-view-text{
+    display: block;
+    text-align: center;
+    position: relative;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+#addons-view-title{
+    font-size: 40px;
+    position: relative;
+    padding-top: 42px;
+}
+
+#addons-view-subtitle{
+    font-size: 18px !important;
+    font-weight: normal;
+    max-width: 900px;
+    margin: auto 0;
+    display: inline-block;
+}
+
+#addons-view-action{
+    width: 110px;
+    height: 38px;
+    transform: scale(1.2);
+    position: relative;
+    margin-top: 50px;
+}
+
+#addons-view-link{
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1200px){
+    section, #features{
+      top: 180px !important;
+    }
+
+    #segmented-ui{
+        transform: scale(0.8);
+        right: 6px !important;
+    }
+
+    footer{
+        margin-top: 220px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #addons-search-box{
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #addons-search-box{
+        width: 320px;
+        transform: scale(0.8);
+        right: 10px;
+    }
+
+    #addons-view-box{
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    #search-box-icons{
+        transform: scale(0.8) translateX(-69%) translateY(-62%);
+    }
+
+    #addons-view-text{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 400px){
+    section, #features{
+      top: 180px !important;
+    }
+
+    #segmented-ui{
+        top: 160px;
+        transform: scale(0.7);
+        right: 20px !important;
+    }
+
+    #hero-container-text{
+        transform: scale(0.9);
+        top: 150px !important;
+    }
+
+    .app-screenshot{
+        top: 200px;
+    }
+
+    #addons-search-box{
+        width: 200px;
+    }
+
+    #addons-view-text{
+        transform: scale(0.8);
+    }
 }

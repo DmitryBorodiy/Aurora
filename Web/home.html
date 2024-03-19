@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="styles/segmented.css" />
         <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="styles/shadows.css" />
 
         <!-- JS -->
         <script type="module" src="index.js"></script>
@@ -100,10 +101,12 @@
                                 </div>
                             </div>
                             <div id="app-screenshot" class="reveal active">
-                                <div id="home-screen" class="app-screenshot app-screenshot-base" style="display: block; visibility: visible;"></div>
-                                <div id="explore-screen" class="app-screenshot app-screenshot-explore"></div>
-                                <div id="assistant-screen" class="app-screenshot app-screenshot-assistant"></div>
-                                <div id="search-screen" class="app-screenshot app-screenshot-search"></div>
+                                <div id="home-screen" class="app-screenshot">
+                                    <picture>
+                                        <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/Screen-main-dark.png">
+                                        <img id="app-screen-img" src="assets/screenshots/Screen-main.png" alt="Image description">
+                                    </picture>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -274,7 +277,7 @@
                                 <p class="subtitle" style="position: relative; display: contents; top: -8px; font-weight: normal; max-width: 700px">
                                     A convenient and pleasant interface will immerse you in the best experience<br /> of interaction with search and Internet surfing. Meet a new look every day with daily wallpapers and enjoy the best video wallpapers.
                                 </p><br />
-                                <fluent-button appearance="accent" onclick="window.open('aurora:wallpaper-picker');" style="position: relative; top: 20px;">Explore wallpapers</fluent-button>
+                                <fluent-button appearance="accent" onclick="window.open('aurora:wallpaper-picker');" style="position: relative; top: 20px;">Explore themes</fluent-button>
                                 <div id="wallpaper-picker" style="margin-top: 56px;">
                                     <button class="wallpaper-picker-item" style="background-image: url('assets/bgr4.jpg');" onclick="selectById(0, 'assets/bgr4.jpg');"></button>
                                     <button class="wallpaper-picker-item" style="background-image: url('assets/bgr2.jpg');" onclick="selectById(1, 'assets/bgr2.jpg');"></button>
@@ -296,18 +299,28 @@
                     </div>
                 </section>
                 <section id="addons-section" class="flex-section reveal active" style="gap: 100px;">
-                    <div class="section-column">
-                        <span class="fluent-badge-accent" style="background-color: #D9BA41; top: 10px; position: relative;;">
-                            <a class="label">Indev</a>
+                    <div id="addons-view-box" class="box-shadow">
+                        <div id="addons-search-box">
+                            <i id="search-box-mic" class="icon-ic_fluent_mic_24_regular"></i>
+                            <i id="search-box-find" class="icon-ic_fluent_search_24_regular"></i>
+
+                            <span id="search-box-icons">
+                                <img src="https://img.icons8.com/fluency/48/bing--v1.png" height="24px" width="24px" />
+                                <img src="https://img.icons8.com/fluency/48/duckduckgo.png" height="24px" width="24px" />
+                                <img src="https://img.icons8.com/fluency/48/google-logo.png" height="24px" width="24px" />
+                                <img src="https://img.icons8.com/fluency/48/wolfram-alpha.png" height="24px" width="24px" />
+                                <img src="https://img.icons8.com/fluency/48/pinterest.png" height="24px" width="24px" />
+                                <img src="https://img.icons8.com/fluency/48/spotify.png" height="24px" width="24px" />
+                            </span>
+                        </div>
+                        <span id="addons-view-text">
+                            <h2 id="addons-view-title">One search for entire web</h2>
+                            <p id="addons-view-subtitle" class="subtitle">
+                                Explore the convenience and versatility of our universal search bar, meticulously engineered to effortlessly support any website, including specialized vapor stores, and seamlessly connect with any search engine of your choice. Find everything you need across numerous websites and sources, all from a unified and user-friendly search hub. Streamline your browsing experience and unlock a wealth of information with unparalleled ease and accessibility.
+                            </p><br />
+                            <fluent-button id="addons-view-action" appearance="accent" onclick="GetProduct();">Try now</fluent-button><br />
+                            <a id="addons-view-link" href="privacy/index.html" class="fluent-hyperlink-control">Privacy Policy</a>
                         </span>
-                        <h2 class="section-title">Make you search easily with extensions</h2>
-                        <p class="section-description placeholder">
-                            With our application you can improve your internet search with various extensions. Extensions are special modules that add new features to your search. For example, you can use the extension to translate text into another language, compare prices on different sites, block unwanted ads, and much more.
-                        </p>
-                        <fluent-button class="section-button" appearance="accent" onclick="document.location.href = 'views/indev.html';">Get addons</fluent-button>
-                    </div>
-                    <div class="section-column">
-                        <span id="addons-image-view"></span>
                     </div>
                 </section>
                 <section id="ai-features" class="centerized-section reveal active">
@@ -456,79 +469,6 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <br />
-                    <br />
-                    <h3 style="font-size: 26px; padding-top: 90px;">Integration with popular services</h3>
-                    <p class="placeholder">
-                        The assistant is compatible with popular services that people use and value. This helps you get better results and work easier. The Assistant can connect to multiple apps and platforms to give you easy access to the information and features you need. You can use the assistant to communicate, search, book, listen, browse, and more.
-                    </p>
-                    <br />
-                    <div id="ai-integrated">
-                        <div class="fluent-card flat-card">
-                            <span class="app-logo" style="background-image: url('https://logosandtypes.com/wp-content/uploads/2022/07/OpenAI.png');"></span>
-                            <h3>OpenAI</h3>
-                            <p class="placeholder" style="font-size: 14px;">
-                                Integration with AI services to provide accurate and detailed answers based on ChatGPT. Generating images and searching by image. Analysis of search results and websites.
-                            </p>
-                            <a href="https://openai.com/" target="_blank" class="fluent-hyperlink-control">Learn more</a>
-                        </div>
-                        <div class="fluent-card flat-card">
-                            <span class="app-logo" style="background-image: url('https://brandlogos.net/wp-content/uploads/2022/07/google_cloud-logo_brandlogos.net_qxnsy.png'); background-size: 70%;"></span>
-                            <h3>Google Cloud</h3>
-                            <p class="placeholder" style="font-size: 14px;">
-                                Using cloud technologies and Google services for Internet search, using AI from Google to provide the best results.
-                            </p>
-                            <a href="https://cloud.google.com/" target="_blank" class="fluent-hyperlink-control">Learn more</a>
-                        </div>
-                        <div class="fluent-card flat-card">
-                            <span class="app-logo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png'); background-size: 60%;"></span>
-                            <h3>Azure</h3>
-                            <p class="placeholder" style="font-size: 14px;">
-                                Microsoft Azure, often referred to as Azure, is a cloud computing platform run by Microsoft. It offers access, management, and the development of applications and services through global data centers. It also provides a range of capabilities, including software as a service, platform as a service, and infrastructure as a service. Microsoft Azure supports many programming languages, tools, and frameworks, including Microsoft-specific and third-party software and systems.
-                            </p>
-                            <a href="https://portal.azure.com/" target="_blank" class="fluent-hyperlink-control">Learn more</a>
-                        </div>
-                        <div class="fluent-card flat-card">
-                            <span class="app-logo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Microsoft_365_%282022%29.svg/1200px-Microsoft_365_%282022%29.svg.png'); background-size: 60%;"></span>
-                            <h3>Microsoft 365</h3>
-                            <p class="placeholder" style="font-size: 14px;">
-                                Microsoft 365 is a product family of productivity software, collaboration and cloud-based services owned by Microsoft. It encompasses online services such as Outlook.com, OneDrive, Microsoft Teams, programs formerly marketed under the name Microsoft Office, enterprise products and services associated with these products such as Exchange Server, SharePoint, and Yammer.More at Wikipedia 
-                            </p>
-                            <a href="https://www.office.com/" target="_blank" class="fluent-hyperlink-control">Learn more</a>
-                        </div>
-                        <div class="fluent-card flat-card">
-                            <span class="app-logo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png'); background-size: 60%;"></span>
-                            <h3>Wikipedia</h3>
-                            <p class="placeholder" style="font-size: 14px;">
-                                Wikipedia is a free-content online encyclopedia written and maintained by a community of volunteers, collectively known as Wikipedians, through open collaboration and using a wiki-based editing system called MediaWiki. Wikipedia is the largest and most-read reference work in history, and has consistently been one of the 10 most popular websites. Founded by Jimmy Wales and Larry Sanger on January 15, 2001, it is hosted by the Wikimedia Foundation, an American nonprofit organization.
-                            </p>
-                            <a href="https://www.wikipedia.org/" target="_blank" class="fluent-hyperlink-control">Learn more</a>
-                        </div>
-                        <div class="fluent-card flat-card">
-                            <span class="app-logo" style="background-image: url('https://play-lh.googleusercontent.com/cShys-AmJ93dB0SV8kE6Fl5eSaf4-qMMZdwEDKI5VEmKAXfzOqbiaeAsqqrEBCTdIEs=w240-h480-rw'); border: none;"></span>
-                            <h3>Spotify</h3>
-                            <p class="placeholder" style="font-size: 14px;">
-                                Spotify is a Swedish audio streaming and media services provider founded on 23 April 2006 by Daniel Ek and Martin Lorentzon. It is one of the largest music streaming service providers, with over 551 million monthly active users, including 220 million paying subscribers, as of June 2023. Spotify is listed on the New York Stock Exchange in the form of American depositary receipts.More at Wikipedia 
-                            </p>
-                            <a href="https://www.spotify.com/" target="_blank" class="fluent-hyperlink-control">Learn more</a>
-                        </div>
-                        <div class="fluent-card flat-card">
-                            <span class="app-logo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png'); background-size: 56%;"></span>
-                            <h3>YouTube</h3>
-                            <p class="placeholder" style="font-size: 14px;">
-                                YouTube is an American online video sharing and social media platform headquartered in San Bruno, California, United States. Accessible worldwide, it was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim. It is owned by Google and is the second most visited website in the world, after Google Search. YouTube has more than 2.5 billion monthly users, who collectively watch more than one billion hours of videos every day.
-                            </p>
-                            <a href="https://www.youtube.com/" target="_blank" class="fluent-hyperlink-control">Learn more</a>
-                        </div>
-                        <div class="fluent-card flat-card">
-                            <span class="app-logo" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbp6fN-itWjYEd-UOxsi6zYjumhJTHyFFRFW9v5cc&s=0');"></span>
-                            <h3>UnoPlatform</h3>
-                            <p class="placeholder" style="font-size: 14px;">
-                                Uno Platform is an open source cross-platform graphical user interface that allows WinUI and Universal Windows Platform (UWP) - based code to run on iOS, macOS, Linux, Android, and WebAssembly. Uno Platform is released under the Apache 2.0 license.
-                            </p>
-                            <a href="https://platform.uno/" target="_blank" class="fluent-hyperlink-control">Learn more</a>
                         </div>
                     </div>
                 </section>
