@@ -46,16 +46,72 @@ function getWindowWidth() {
     );
 }
 
+function getPreferredColorScheme() {
+    if(window.matchMedia) {
+      if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+        return 'dark';
+      } else {
+        return 'light';
+      }
+    }
+    
+    return 'light';
+}
+
 function SetScreenshotDisplayByIndex(index){
     try{
-        for(var i = 0; i <= 3; i++){
-            if(i != index){
-                document.getElementsByClassName("app-screenshot")[i].style.visibility = "collapse";
-                document.getElementsByClassName("app-screenshot")[i].style.display = "none";
-            }
-            else{
-                document.getElementsByClassName("app-screenshot")[i].style.visibility = "visible";
-                document.getElementsByClassName("app-screenshot")[i].style.display = "block";
+        let appScreenViewImg = document.getElementById("app-screen-img");
+        let appTheme = getPreferredColorScheme();
+        let pictureSource = document.getElementById("app-screen-media");
+
+        if(pictureSource != null){
+            pictureSource.remove();
+        }
+
+        console.log(appScreenViewImg);
+
+        if(appScreenViewImg != null){
+            switch(index){
+                case 0:
+                    if(appTheme == 'light'){
+                        appScreenViewImg.src = "assets/screenshots/Screen-main.png";
+                    }
+                    else{
+                        appScreenViewImg.src = "assets/screenshots/Screen-main-dark.png";
+                    }
+                break;
+                case 1:
+                    if(appTheme == 'light'){
+                        appScreenViewImg.src = "assets/screenshots/Screen-explore.png";
+                    }
+                    else{
+                        appScreenViewImg.src = "assets/screenshots/Screen-explore-dark.png";
+                    }
+                break;
+                case 2:
+                    if(appTheme == 'light'){
+                        appScreenViewImg.src = "assets/screenshots/Screen-assistant.png";
+                    }
+                    else{
+                        appScreenViewImg.src = "assets/screenshots/Screen-assistant-dark.png";
+                    }
+                break;
+                case 3:
+                    if(appTheme == 'light'){
+                        appScreenViewImg.src = "assets/screenshots/Screen-search.png";
+                    }
+                    else{
+                        appScreenViewImg.src = "assets/screenshots/Screen-search-dark.png";
+                    }
+                break;
+                case 4:
+                    if(appTheme == 'light'){
+                        appScreenViewImg.src = "assets/screenshots/";
+                    }
+                    else{
+                        appScreenViewImg.src = "assets/screenshots/";
+                    }
+                break;
             }
         }
     }

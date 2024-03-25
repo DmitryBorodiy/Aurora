@@ -80,30 +80,30 @@
                             <div id="segmented-ui" class="ios13-segmented-control">
                                 <span class="selection"></span>
                         
-                                <div class="option" onclick="SetScreenshotDisplayByIndex(0);">
-                                    <input type="radio" id="metro" name="sample" value="metro" checked>
+                                <div class="option">
+                                    <input type="radio" id="metro" name="sample" value="metro" onclick="SetScreenshotDisplayByIndex(0);" checked>
                                     <label for="metro"><span>Home</span></label>
                                 </div>
 
-                                <div class="option" onclick="SetScreenshotDisplayByIndex(1);">
-                                    <input type="radio" id="explore" name="sample" value="explore" onclick="SetInteractiveScreenshot('explore-{0}-screen.png');">
+                                <div class="option">
+                                    <input type="radio" id="explore" name="sample" value="explore" onclick="SetScreenshotDisplayByIndex(1);">
                                     <label for="explore"><span>Explore</span></label>
                                 </div>
                         
-                                <div class="option" onclick="SetScreenshotDisplayByIndex(2);">
-                                    <input type="radio" id="bus" name="sample" value="bus" onclick="SetInteractiveScreenshot('assistant-{0}-screen.png');">
+                                <div class="option">
+                                    <input type="radio" id="bus" name="sample" value="bus" onclick="SetScreenshotDisplayByIndex(2);">
                                     <label for="bus"><span>Assistant</span></label>
                                 </div>
                         
-                                <div class="option" onclick="SetScreenshotDisplayByIndex(3);">
-                                    <input type="radio" id="train" name="sample" value="train" onclick="SetInteractiveScreenshot('search-{0}-screen.png');">
+                                <div class="option">
+                                    <input type="radio" id="train" name="sample" value="train" onclick="SetScreenshotDisplayByIndex(3);">
                                     <label for="train"><span>Search</span></label>
                                 </div>
                             </div>
                             <div id="app-screenshot" class="reveal active">
                                 <div id="home-screen" class="app-screenshot">
                                     <picture>
-                                        <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/Screen-main-dark.png">
+                                        <source id="app-screen-media" media="(prefers-color-scheme: dark)" srcset="assets/screenshots/Screen-main-dark.png">
                                         <img id="app-screen-img" src="assets/screenshots/Screen-main.png" alt="Image description">
                                     </picture>
                                 </div>

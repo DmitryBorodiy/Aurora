@@ -34,9 +34,8 @@ function NewsPage_OnResize(){
         var windowWidth = getWindowWidth();
 
         if(windowWidth < 800){
-            document.getElementById("blog-posts").style.paddingLeft = "36px";
+            document.getElementById("blog-posts").style.paddingLeft = "30px";
             document.getElementById("blog-posts").style.paddingRight = "30px";
-            document.getElementById("rootNewsLayout").style.paddingLeft = "42px";
         }
         else if(windowWidth > 800){
             document.getElementById("blog-posts").style.paddingLeft = "90px";

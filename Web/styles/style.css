@@ -1173,7 +1173,7 @@ footer{
 }
 
 #news-hero-text{
-    max-width: 320px;
+    padding-right: 120px;
 }
 
 .news-hero-button{
@@ -1187,7 +1187,6 @@ footer{
     position: relative;
     top: 0px;
     width: 100%;
-    background-image: url('https://images.hdqwalls.com/wallpapers/aurora-background-0i.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1490,6 +1489,16 @@ section{
 
 #addons-view-link{
     margin-top: 100px;
+}
+
+.centerized-label{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: auto auto;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
 }
 
 @media screen and (max-width: 1200px){

@@ -43,19 +43,6 @@
                     if(NewsLayout == null){
                         NewsLayout = document.getElementById("rootNewsLayout");
                     }
-
-                    if(NewsLayout != null){
-                        var windowWidth = getWindowWidth();
-
-                        if(windowWidth < 960){
-                            NewsLayout.style.paddingLeft = "56px";
-                            NewsLayout.style.paddingRight = "56px";
-                        }
-                        else{
-                            NewsLayout.style.paddingLeft = "120px";
-                            NewsLayout.style.paddingRight = "120px";
-                        }
-                    }
                 }
                 catch(e){
                     console.log(e);
@@ -75,38 +62,40 @@
     </head>
     <body id="rootBody" onresize="NewsPage_OnResize()" onload="Page_OnLoaded()">
         <fluent-design-system-provider id="fluent-design-provider" style="width: 100%;" onload="Page_OnLoaded()">
-            <div id="hero-image">
+            <div id="hero-image" style="background-image: url('updates/assets/post-update240324.png');">
                 <span class="acrylic-effect"></span>
                 <div id="rootNewsLayout" class="news-layout" onclick="NewsLayout_OnResize();">
                     <section id="main-news" style="animation: navigation-transition 1.2s ease-in-out;">
                         <div id="news-hero-text" class="section-column" style="flex-basis: 500px;">
                             <div class="table-grid">
                                 <span class="fluent-badge" style="display: inline-block;">
-                                    <a class="label">November 25, 2023</a>
+                                    <a class="label">March 25, 2024</a>
                                 </span>
                                 <span class="fluent-badge-accent" style="display: inline-block; height: 12px; margin-left: 2px;">
                                     <a class="label" style="position: relative; bottom: 2px;">Beta</a>
                                 </span>
                             </div>
-                            <h1 class="news-hero-title">Introducing new build for you!🎉</h1>
+                            <h1 class="news-hero-title">What's new in 231224 build? ✨</h1>
                             <p class="placeholder">
-                                In this latest update, we're thrilled to unveil the integration of GPT-4 to enhance your assistant's capabilities. With GPT-4, your AI assistant is now more knowledgeable and capable than ever before, ready to assist you in various tasks, answer questions, and provide valuable insights.
-                            </p>
-                            <fluent-button class="news-hero-button" appearance="accent" onclick="LaunchBlogPostPage('https://dmitryborodiy.github.io/Aurora/Web/updates/beta_build231110.md');">Learn more</fluent-button>
+                                The culmination of 2023, Build 231224, marks the final release for the year. This pivotal version sets the stage for the upcoming iteration of the application, unveiling an exciting roadmap for 2024. Anticipate the integration of a sophisticated built-in browser, bolstered by enhanced support for search extensions. Additionally, the roadmap outlines the inception of a mobile application rooted in .NET MAUI, accompanied by a host of innovative search and AI features that promise to redefine user experience.                            </p>
+                            <fluent-button class="news-hero-button" appearance="accent" onclick="LaunchBlogPostPage('https://dmitryborodiy.github.io/Aurora/Web/updates/beta_build240324.md');">Learn more</fluent-button>
                         </div>
-                        <div class="section-column" style="flex-basis: 500px; animation: navigation-transition 1.2s ease-in-out; text-align: right;">
+                        <div class="section-column" style="flex-basis: 500px; animation: navigation-transition 1.2s ease-in-out; text-align: center;">
                             <div class="app-screenshot" style="
                                 top: 30px;
                                 right: 90px;
                                 bottom: 100px;
                                 position: relative;
                                 height: 460px;
-                                width: 530px;
+                                width: 100%;
+                                background-size: cover;
+                                border: none;
+                                margin-left: 50px;
                                 border-radius: 10px;
                                 visibility: visible;
                                 display: inline-block;
                                 background-position: center;
-                                background-image: url('updates/assets/beta_build-231110-hero.png');"></div>
+                                background-image: url('updates/assets/post-update240324.png');"></div>
                         </div>
                     </section>
                 </div>
@@ -184,6 +173,24 @@
                             padding-top: 6px;
                             line-height: 2px;
                             ">Cumulative update - 03.16.2024</p>
+                        </div>
+                        <fluent-button class="card-action" appearance="accent" style="padding-top: 10px; float: left; margin-bottom: 16px; margin-top: auto; margin-left: 16px;">Learn more</fluent-button>
+                    </div>
+                    <div class="fluent-card news-card" onclick="LaunchBlogPostPage('https://dmitryborodiy.github.io/Aurora/Web/updates/beta_build240324.md');">
+                        <span class="card-image" style="background-image: url('updates/assets/post-update240324.png');">
+                        </span>
+                        <div class="card-layout-content">
+                            <h5 style="
+                            padding: 0px;
+                            font-size: 18px;
+                            ">Fixes and security updates 🚀</h5>
+                            <p style="padding-right: 32px;">
+                                In this build with the number 230324, several bugs were addressed and fixed to enhance the overall stability and performance of the system.
+                            </p>
+                            <p class="placeholder" style="
+                            padding-top: 6px;
+                            line-height: 2px;
+                            ">Cumulative update - 03.25.2024</p>
                         </div>
                         <fluent-button class="card-action" appearance="accent" style="padding-top: 10px; float: left; margin-bottom: 16px; margin-top: auto; margin-left: 16px;">Learn more</fluent-button>
                     </div>
