@@ -96,7 +96,7 @@ h2{
     position: relative;
     padding-left: 42px;
     padding-right: 42px;
-    padding-top: 172px;
+    padding-top: 182px;
     text-align: center;
 }
 
@@ -115,7 +115,7 @@ h2{
     background-image: url('../assets/premium-hero-mesh.svg');
     background-repeat: no-repeat;
     background-position: center center;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .premium-branding-label{

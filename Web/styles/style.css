@@ -701,7 +701,6 @@ h2{
     padding-right: 56px;
     position: relative;
     text-align: center;
-    padding-top: 100px;
 }
 
 #features-box{
@@ -773,7 +772,7 @@ em{
 
 #addons-section{
     padding-top: 30px;
-    padding-bottom: 224px;
+    padding-bottom: 60px;
 }
 
 .section-column{
@@ -909,6 +908,7 @@ fluent-option{
 #ai-features{
     padding-left: 60px;
     padding-right: 60px;
+    position: relative;
 }
 
 #ai-features-description{
@@ -1008,6 +1008,8 @@ fluent-option{
     display: table;
     position: relative;
     width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .box-view-gradient{
@@ -1168,7 +1170,7 @@ footer{
 }
 
 #ai-features-text{
-    padding-top: 200px;
+    padding-top: 300px;
     text-align: center;
     display: block;
     position: relative;
@@ -1186,7 +1188,7 @@ footer{
 }
 
 #ai-view-text{
-    font-weight: 300;
+    font-weight: normal;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     padding-left: 20px;
@@ -1464,6 +1466,28 @@ footer{
     padding-left: 9px;
 }
 
+.box-share-command{
+    float: right;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    padding-left: 9px;
+    top: 20px;
+    right: 20px;
+}
+
+.box-premium-command{
+    float: right;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    padding-left: 9px;
+    top: 20px;
+    left: 20px;
+}
+
 #personalization-view-text{
     top: 24px;
     width: 100%;
@@ -1602,6 +1626,15 @@ section{
     margin-top: 100px;
 }
 
+.card-label{
+    text-transform: none;
+    font-size: 18px;
+    position: relative;
+    justify-self: center;
+    margin: auto auto;
+    padding: 24px;
+}
+
 .centerized-label{
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -1613,13 +1646,17 @@ section{
 }
 
 @media screen and (max-width: 1200px){
-    #features, #looks-beautiful, #addons-section{
+    #features, #looks-beautiful, #addons-section, #ai-features{
       top: 120px !important;
     }
 
     #segmented-ui{
         transform: scale(0.8);
         right: 6px !important;
+    }
+
+    #premium-section{
+        margin-top: 100px;
     }
 
     footer{

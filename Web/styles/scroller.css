@@ -1,6 +1,6 @@
 @media(prefers-color-scheme: light){
     :root{
-        --grad-color: rgba(255,255,255,0.6);
+        --grad-color: #f7f7f7;
     }
 }
 
