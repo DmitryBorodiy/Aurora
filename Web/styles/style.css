@@ -35,6 +35,7 @@ body{
 @media(prefers-color-scheme: light){
     :root{
         --foreground-color: rgb(30, 30, 30);
+        --chrome-color: #e7e7e7;
     }
 
     body{
@@ -69,6 +70,16 @@ body{
 
     #addons-view-box{
         background: rgba(255, 255, 255, 0.9);
+    }
+
+    #ai-features-box{
+        background-image: url('../assets/assistant-asset-light.png');
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .box-view-gradient{
+        background: rgba(255,255,255,0.6);
+        background: linear-gradient(0deg, #f7f7f7 50%, rgba(255,255,255,0) 100%);
     }
 
     fluent-divider{
@@ -241,6 +252,7 @@ body{
 @media(prefers-color-scheme: dark){
     :root{
         --foreground-color: rgb(245, 245, 245);
+        --chrome-color: #323232;
     }
     
     body{
@@ -264,6 +276,16 @@ body{
     body::-webkit-scrollbar-thumb {
         background: var(--sb-thumb-color);
         border-radius: 10px;
+    }
+
+    #ai-features-box{
+        background-image: url('../assets/assistant-asset-dark.png');
+        background-color: #1f1f1f;
+    }
+
+    .box-view-gradient{
+        background: rgb(31,31,31);
+        background: linear-gradient(0deg, rgba(31,31,31,1) 50%, rgba(255,255,255,0) 100%);
     }
 
     fluent-divider{
@@ -605,7 +627,18 @@ h2{
 .fluent-badge{
     border-radius: 48px;
     padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    gap: 6px;
+}
+
+.badge-icon{
+    position: relative;
+    top: 2px;
 }
 
 #hero-description{
@@ -740,6 +773,7 @@ em{
 
 #addons-section{
     padding-top: 30px;
+    padding-bottom: 224px;
 }
 
 .section-column{
@@ -976,6 +1010,13 @@ fluent-option{
     width: 100%;
 }
 
+.box-view-gradient{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 #get-premium-button{
     position: relative;
     margin-top: 12px;
@@ -1103,6 +1144,74 @@ footer{
     padding-top: 66px;
     padding-bottom: 44px;
     object-fit: scale-down;
+}
+
+#ai-features-box{
+    width: 100%;
+    border-radius: 16px;
+    backdrop-filter: blur(220px);
+    text-align: center;
+    z-index: 1;
+    background-position: center 42px;
+    background-size: 56%;
+    background-repeat: no-repeat;
+}
+
+#ai-features-content{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    padding: 42px;
+    padding-bottom: 100px;
+}
+
+#ai-features-text{
+    padding-top: 200px;
+    text-align: center;
+    display: block;
+    position: relative;
+    max-width: 710px;
+    display: inline-block;
+}
+
+#ai-features-chips{
+    display: table;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center;
+    width: 100%;
+    border-spacing: 9px;
+}
+
+#ai-view-text{
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#ai-view-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 36px;
+}
+
+#ai-features-action{
+    width: 160px;
+    height: 38px;
+    transform: scale(1.2);
+    position: relative;
+    margin-top: 16px;
+}
+
+.box-view-gradient{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 #addons-search-box{
@@ -1477,6 +1586,8 @@ section{
     max-width: 900px;
     margin: auto 0;
     display: inline-block;
+    padding-left: 18px;
+    padding-right: 18px;
 }
 
 #addons-view-action{
@@ -1502,8 +1613,8 @@ section{
 }
 
 @media screen and (max-width: 1200px){
-    section, #features{
-      top: 180px !important;
+    #features, #looks-beautiful, #addons-section{
+      top: 120px !important;
     }
 
     #segmented-ui{
@@ -1512,7 +1623,7 @@ section{
     }
 
     footer{
-        margin-top: 220px;
+        margin-top: 80px;
     }
 }
 

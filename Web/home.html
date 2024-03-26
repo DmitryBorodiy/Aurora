@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="fonts/FluentSystemIcons-Regular.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <link rel="stylesheet" href="styles/shadows.css" />
+        <link rel="stylesheet" href="styles/scroller.css" />
 
         <!-- JS -->
         <script type="module" src="index.js"></script>
@@ -265,7 +266,7 @@
                     <div id="personalization-view-box">
                         <img id="personalization-view-box-background" src="assets/bgr0.jpg" />
                         <div id="personalization-view-box-context">
-                            <span class="fluent-badge" style="top: 10px;position: relative; padding: 9px;">
+                            <span class="fluent-badge" style="top: 10px;position: relative;">
                                 <a class="label">#Personalization</a>
                             </span>
                             <button id="personalization-box-share-command" class="icon-button" onclick="ShareUrl('#looks-beautiful', document.title.toString(), 'Wallpapers & personalization');">
@@ -274,7 +275,7 @@
                             <br />
                             <div id="personalization-view-text">
                                 <h2>Love at first sight</h2>
-                                <p class="subtitle" style="position: relative; display: contents; top: -8px; font-weight: normal; max-width: 700px">
+                                <p class="subtitle" style="position: relative; display: contents; top: -8px; font-weight: normal; max-width: 666px; padding-left: 18px; padding-right: 18px;">
                                     A convenient and pleasant interface will immerse you in the best experience<br /> of interaction with search and Internet surfing. Meet a new look every day with daily wallpapers and enjoy the best video wallpapers.
                                 </p><br />
                                 <fluent-button appearance="accent" onclick="window.open('aurora:wallpaper-picker');" style="position: relative; top: 20px;">Explore themes</fluent-button>
@@ -323,156 +324,95 @@
                         </span>
                     </div>
                 </section>
-                <section id="ai-features" class="centerized-section reveal active">
-                    <img alt="assistant-logo" height="60px" width="60px" src="assets/Assistant.png" /><br /><br />
-                    <span class="fluent-badge" style="top: 10px; position: relative;">
-                        <a class="label">Personal AI assistant</a>
-                    </span>
-                    <h2 id="ai-features-title">Get helpful AI answers on your questions</h2>
-                    <p id="ai-features-description" class="placeholder">
-                        Assistant is a smart, friendly and helpful voice assistant that helps you in your daily life. You can communicate with the assistant by voice or text using natural language. The assistant can help you with a variety of tasks, such as finding information, managing your calendar, reminders, entertainment, and more. The assistant can also provide you with personalized recommendations and advice, tailored to your preferences and interests.
-                    </p>
-                    <fluent-button id="open-assistant-action" appearance="accent" onclick="window.open('aurora:assistant');" style="height: 38px; width: 146px;">Ask Assistant</fluent-button>
-                    <br />
-                    <div id="what-can-ai">
-                        <div class="fluent-card ai-section-card">
-                            <i class="card-icon icon icon-ic_fluent_chat_12_regular" style="padding-top: 8px;"></i>
-                            <h3>AI-powered answers</h3>
-                            <p class="placeholder">
-                                Get answers to questions that are not so easy to find. Generative AI allows you to find information by asking just one question.
-                            </p>
-                            <div class="table" style="padding-bottom: 26px;">
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Explain the concept of AI.</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">How do I bake chocolate cookies?</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">How can I start online business?</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Define quantum computing</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fluent-card ai-section-card">
-                            <i class="card-icon icon icon-ic_fluent_chess_20_regular" style="padding-top: 8px;"></i>
-                            <h3>Entertainment and relaxation</h3>
-                            <p class="placeholder">
-                                Use the capabilities of a personal assistant to relax and escape from everyday tasks.
-                            </p>
-                            <div class="table" style="line-height: 20px;">
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Tell me a joke.</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Surprise me.</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Let's play a game.</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fluent-card ai-section-card">
-                            <i class="card-icon icon icon-ic_fluent_briefcase_24_regular" style="padding-top: 8px;"></i>
-                            <h3>Organizing tasks</h3>
-                            <p class="placeholder">
-                                The assistant can help you plan events, manage email, organize to-do lists, and more. The assistant can also integrate with various apps and services to make your work easier.
-                            </p>
-                            <div class="table" style="line-height: 20px;">
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">What do I need to do today?</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Create a task for Tuesday of this week.</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Remind me about the meeting</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fluent-card ai-section-card">
-                            <i class="card-icon icon-ic_fluent_globe_search_24_regular" style="padding-top: 8px;"></i>
-                            <h3>Searching and analyzing</h3>
-                            <p class="placeholder">
-                                Searching and analyzing information on the Internet on sites and web resources is an important task that the assistant does well.
-                            </p>
-                            <div class="table" style="padding-bottom: 26px;">
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Find recent COVID-19 statistics.</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Search for healthy breakfast recipes.</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Look up famous quotes by Albert Einstein.</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Find information on climate change effects.</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fluent-card ai-section-card">
-                            <i class="card-icon icon-ic_fluent_circle_image_24_regular" style="padding-top: 8px;"></i>
-                            <h3>Image searching and generation</h3>
-                            <p class="placeholder">
-                                Searching for images is easier than ever, find everything you need thanks to integration with popular image search and processing services, or generate the image you need using DALLE from OpenAI.
-                            </p>
-                            <div class="table" style="padding-bottom: 26px;">
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Create futuristic cityscape.</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Design a sci-fi character using AI.</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Generate a sunset beach scene.</a>
-                                    </span>
-                                </div>
-                                <div class="table-item">
-                                    <span class="fluent-badge" style="top: 10px; position: relative; max-width: 220px;">
-                                        <a class="label" style="text-overflow: ellipsis; text-wrap: nowrap;">Design a digital logo for a startup.</a>
-                                    </span>
+                <section id="ai-features">
+                    <div id="ai-features-box" class="box-shadow">
+                        <span class="box-view-gradient" style="border-radius: 18px;"></span>
+                        <div id="ai-features-content">
+                            <span id="ai-features-text">
+                                <h2 id="ai-view-title">Assistant is always nearby</h2>
+                                <p id="ai-view-text" class="subtitle">
+                                    Meet your new virtual assistant with AI. Whether you need help finding information or tackling everyday tasks, your virtual assistant with AI is here to make your life easier. With vast knowledge and lightning-fast search abilities, this valuable tool is at your fingertips.
+                                </p>
+                            </span>
+                            <span id="ai-features-chips">
+                                <span class="fluent-badge" style="background-color: var(--chrome-color); margin: 6px;">
+                                    <i class="badge-icon icon-ic_fluent_brain_circuit_24_regular" style="font-size: 20px; padding: 0;"></i>
+                                    <label class="label">AI</label>
+                                </span>
+                                <span class="fluent-badge" style="background-color: var(--chrome-color); margin: 6px;">
+                                    <i class="badge-icon icon-ic_fluent_mail_inbox_24_regular" style="font-size: 20px; padding: 0;"></i>
+                                    <label class="label">Tasks and events organization</label>
+                                </span>
+                                <span class="fluent-badge" style="background-color: var(--chrome-color); margin: 6px;">
+                                    <i class="badge-icon icon-ic_fluent_search_24_regular" style="font-size: 20px; padding: 0;"></i>
+                                    <label class="label">AI Searching</label>
+                                </span>
+                                <span class="fluent-badge" style="background-color: var(--chrome-color); margin: 6px;">
+                                    <i class="badge-icon icon-ic_fluent_mic_24_regular" style="font-size: 20px; padding: 0;"></i>
+                                    <label class="label">Voice manamanagement</label>
+                                </span>
+                                <span class="fluent-badge" style="background-color: var(--chrome-color); margin: 6px;">
+                                    <i class="badge-icon icon-ic_fluent_games_24_regular" style="font-size: 20px; padding: 0;"></i>
+                                    <label class="label">Entertainment</label>
+                                </span>
+                                <span class="fluent-badge" style="background-color: var(--chrome-color); margin: 6px;">
+                                    <i class="badge-icon icon-ic_fluent_design_ideas_24_regular" style="font-size: 20px; padding: 0;"></i>
+                                    <label class="label">AI Creator</label>
+                                </span>
+                            </span><br />
+                            <fluent-button id="ai-features-action" appearance="accent" onclick="window.open('aurora:assistant');">Meet the assistant</fluent-button>
+                            <div class="scroller" style="top: 80px;">
+                                <div class="mover">
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_chat_12_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">How do I bake chocolate cookies?</label>
+                                    </div>
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_chat_12_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">Explain the concept of AI</label>
+                                    </div>
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_chess_20_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">Tell me a joke<br /><br /></label>
+                                    </div>
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_briefcase_24_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">What do I must to do today?</label>
+                                    </div>
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_briefcase_24_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">Create a task for Tuesday of this week.</label>
+                                    </div>
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_globe_search_24_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">Search for healthy breakfast recipes.</label>
+                                    </div>
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_design_ideas_24_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">Write cool story about me.</label>
+                                    </div>
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_globe_search_24_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">Find information on climate change effects.</label>
+                                    </div>
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_calculator_24_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">How many tablespoons are in one-quarter cup?</label>
+                                    </div>
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_weather_partly_cloudy_day_24_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">What will the weather be like tomorrow?</label>
+                                    </div>
+                                    <div class="flex-card" style="display: inline-table; background-color: #323232; margin-right: 16px;">
+                                        <i class="card-icon icon icon-ic_fluent_headphones_sound_wave_24_regular" style="padding-top: 8px; font-size: 36px; display: inline-block;"></i>
+                                        <label class="card-label" style="display: inline-block;position: relative;padding-left: 14px;text-wrap: wrap; max-width: 240px;">Play ocean sounds</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="premium-section" class="reveal active">
+                <section id="premium-section" class="reveal active" style="padding-top: 80px !important;">
                     <div class="premium-card">
                         <img alt="premium-icon" height="60px" width="60px" src="assets/icons8-magic-96.png" /><br />
                         <br />
