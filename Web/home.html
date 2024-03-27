@@ -407,16 +407,31 @@
                         <p class="box-card-subtitle subtitle" style="max-width: 700px; padding-left: 18px; padding-right: 18px; margin-top: 24px;">
                             Aurora is a browser that truly cares about your privacy, which is why it has built-in support for it since its inception. Built-in encryption, session and tab locking, tracking blocking, and fine-grained privacy control are all things you can do with Aurora.
                         </p><br />
-                        <fluent-button appearance="accent" style="margin-top: 20px; transform: scale(1.1);">Launch security hub(coming soon)</fluent-button>
+                        <fluent-button appearance="accent" style="margin-top: 20px; transform: scale(1.1); height: 38px;"><p style="padding: 20px;">Launch security hub(coming soon)</p></fluent-button>
                         <button class="icon-button box-share-command" style="right: 79px;" onclick="ShareUrl('#private-browsing', document.title.toString(), 'Assistant is always nearby.');">
                             <i class="icon self-icon icon-ic_fluent_share_20_regular"></i>
                         </button>
                     </div>
-                    <div id="privacy-cards">
+                    <div id="privacy-cards" class="flex">
                         <!-- TODO : Complete privacy cards to tell user about privacy more detail. -->
+                        <div class="flex-card privacy-card">
+                            <!-- Encryption and tracking blocking -->
+                        </div>
+                        <div class="flex-card privacy-card">
+                            <!-- Take your privacy on control with privacy hub -->
+                        </div>
+                        <div class="flex-card privacy-card">
+                            <!-- Key Vault -->
+                        </div>
+                        <div class="flex-card privacy-card">
+                            <!-- Security policy management -->
+                        </div>
+                        <div class="flex-card privacy-card">
+                            <!-- Lock your high private sessions and sites -->
+                        </div>
                     </div>
                 </section>
-                <section id="premium-section" class="reveal active" style="padding-top: 80px !important;">
+                <section id="premium-section" class="reveal active" style="padding-top: 132px !important;">
                     <div class="premium-card">
                         <img alt="premium-icon" height="60px" width="60px" src="assets/icons8-magic-96.png" /><br />
                         <br />

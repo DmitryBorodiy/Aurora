@@ -476,6 +476,10 @@ body{
     #privacy-view-box{
         background-color: rgb(20, 20, 20);
     }
+
+    .privacy-card{
+        background-color: rgb(20, 20, 20);
+    }
 }
 
 header{
@@ -719,6 +723,17 @@ h2{
     flex-wrap: wrap;
     text-align: left;
     gap: 36px;
+}
+
+#privacy-cards{
+    top: 26px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 36px;
+    padding-top: 42px;
 }
 
 .fluent-card{
@@ -1667,8 +1682,8 @@ section{
     display: table;
     text-align: center;
     width: 100%;
-    padding-top: 80px;
-    padding-bottom: 90px;
+    padding-top: 140px;
+    padding-bottom: 200px;
 }
 
 .box-card-title{
