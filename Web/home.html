@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="styles/scroller.css" />
 
         <!-- JS -->
-        <script type="module" src="index.js"></script>
+        <script type="module" src="index.js" defer></script>
         <script src="main.js" defer></script>
         <script src="home.js"></script>
         <script src="modules/segmented.js"></script>
@@ -213,8 +213,8 @@
                                 With the Assistant, you can get complex answers based on artificial intelligence, search for the information you need, generate text, images, source code, and much more. The assistant can help you with various tasks such as writing essays, poems, songs, celebrity parodies, creating graphic works, programming, improving and optimizing your content and much more.
                             </p>
                             <div class="table-grid" style="margin-top: auto;">
-                                <span class="fluent-badge-accent" style="background-color: #D9BA41;">
-                                    <a class="label">Indev</a>
+                                <span class="fluent-badge-accent">
+                                    <a class="label">Beta</a>
                                 </span>
                                 <span class="fluent-badge">
                                     <a class="label">AI</a>
@@ -224,41 +224,11 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="flex-card">
-                            <i class="card-icon icon icon-ic_fluent_window_multiple_16_regular"></i>
-                            <h3>Multitasking in action</h3>
-                            <p>
-                                With tabs, you can launch and easily switch between different applications or websites at the same time. There is no need to open a browser or a separate window in order to use the service you need; Just use the search.
-                            </p>
-                            <div class="table-grid" style="margin-top: auto;">
-                                <span class="fluent-badge-accent" style="background-color: #D9BA41;">
-                                    <a class="label">Indev</a>
-                                </span>
-                                <span class="fluent-badge">
-                                    <a class="label">Free</a>
-                                </span>
-                                <span class="fluent-badge">
-                                    <a class="label">Multitasking</a>
-                                </span>
-                            </div>
+                        <div class="flex-card" style="height: 560px;">
+                            <!-- TO DO : Perfomance -->
                         </div>
-                        <div class="flex-card">
-                            <i class="card-icon icon icon-ic_fluent_globe_32_regular"></i>
-                            <h3>Explore the web</h3>
-                            <p>
-                                You no longer need a browser to visit websites and surf the Internet. Open search results directly in the application and enjoy convenience and speed. You can easily switch between different tabs, add sites to your favorites, share links with friends, and much more. The app also protects your privacy and security by blocking unwanted ads and malicious sites. Search will become your reliable assistant and guide to the world of the Internet.
-                            </p>
-                            <div class="table-grid" style="margin-top: auto;">
-                                <span class="fluent-badge-accent" style="background-color: #D9BA41;">
-                                    <a class="label">Indev</a>
-                                </span>
-                                <span class="fluent-badge">
-                                    <a class="label">Web</a>
-                                </span>
-                                <span class="fluent-badge">
-                                    <a class="label">Free</a>
-                                </span>
-                            </div>
+                        <div class="flex-card" style="height: 560px;">
+                            <!-- TO DO : Improved power efficiency -->
                         </div>
                     </div>
                 </section>
@@ -420,9 +390,30 @@
                         </div>
                     </div>
                 </section>
-                <section id="private-browsing" class="reveal active" style="padding-top: 80px !important;">
-                    <div id="privacy-view-box">
-                        
+                <section id="private-browsing" class="reveal active">
+                    <div id="privacy-view-box" class="box-shadow">
+                        <svg class="lock" viewBox="0 0 184 220.19">
+                            <clipPath id="clip-path">
+                                <rect class="fill-mask" x="7.5" y="97.69" width="169" height="115" rx="18.5" ry="18.5"/>
+                            </clipPath>
+                            <g class="fill-mask-group">
+                                <circle class="fill-circle" cx="142.5" cy="97.69" r="1.5"/>
+                            </g>
+                            <path class="top-part" d="M41.5,93.69V56.93A49.24,49.24,0,0,1,90.73,7.69h2.54A49.24,49.24,0,0,1,142.5,56.93v2.26"/>
+                            <rect class="bottom-part" x="7.5" y="97.69" width="169" height="115" rx="18.5" ry="18.5"/>
+                        </svg><br />
+                        <span class="fluent-badge" style="margin-top: 14px;">Most secure</span><br />
+                        <h2 class="box-card-title" style="display: block; padding-top: 14px; margin: 0;">Security is already on board</h2>
+                        <p class="box-card-subtitle subtitle" style="max-width: 700px; padding-left: 18px; padding-right: 18px; margin-top: 24px;">
+                            Aurora is a browser that truly cares about your privacy, which is why it has built-in support for it since its inception. Built-in encryption, session and tab locking, tracking blocking, and fine-grained privacy control are all things you can do with Aurora.
+                        </p><br />
+                        <fluent-button appearance="accent" style="margin-top: 20px; transform: scale(1.1);">Launch security hub(coming soon)</fluent-button>
+                        <button class="icon-button box-share-command" style="right: 79px;" onclick="ShareUrl('#private-browsing', document.title.toString(), 'Assistant is always nearby.');">
+                            <i class="icon self-icon icon-ic_fluent_share_20_regular"></i>
+                        </button>
+                    </div>
+                    <div id="privacy-cards">
+                        <!-- TODO : Complete privacy cards to tell user about privacy more detail. -->
                     </div>
                 </section>
                 <section id="premium-section" class="reveal active" style="padding-top: 80px !important;">
@@ -457,7 +448,7 @@
                             </button>
                         </div>
                         <br />
-                        <a class="placeholder subtitle" style="position: relative; top: 32px;">Copyright © 2023</a>
+                        <a class="placeholder subtitle" style="position: relative; top: 32px;">Copyright © 2024</a>
                     </div>
                     <div class="footer-column">
                         <p class="placeholder subtitle">Pages</p>

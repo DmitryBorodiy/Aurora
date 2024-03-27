@@ -9,8 +9,13 @@ var searchBar;
 var searchCommand;
 var SearchUI;
 var ThemeView;
+let domLock;
 
 var IsMenuOpen = false;
+
+//window.onload = function(){
+    //Page_OnLoaded();
+//};
 
 function Page_OnLoaded() {
     headerUI = document.getElementsByTagName("header")[0];
@@ -23,10 +28,13 @@ function Page_OnLoaded() {
     searchBar = document.getElementById("mobile-search-bar");
     searchCommand = document.getElementById("mobile-search-command");
     ThemeView = document.getElementById("theme-view-box");
+    domLock = document.querySelector(".lock");
 
     getProductButton.addEventListener("click", GetProduct);
     feedbackCommand.addEventListener("click", SendReview);
     searchCommand.addEventListener("click", MakeSearch);
+
+    InitLockIcon();
 };
 
 function Page_OnResize() {
@@ -169,3 +177,23 @@ function GetPremiumSubscription(){
         console.log(e);
     }
 }
+
+//#region SecuritySection
+function InitLockIcon(){
+    let closed = false;
+
+    if(domLock != null){
+        domLock.addEventListener("click", ()=> {
+            closed = !closed;
+            domLock.classList.toggle("closed", closed);
+
+            let anim = closed ?
+                        "LinearShake ease-in-out 280ms, 360ms AngularShake ease-in-out 280ms" :
+                        "LinearShake ease-in-out 280ms";
+
+            domLock.style.animation = "none";
+            setTimeout(()=> domLock.style.animation = anim, 0);
+        });
+    }
+}
+//#endregion

@@ -21,6 +21,8 @@ var rootFrame;
 var headerUI;
 var headerActions;
 var progressView;
+let domLock;
+let lockClosed = false;
 
 var windowTheme = "Light";
 
@@ -43,15 +45,74 @@ window.onload = (event) => {
     mobileMenuButton = document.getElementById("mobile-menu-button");
     mobileMenuSidebar = document.getElementById("mobile-menu-sidebar");
     menuBackdrop = document.getElementById("menu-backdrop");
+    domLock = document.querySelector(".lock");
 
     HandleScrollingAttach();
     ApplyTheme();
     SetProgressViewVisible(false);
 
-    window.addEventListener("resize", Page_OnResize);
+    if(GetCurrentPage() == "main.html"){
+        Page_OnResize();
+        window.addEventListener("resize", Page_OnResize);
+    }
 
-    Page_OnResize();
+    if(GetCurrentPage() == "home.html"){
+        InitLockIcon();
+    }
 };
+
+window.addEventListener('scroll', function() {
+	var position = domLock.getBoundingClientRect();
+
+	if(position.top >= 0 && position.bottom <= window.innerHeight) {
+        this.setTimeout(function() {
+            lockClosed = true;
+            domLock.classList.toggle("closed", lockClosed);
+
+            let anim = lockClosed ?
+                    "LinearShake ease-in-out 280ms, 360ms AngularShake ease-in-out 280ms" :
+                    "LinearShake ease-in-out 280ms";
+
+            domLock.style.animation = "none";
+            setTimeout(()=> domLock.style.animation = anim, 0);
+        }, 800);
+    }
+    else{
+        this.setTimeout(function() {
+            lockClosed = false;
+            domLock.classList.toggle("closed", lockClosed);
+
+            let anim = lockClosed ?
+                    "LinearShake ease-in-out 280ms, 360ms AngularShake ease-in-out 280ms" :
+                    "LinearShake ease-in-out 280ms";
+
+            domLock.style.animation = "none";
+            setTimeout(()=> domLock.style.animation = anim, 0);
+        }, 1100);
+    }
+});
+
+//#region SecuritySection
+function InitLockIcon(){
+    if(domLock != null){
+        domLock.addEventListener("click", ()=> {
+            lockClosed = !lockClosed;
+            domLock.classList.toggle("closed", lockClosed);
+
+            let anim = lockClosed ?
+                        "LinearShake ease-in-out 280ms, 360ms AngularShake ease-in-out 280ms" :
+                        "LinearShake ease-in-out 280ms";
+
+            domLock.style.animation = "none";
+            setTimeout(()=> domLock.style.animation = anim, 0);
+        });
+    }
+}
+//#endregion
+
+function GetCurrentPage(){
+    return window.location.pathname.split('/').pop();
+}
 
 function HandleScrollingAttach(){
     try{

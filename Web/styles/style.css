@@ -247,6 +247,10 @@ body{
     .bgr4_scr{
         background-image: url('../assets/bgr4_scr_light.png');
     }
+
+    #privacy-view-box{
+        background-color: rgb(255, 255, 255);
+    }
 }
 
 @media(prefers-color-scheme: dark){
@@ -467,6 +471,10 @@ body{
 
     .bgr4_scr{
         background-image: url('../assets/bgr4_scr_dark.png');
+    }
+
+    #privacy-view-box{
+        background-color: rgb(20, 20, 20);
     }
 }
 
@@ -1645,9 +1653,42 @@ section{
     vertical-align: middle;
 }
 
+#private-browsing{
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: relative;
+    top: 76px;
+}
+
+#privacy-view-box{
+    border-radius: 18px;
+    padding: 26px;
+    display: table;
+    text-align: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.box-card-title{
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box-card-subtitle{
+    font-size: 18px;
+    font-weight: normal;
+    display: inline-block;
+}
+
 @media screen and (max-width: 1200px){
     #features, #looks-beautiful, #addons-section, #ai-features{
       top: 120px !important;
+    }
+
+    #private-browsing{
+        top: 142px;
     }
 
     #segmented-ui{

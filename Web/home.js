@@ -120,12 +120,6 @@ function SetScreenshotDisplayByIndex(index){
     }
 }
 
-//#region themes-slider
-
-
-
-//#endregion
-
 //#region scrolling animation
 
 function reveal() {
