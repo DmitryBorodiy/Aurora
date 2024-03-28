@@ -74,6 +74,27 @@
     background-image: linear-gradient(280deg, #73FF5F, #16E6CE);
 }
 
+.card-gradient{
+    padding: 42px;
+    border-radius: 18px;
+    position: relative;
+    top: -150px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(180px);
+    z-index: 11;
+}
+
+.ellipse {
+    position: relative;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #00b4db, #0083b0);
+  }
+
 @keyframes up-anim {
     0%, 100%{
         bottom: -100px;

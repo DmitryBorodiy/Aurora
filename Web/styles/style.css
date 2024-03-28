@@ -748,6 +748,12 @@ h2{
     -moz-box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.11);
 }
 
+.privacy-card{
+    flex-basis: 420px;
+    border-radius: 18px;
+    height: 480px;
+}
+
 .fluent-card:hover{
     box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.5);
     -webkit-box-shadow: 3px 4px 14px 0px rgba(0,0,0,0.5);
@@ -759,6 +765,18 @@ h2{
     background: -webkit-linear-gradient(#0676c1, #01e496);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.card-box-label{
+    text-transform: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.privacy-card-text{
+    display: block;
+    position: relative;
+    padding: 46px;
 }
 
 .table-grid{
