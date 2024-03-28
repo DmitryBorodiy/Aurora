@@ -344,3 +344,19 @@ h2{
         background-size: cover;
     }
 }
+
+@media screen and (max-width: 6560px) {
+    #features-content, #tariff-plans-context{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #tariff-plans-context{
+        padding-top: 0px;
+    }
+
+    #tariff-plans{
+        padding-top: 0px !important;
+        top: 60px !important;
+    }
+}

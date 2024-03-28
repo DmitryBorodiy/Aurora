@@ -867,7 +867,7 @@ em{
     position: fixed;
     left: 0px;
     height: 100%;
-    width: 342px;
+    width: 100%;
     margin-top: 73px;
     top: 0px;
     z-index: 111111111111;
@@ -894,7 +894,7 @@ em{
 #mobile-search-bar{
     position: relative;
     display: inline-block;
-    width: 300px;
+    width: 89%;
     margin: 20px;
     top: 0px;
 }
@@ -1029,16 +1029,15 @@ fluent-option{
 
 .premium-card{
     padding: 32px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 160px;
+    padding-bottom: 160px;
     border-radius: 16px;
-    display: inline-block;
-    max-width: 720px;
+    display: block;
     margin-left: 32px;
     margin-right: 32px;
     margin-top: 36px;
     color: rgb(42, 42, 42);
-    background: linear-gradient(210deg, #ABFFA4, #75ADDB);
+    background: linear-gradient(260deg, #ABFFA4, #75ADDB);
     box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.2);
     -webkit-box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.2);
@@ -1062,9 +1061,10 @@ fluent-option{
 
 #get-premium-button{
     position: relative;
-    margin-top: 12px;
+    margin-top: 14px;
     height: 40px;
     width: 160px;
+    transform: scale(1.2);
 }
 
 footer{
@@ -1716,7 +1716,7 @@ section{
 }
 
 @media screen and (max-width: 1200px){
-    #features, #looks-beautiful, #addons-section, #ai-features{
+    #looks-beautiful, #addons-section, #ai-features{
       top: 120px !important;
     }
 
@@ -1763,10 +1763,59 @@ section{
     #addons-view-text{
         transform: scale(0.9);
     }
+
+    #features{
+        padding-top: 280px !important;
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    .app-screenshot{
+        width: 86%;
+    }
+
+    #looks-beautiful{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    #personalization-view-box-context{
+        padding-left: 60px;
+    }
+
+    #addons-section{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #ai-features{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    #ai-features-box{
+        background-size: 100%;
+        background-position: center 90px;
+    }
+
+    #private-browsing{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .premium-card{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #premium-section{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 @media screen and (max-width: 400px){
-    section, #features{
+    section{
       top: 180px !important;
     }
 
@@ -1791,5 +1840,9 @@ section{
 
     #addons-view-text{
         transform: scale(0.8);
+    }
+
+    #features{
+        top: -60px !important;
     }
 }
